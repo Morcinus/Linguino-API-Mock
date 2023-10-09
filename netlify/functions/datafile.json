@@ -2,7 +2,7 @@
   "uuid": "fd92ddc7-9999-4092-93b0-84839065fdb7",
   "lastMigration": 27,
   "name": "Linguino API",
-  "endpointPrefix": "",
+  "endpointPrefix": "api",
   "latency": 0,
   "port": 3001,
   "hostname": "127.0.0.1",
@@ -2850,7 +2850,7 @@
     {
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a",
       "name": "achievements",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2991,7 +2991,7 @@
     {
       "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6",
       "name": "lessons",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
