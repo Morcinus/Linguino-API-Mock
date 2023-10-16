@@ -305,7 +305,7 @@
       "responses": [
         {
           "uuid": "9bc10232-9c93-4ee4-a96a-dda76fe61e0e",
-          "body": "[\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Ruth Campbell\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ruthcampbell\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Danielle Smith\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"daniellesmith\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Sasha Townsend\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sashatownsend\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Janelle Patton\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"janellepatton\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Ashlyn Owens\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ashlynowens\"\r\n   },\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Alma Gross\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"almagross\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Tina Harris\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"tinaharris\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Susan Moran\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"susanmoran\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Mackenzie Lawrence\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"mackenzielawrence\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Sara Pham\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sarapham\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Ruth Campbell\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ruthcampbell\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Danielle Smith\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"daniellesmith\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Sasha Townsend\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sashatownsend\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Janelle Patton\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"janellepatton\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Ashlyn Owens\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ashlynowens\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Alma Gross\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"almagross\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Tina Harris\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"tinaharris\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Susan Moran\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"susanmoran\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Mackenzie Lawrence\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"mackenzielawrence\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Sara Pham\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sarapham\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -361,7 +361,7 @@
       "responses": [
         {
           "uuid": "9535f0a6-6a45-4742-af6b-7fa7ca39e4a7",
-          "body": "[\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Ruth Campbell 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ruthcampbell\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Danielle Smith 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"daniellesmith\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Sasha Townsend 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sashatownsend\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Janelle Patton 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"janellepatton\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Ashlyn Owens 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ashlynowens\"\r\n   },\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Alma Gross 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"almagross\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Tina Harris 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"tinaharris\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Susan Moran 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"susanmoran\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Mackenzie Lawrence 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"mackenzielawrence\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Sara Pham 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sarapham\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Ruth Campbell 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ruthcampbell\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Danielle Smith 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"daniellesmith\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Sasha Townsend 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sashatownsend\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Janelle Patton 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"janellepatton\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Ashlyn Owens 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ashlynowens\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Alma Gross 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"almagross\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Tina Harris 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"tinaharris\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Susan Moran 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"susanmoran\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Mackenzie Lawrence 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"mackenzielawrence\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Sara Pham 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sarapham\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -741,7 +741,7 @@
     },
     {
       "uuid": "ef9b7deb-031b-4128-952b-6de898108f48",
-      "documentation": "Defaultně je seřazeno podle \"learningOrder\" a groupnuto podle \"category\". Tyto parametry jsou obsaženy ve struktuře jsonu, nedávají se tedy do objektů.",
+      "documentation": "",
       "method": "get",
       "endpoint": "lessons",
       "responses": [
@@ -791,6 +791,31 @@
               "target": "query",
               "modifier": "favorite",
               "value": "true",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE"
+        },
+        {
+          "uuid": "4264fb8b-45a8-4e72-a870-923b6be89d90",
+          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"Minulý čas prostý - otázky\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"Minulý čas prostý - negativa\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"Minulý čas prostý - přehled\",\r\n      \"progress\":50\r\n   }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "searchName=min",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "searchName",
+              "value": "min",
               "invert": false,
               "operator": "equals"
             }
@@ -989,9 +1014,9 @@
         },
         {
           "uuid": "bc72bc30-0df4-4fd4-9612-ee482b839933",
-          "body": "{}",
+          "body": "[]",
           "latency": 0,
-          "statusCode": 404,
+          "statusCode": 200,
           "label": "",
           "headers": [],
           "filePath": "",
@@ -1379,9 +1404,9 @@
         },
         {
           "uuid": "6930c14c-36d5-4136-bb92-260d1f301493",
-          "body": "{}",
+          "body": "[]",
           "latency": 0,
-          "statusCode": 404,
+          "statusCode": 200,
           "label": "",
           "headers": [],
           "filePath": "",
@@ -2800,6 +2825,59 @@
       "enabled": true,
       "responseMode": null,
       "type": "http"
+    },
+    {
+      "uuid": "e874f48d-c37b-47d8-80eb-dbce462aba92",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users",
+      "responses": [
+        {
+          "uuid": "6a931155-e210-49eb-816d-669c8aaa841c",
+          "body": "[\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Pepa Okurka\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"pepaokurka\",\r\n      \"profileImageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Prasátko Pepina\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"prasatkopepina\",\r\n      \"profileImageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Pepek Námořník\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"pepeknamornik\",\r\n      \"profileImageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "searchName=pep",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "searchName",
+              "value": "pep",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "c7a89b02-6017-4a94-b315-be99f1e3f105",
+          "body": "[]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2955,6 +3033,10 @@
         {
           "type": "folder",
           "uuid": "586174e7-190c-4b3d-9675-5525508da3c9"
+        },
+        {
+          "type": "route",
+          "uuid": "e874f48d-c37b-47d8-80eb-dbce462aba92"
         }
       ]
     },
@@ -2972,7 +3054,7 @@
     {
       "uuid": "e29d44ab-fdb3-4d48-8bb6-8f592db51879",
       "name": "courses",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3018,7 +3100,7 @@
     {
       "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be",
       "name": "lesson-items",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3127,7 +3209,7 @@
     {
       "uuid": "e871c1ae-4011-4e81-9608-3340a6f3879f",
       "name": "following",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3168,7 +3250,7 @@
     {
       "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940",
       "name": "study-sessions",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3261,7 +3343,7 @@
     {
       "uuid": "e1465dad-b695-4bf2-acb3-4f63238545d8",
       "name": "exercises",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3272,7 +3354,7 @@
     {
       "uuid": "586174e7-190c-4b3d-9675-5525508da3c9",
       "name": "notices",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
