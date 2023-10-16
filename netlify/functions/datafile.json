@@ -2667,6 +2667,62 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "189cf813-52d3-49ce-9b10-af58152d4491",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "courses/:courseId/placement-test",
+      "responses": [
+        {
+          "uuid": "e259feaf-59fb-489f-b511-dd3134b0355f",
+          "body": "[\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"explanation\": \"# Hello world \\n Lorem opossum\",\n    \"question\": {\n      \"id\": \"dsmaljdsa\",\n      \"question\": \"Brambora xx'x\",\n      \"answer\": \"xx'x\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmaljdsad\",\n      \"question\": \"Brambora yyy\",\n      \"answer\": \"yyy\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"gsggdsggsgfdsg\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmxaljdsa\",\n      \"question\": \"Brambora zzz\",\n      \"answer\": \"zzz\",\n      \"type\": \"TEXT\"\n    }\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c48fbd23-e338-4a22-b39f-0b316c683350",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "courses/:courseId/placement-test",
+      "responses": [
+        {
+          "uuid": "361b6ecb-3eb8-475b-bbed-3256ca29d172",
+          "body": "{\n  \"userLevel\": \"b2\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2762,7 +2818,7 @@
     {
       "uuid": "f90b3022-75ab-4d50-b719-9c6fe65b13f7",
       "name": "courses",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2775,6 +2831,10 @@
         {
           "type": "folder",
           "uuid": "464e24f7-21fd-4071-8a35-b5790e6beb7e"
+        },
+        {
+          "type": "folder",
+          "uuid": "1b92768c-79f4-41b4-85ac-5109065e17e5"
         }
       ]
     },
@@ -2915,7 +2975,7 @@
     {
       "uuid": "464e24f7-21fd-4071-8a35-b5790e6beb7e",
       "name": "topics",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3020,7 +3080,7 @@
     {
       "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940",
       "name": "study-session",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3120,11 +3180,26 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "folder",
           "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940"
+        }
+      ]
+    },
+    {
+      "uuid": "1b92768c-79f4-41b4-85ac-5109065e17e5",
+      "name": "placement-test",
+      "collapsed": false,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "189cf813-52d3-49ce-9b10-af58152d4491"
+        },
+        {
+          "type": "route",
+          "uuid": "c48fbd23-e338-4a22-b39f-0b316c683350"
         }
       ]
     }
