@@ -11,33 +11,18 @@
       "uuid": "3cf36e77-8e08-41aa-b382-89ea82b382aa",
       "documentation": "",
       "method": "get",
-      "endpoint": "study-sessions/:lessonType",
+      "endpoint": "user/study-session",
       "responses": [
         {
           "uuid": "0158cddf-756f-49f5-b271-7b9ef8ab64ff",
           "body": "[\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"explanation\": \"# Hello world \\n Lorem opossum\",\n    \"question\": {\n      \"id\": \"dsmaljdsa\",\n      \"question\": \"Brambora xx'x\",\n      \"answer\": \"xx'x\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmaljdsad\",\n      \"question\": \"Brambora yyy\",\n      \"answer\": \"yyy\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"gsggdsggsgfdsg\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmxaljdsa\",\n      \"question\": \"Brambora zzz\",\n      \"answer\": \"zzz\",\n      \"type\": \"TEXT\"\n    }\n  }\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "Example Response 1",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "lessonType",
-              "value": "VOCABULARY",
-              "invert": false,
-              "operator": "equals"
-            },
-            {
-              "target": "params",
-              "modifier": "lessonType",
-              "value": "GRAMMAR",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
+          "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
@@ -50,19 +35,11 @@
           "body": "[\r\n   {\r\n      \"id\":\"fdsfsdfdsfsdfsd\",\r\n      \"type\":\"RAPID_QUESTIONS\",\r\n      \"instructionTitle\":\"Odpovězte nahlas v angličtině:\",\r\n      \"questions\":[\r\n         {\r\n            \"id\":\"ldsnjdadd\",\r\n            \"questionAudioLink\":\"https://samplelib.com/lib/preview/mp3/sample-3s.mp3\"\r\n         }\r\n      ]\r\n   },\r\n   {\r\n      \"id\":\"dsadsaaddadadad\",\r\n      \"type\":\"RAPID_QUESTIONS\",\r\n      \"instructionTitle\":\"Odpovězte nahlas v angličtině2:\",\r\n      \"questions\":[\r\n         {\r\n            \"id\":\"ldsnjdaddx\",\r\n            \"questionAudioLink\":\"https://samplelib.com/lib/preview/mp3/sample-3s.mp3\"\r\n         }\r\n      ]\r\n   },\r\n   {\r\n      \"id\":\"ifdsamlmlkafd\",\r\n      \"type\":\"SPEECH\",\r\n      \"instructionTitle\":\"Mluvte na téma\",\r\n      \"instructionDescription\":\"What is my favourite music genre\",\r\n      \"time\":10000,\r\n      \"questions\":[\r\n         {\r\n            \"question\":\"Why do you like the genre?\",\r\n            \"id\":\"dadadas\"\r\n         },\r\n         {\r\n            \"question\":\"What genres do you hate?\",\r\n            \"id\":\"dadadas\"\r\n         },\r\n         {\r\n            \"question\":\"Would you want to play an instrument? Why? Why not?\",\r\n            \"id\":\"dadadas\"\r\n         }\r\n      ]\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "Example Response 2",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "lessonType",
-              "value": "SPEAKING",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
+          "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
@@ -75,17 +52,34 @@
           "body": "[\r\n   {\r\n      \"id\":\"ifdsamlmlkafd\",\r\n      \"type\":\"LISTEN_AND_WRITE\",\r\n      \"instructionTitle\":\"Přepište poslech\",\r\n      \"questions\":[\r\n         {\r\n            \"id\":\"lafjdflfa\",\r\n            \"answer\":\"xxx\",\r\n            \"questionAudioLink\":\"https://samplelib.com/lib/preview/mp3/sample-3s.mp3\"\r\n         }\r\n      ]\r\n   },\r\n   {\r\n      \"id\":\"ifdsamlmlkafd\",\r\n      \"type\":\"LISTENING\",\r\n      \"instructionTitle\":\"Poslechněte a odpovězte\",\r\n      \"audioLink\":\"https://samplelib.com/lib/preview/mp3/sample-3s.mp3\",\r\n      \"questions\":[\r\n         {\r\n            \"question\":\"Hello world, I love tomatoes!\",\r\n            \"blankIndexes\":[\r\n               0,\r\n               1,\r\n               2\r\n            ],\r\n            \"id\":\"a\"\r\n         },\r\n         {\r\n            \"question\":\"Hello world, I love tomatoes!\",\r\n            \"blankIndexes\":[\r\n               2\r\n            ],\r\n            \"id\":\"b\"\r\n         },\r\n         {\r\n            \"question\":\"Hello world, I love tomatoes!\",\r\n            \"blankIndexes\":[\r\n               1\r\n            ],\r\n            \"id\":\"c\"\r\n         },\r\n         {\r\n            \"question\":\"Hello world, I love tomatoes!\",\r\n            \"blankIndexes\":[\r\n               4\r\n            ],\r\n            \"id\":\"d\"\r\n         },\r\n         {\r\n            \"question\":\"Hello world, I love tomatoes!\",\r\n            \"blankIndexes\":[\r\n               2\r\n            ],\r\n            \"id\":\"e\"\r\n         }\r\n      ]\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "Example Response 3",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE"
+        },
+        {
+          "uuid": "e01a5e44-494f-4bf5-bdd5-6aa03105cbde",
+          "body": "[\r\n   {\r\n      \"id\":\"sfdajnlsnfads\",\r\n      \"lessonItemId\":\"fsjngskdnlkngs\",\r\n      \"type\":\"MATCHING\",\r\n      \"assignmentTitle\":\"Spojte odpovídající dvojice!\",\r\n      \"question\":{\r\n         \"id\":\"flsnajkadfnldfasj\",\r\n         \"type\":\"MATCHING\",\r\n         \"options1\":[\r\n            {\r\n               \"text\":\"Jablko\",\r\n               \"matchIndex\":0\r\n            },\r\n            {\r\n               \"text\":\"Hruška\",\r\n               \"matchIndex\":1\r\n            },\r\n            {\r\n               \"text\":\"Banán\",\r\n               \"matchIndex\":2\r\n            },\r\n            {\r\n               \"text\":\"Meloun\",\r\n               \"matchIndex\":3\r\n            }\r\n         ],\r\n         \"options2\":[\r\n            {\r\n               \"text\":\"Apple\",\r\n               \"matchIndex\":0\r\n            },\r\n            {\r\n               \"text\":\"Pear\",\r\n               \"matchIndex\":1\r\n            },\r\n            {\r\n               \"text\":\"Banana\",\r\n               \"matchIndex\":2\r\n            },\r\n            {\r\n               \"text\":\"Watermelon\",\r\n               \"matchIndex\":3\r\n            }\r\n         ]\r\n      }\r\n   }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "lessonId",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
           "rules": [
             {
-              "target": "params",
-              "modifier": "lessonType",
-              "value": "LISTENING",
-              "invert": false,
-              "operator": "equals"
+              "target": "query",
+              "modifier": "lessonId",
+              "value": "",
+              "invert": true,
+              "operator": "null"
             }
           ],
           "rulesOperator": "OR",
@@ -104,7 +98,7 @@
       "uuid": "99f8f56e-c4e5-416b-be79-8c227fe51743",
       "documentation": "",
       "method": "post",
-      "endpoint": "study-sessions/:lessonType",
+      "endpoint": "user/study-session",
       "responses": [
         {
           "uuid": "cb62309f-bfbe-4148-a652-bc91d568ee92",
@@ -112,175 +106,6 @@
           "latency": 0,
           "statusCode": 200,
           "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null,
-      "type": "http"
-    },
-    {
-      "uuid": "c1ad763a-4978-441f-8139-7a816566f7fd",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "study-sessions/:lessonType/lessons/:lessonId",
-      "responses": [
-        {
-          "uuid": "98eccc54-10aa-4d44-848f-45b423b959ad",
-          "body": "[\n  {\n    \"id\": \"sfdajnlsnfads\",\n    \"lessonItemId\": \"fsjngskdnlkngs\",\n    \"type\": \"FILL_TABLE\",\n    \"assignmentTitle\": \"Doplňte chybějící slova do tabulky!\",\n    \"question\": {\n      \"id\": \"flsnajkadfnldfasj\",\n      \"question\": \"Vyčasujte správně sloveso být\",\n      \"type\": \"TABLE\",\n      \"tableRows\": [\n        [\n          \"I\",\n          \"am\"\n        ],\n        [\n          \"You\",\n          \"are\"\n        ],\n        [\n          \"He/she/it\",\n          \"is\"\n        ],\n        [\n          \"We\",\n          \"are\"\n        ],\n        [\n          \"You\",\n          \"are\"\n        ],\n        [\n          \"They\",\n          \"are\"\n        ]\n      ],\n      \"blankCellCoords\": [\n        [\n          1,\n          0\n        ],\n        [\n          1,\n          2\n        ],\n        [\n          1,\n          4\n        ]\n      ]\n    }\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"fdggldgkhdk\",\n    \"type\": \"BUILD_WORD\",\n    \"assignmentTitle\": \"Přeložte do angličtiny\",\n    \"imageURL\": \"https://picsum.photos/id/168/512/512\",\n    \"question\": {\n      \"id\": \"dsmaljdsax\",\n      \"question\": \"jablko\",\n      \"answer\": \"apple\",\n      \"letters\": [\n        \"a\",\n        \"p\",\n        \"p\",\n        \"l\",\n        \"e\",\n        \"x\",\n        \"y\"\n      ],\n      \"type\": \"BUILD_WORD\"\n    }\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"456\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"explanation\": \"# Hello world \\n Lorem opossum\",\n    \"question\": {\n      \"id\": \"dsmaljdsa\",\n      \"question\": \"Brambora xx'x\",\n      \"answer\": \"xx'x\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"type\": \"NEW_GRAMMAR\",\n    \"lessonItemIds\": [\n      \"123\"\n    ]\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmaljdsad\",\n      \"question\": \"Brambora yyy\",\n      \"answer\": \"yyy\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"gsggdsggsgfdsg\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"type\": \"TEXT\",\n      \"id\": \"dsmxaljdsa\",\n      \"question\": \"Brambora zzz\",\n      \"answer\": \"zzz\"\n    }\n  }\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "8ce1d838-eb37-4c9e-9bac-88209a359d84",
-          "body": "[\n  {\n    \"assignmentTitle\": \"Přelož následující větu!\",\n    \"id\": \"asfjnldsfnks\",\n    \"lessonItemId\": \"dflnjfnaksfandf\",\n    \"imageURL\": \"https://picsum.photos/id/168/512/512\",\n    \"type\": \"FILL_IN_SENTENCE\",\n    \"options\": [\n      \"am\",\n      \"angry\",\n      \"hungry\",\n      \"is\",\n      \"are\"\n    ],\n    \"question\": {\n      \"question\": \"Jsem velice hladový.\",\n      \"answer\": \"I am very hungry\",\n      \"blankIndexes\": [\n        1,\n        3\n      ],\n      \"id\": \"asjnkfldaf\",\n      \"type\": \"FILL_IN_BLANK\"\n    }\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"fdggldgkhdk\",\n    \"type\": \"BUILD_WORD\",\n    \"assignmentTitle\": \"Přeložte do angličtiny\",\n    \"imageURL\": \"https://picsum.photos/id/168/512/512\",\n    \"question\": {\n      \"id\": \"dsmaljdsax\",\n      \"question\": \"jablko\",\n      \"answer\": \"apple\",\n      \"letters\": [\n        \"a\",\n        \"p\",\n        \"p\",\n        \"l\",\n        \"e\",\n        \"x\",\n        \"y\"\n      ],\n      \"type\": \"BUILD_WORD\"\n    }\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"456\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"explanation\": \"# Hello world \\n Lorem opossum\",\n    \"question\": {\n      \"id\": \"dsmaljdsa\",\n      \"question\": \"Brambora xx'x\",\n      \"answer\": \"xx'x\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"type\": \"NEW_GRAMMAR\",\n    \"lessonItemIds\": [\n      \"123\"\n    ]\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmaljdsad\",\n      \"question\": \"Brambora yyy\",\n      \"answer\": \"yyy\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"gsggdsggsgfdsg\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"type\": \"TEXT\",\n      \"id\": \"dsmxaljdsa\",\n      \"question\": \"Brambora zzz\",\n      \"answer\": \"zzz\"\n    }\n  }\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Example response 2",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "07a3fe4b-3e30-4737-8944-602721c4c07c",
-          "body": "[\r\n   {\r\n      \"id\":\"sfdajnlsnfads\",\r\n      \"lessonItemId\":\"fsjngskdnlkngs\",\r\n      \"type\":\"MATCHING\",\r\n      \"assignmentTitle\":\"Spojte odpovídající dvojice!\",\r\n      \"question\":{\r\n         \"id\":\"flsnajkadfnldfasj\",\r\n         \"type\":\"MATCHING\",\r\n         \"options1\":[\r\n            {\r\n               \"text\":\"Jablko\",\r\n               \"matchIndex\":0\r\n            },\r\n            {\r\n               \"text\":\"Hruška\",\r\n               \"matchIndex\":1\r\n            },\r\n            {\r\n               \"text\":\"Banán\",\r\n               \"matchIndex\":2\r\n            },\r\n            {\r\n               \"text\":\"Meloun\",\r\n               \"matchIndex\":3\r\n            }\r\n         ],\r\n         \"options2\":[\r\n            {\r\n               \"text\":\"Apple\",\r\n               \"matchIndex\":0\r\n            },\r\n            {\r\n               \"text\":\"Pear\",\r\n               \"matchIndex\":1\r\n            },\r\n            {\r\n               \"text\":\"Banana\",\r\n               \"matchIndex\":2\r\n            },\r\n            {\r\n               \"text\":\"Watermelon\",\r\n               \"matchIndex\":3\r\n            }\r\n         ]\r\n      }\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Matching Text Exercise",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "3486ba8f-7f49-40f7-b085-20b2a20b28f9",
-          "body": "[\r\n   {\r\n      \"id\":\"sfdajnlsnfads\",\r\n      \"lessonItemId\":\"fsjngskdnlkngs\",\r\n      \"type\":\"MATCHING\",\r\n      \"assignmentTitle\":\"Spojte odpovídající dvojice!\",\r\n      \"question\":{\r\n         \"id\":\"flsnajkadfnldfasj\",\r\n         \"type\":\"MATCHING\",\r\n         \"options1\":[\r\n            {\r\n               \"imageURL\":\"https://picsum.photos/id/1/512/512\",\r\n               \"matchIndex\":0\r\n            },\r\n            {\r\n               \"imageURL\":\"https://picsum.photos/id/10/512/512\",\r\n               \"matchIndex\":1\r\n            },\r\n            {\r\n               \"imageURL\":\"https://picsum.photos/id/17/512/512\",\r\n               \"matchIndex\":2\r\n            },\r\n            {\r\n               \"imageURL\":\"https://picsum.photos/id/24/512/512\",\r\n               \"matchIndex\":3\r\n            }\r\n         ],\r\n         \"options2\":[\r\n            {\r\n               \"text\":\"Laptop\",\r\n               \"matchIndex\":0\r\n            },\r\n            {\r\n               \"text\":\"Forest\",\r\n               \"matchIndex\":1\r\n            },\r\n            {\r\n               \"text\":\"Road\",\r\n               \"matchIndex\":2\r\n            },\r\n            {\r\n               \"text\":\"Book\",\r\n               \"matchIndex\":3\r\n            }\r\n         ]\r\n      }\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Matching Images Exercise",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "95672de4-30af-4d9f-9592-7699a36e38c6",
-          "body": "[\r\n   {\r\n      \"id\":\"sfdajnlsnfads\",\r\n      \"lessonItemId\":\"fsjngskdnlkngs\",\r\n      \"type\":\"MATCHING\",\r\n      \"assignmentTitle\":\"Spojte odpovídající dvojice!\",\r\n      \"question\":{\r\n         \"id\":\"flsnajkadfnldfasj\",\r\n         \"type\":\"MATCHING\",\r\n         \"options1\":[\r\n            {\r\n               \"text\":\"Laptop\",\r\n               \"matchIndex\":0\r\n            },\r\n            {\r\n               \"text\":\"Forest\",\r\n               \"matchIndex\":1\r\n            },\r\n            {\r\n               \"text\":\"Road\",\r\n               \"matchIndex\":2\r\n            },\r\n            {\r\n               \"text\":\"Book\",\r\n               \"matchIndex\":3\r\n            }\r\n         ],\r\n         \"options2\":[\r\n            {\r\n               \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n               \"matchIndex\":0\r\n            },\r\n            {\r\n               \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n               \"matchIndex\":1\r\n            },\r\n            {\r\n               \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n               \"matchIndex\":2\r\n            },\r\n            {\r\n               \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n               \"matchIndex\":3\r\n            }\r\n         ]\r\n      }\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Matching Audio Exercise",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null,
-      "type": "http"
-    },
-    {
-      "uuid": "94e3aaed-826c-4cbe-9528-f06082cab7c1",
-      "documentation": "",
-      "method": "post",
-      "endpoint": "study-sessions/:lessonType/lessons/:lessonId",
-      "responses": [
-        {
-          "uuid": "3bef8e9d-579c-4d5f-97a0-7f85080b64eb",
-          "body": "{\n  \"reward\": 20\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null,
-      "type": "http"
-    },
-    {
-      "uuid": "61bcf75e-fd6b-48e4-b9d5-1519663fe4b7",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "users/:id/settings",
-      "responses": [
-        {
-          "uuid": "3e2d5986-1dce-4f6f-90ba-4975902a87e5",
-          "body": "{\r\n   \"dailySessions\":[\r\n      {\r\n         \"type\":\"VOCABULARY\",\r\n         \"goal\": 2\r\n      },\r\n      {\r\n         \"type\":\"SPEAKING\",\r\n         \"goal\": 3\r\n      },\r\n      {\r\n         \"type\":\"LISTENING\",\r\n         \"goal\": 2\r\n      }\r\n   ]\r\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "ccfea37a-3ce1-4d5f-8530-e9164e1ac05f",
-          "body": "{\r\n   \"dailySessions\":[\r\n      {\r\n         \"type\":\"VOCABULARY\",\r\n         \"goal\": 3\r\n      }\r\n   ]\r\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "One session",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -2570,42 +2395,6 @@
       "responseMode": null
     },
     {
-      "uuid": "b31e45ff-2551-4852-a897-8d71461aa743",
-      "type": "http",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "users/:userId/exercises",
-      "responses": [
-        {
-          "uuid": "4e6e4a96-00b0-47ba-bf3d-86b93c8abfdc",
-          "body": "[\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"explanation\": \"# Hello world \\n Lorem opossum\",\n    \"question\": {\n      \"id\": \"dsmaljdsa\",\n      \"question\": \"Test xxx\",\n      \"answer\": \"xxx\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmaljdsad\",\n      \"question\": \"Test yyy\",\n      \"answer\": \"yyy\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"gsggdsggsgfdsg\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"type\": \"TEXT\",\n      \"id\": \"dsmxaljdsa\",\n      \"question\": \"Test zzz\",\n      \"answer\": \"zzz\"\n    }\n  }\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "lessonType != null",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "lessonType",
-              "value": "",
-              "invert": true,
-              "operator": "null"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true
-        }
-      ],
-      "enabled": true,
-      "responseMode": null
-    },
-    {
       "uuid": "cb813032-aed1-4f03-a57f-40e555d2ca94",
       "type": "http",
       "documentation": "",
@@ -2617,7 +2406,7 @@
           "body": "[\r\n   {\r\n      \"id\":\"0646445\",\r\n      \"surveyId\":\"897898\",\r\n      \"type\":\"RATING_SURVEY\",\r\n      \"question\":\"Jaká je pravděpodobnost, že byste aplikaci doporučili přátelům/kolegům?\",\r\n      \"answerLabel1\":\"Nízká\",\r\n      \"answerLabel2\":\"Vysoká\",\r\n      \"maxPoints\":10\r\n   },\r\n   {\r\n      \"id\":\"123456\",\r\n      \"type\":\"FREE_TRIAL_END\",\r\n      \"name\":\"Prodlužte si předplatné a užívejte si tyto výhody:\",\r\n      \"featureList\":[\r\n         \"Žádné reklamy!\",\r\n         \"Pokročilá slovíčka\",\r\n         \"Lidé s premium se statisticky učí rychleji!\"\r\n      ],\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"123\",\r\n      \"type\":\"ACHIEVEMENT\",\r\n      \"name\":\"Moudrý vševěd\",\r\n      \"description\":\"Nauč se aspoň 50 gramatických lekcí.\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "Example Response",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2644,14 +2433,14 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true
+          "default": false
         },
         {
           "uuid": "5029dc0d-b636-46ba-a688-774e5be3caf8",
           "body": "[]",
           "latency": 0,
           "statusCode": 200,
-          "label": "Empty response",
+          "label": "Empty Response (No Notices)",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2661,7 +2450,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false
+          "default": true
         }
       ],
       "enabled": true,
@@ -2928,7 +2717,7 @@
     {
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a",
       "name": "achievements",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2992,8 +2781,12 @@
     {
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e",
       "name": "users",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
+        {
+          "type": "route",
+          "uuid": "e874f48d-c37b-47d8-80eb-dbce462aba92"
+        },
         {
           "type": "route",
           "uuid": "1ba76f7b-f99f-46d1-8866-ab02231f9cb1"
@@ -3024,19 +2817,7 @@
         },
         {
           "type": "folder",
-          "uuid": "2f336b21-1124-4db2-8575-6f6579a16658"
-        },
-        {
-          "type": "folder",
-          "uuid": "e1465dad-b695-4bf2-acb3-4f63238545d8"
-        },
-        {
-          "type": "folder",
           "uuid": "586174e7-190c-4b3d-9675-5525508da3c9"
-        },
-        {
-          "type": "route",
-          "uuid": "e874f48d-c37b-47d8-80eb-dbce462aba92"
         }
       ]
     },
@@ -3073,7 +2854,7 @@
     {
       "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6",
       "name": "lessons",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3100,7 +2881,7 @@
     {
       "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be",
       "name": "lesson-items",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3209,7 +2990,7 @@
     {
       "uuid": "e871c1ae-4011-4e81-9608-3340a6f3879f",
       "name": "following",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3237,20 +3018,9 @@
       ]
     },
     {
-      "uuid": "2f336b21-1124-4db2-8575-6f6579a16658",
-      "name": "settings",
-      "collapsed": true,
-      "children": [
-        {
-          "type": "route",
-          "uuid": "61bcf75e-fd6b-48e4-b9d5-1519663fe4b7"
-        }
-      ]
-    },
-    {
       "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940",
-      "name": "study-sessions",
-      "collapsed": false,
+      "name": "study-session",
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3259,25 +3029,6 @@
         {
           "type": "route",
           "uuid": "99f8f56e-c4e5-416b-be79-8c227fe51743"
-        },
-        {
-          "type": "folder",
-          "uuid": "43fec879-d916-4da6-882d-9be0b4d8a168"
-        }
-      ]
-    },
-    {
-      "uuid": "43fec879-d916-4da6-882d-9be0b4d8a168",
-      "name": "lessons",
-      "collapsed": false,
-      "children": [
-        {
-          "type": "route",
-          "uuid": "c1ad763a-4978-441f-8139-7a816566f7fd"
-        },
-        {
-          "type": "route",
-          "uuid": "94e3aaed-826c-4cbe-9528-f06082cab7c1"
         }
       ]
     },
@@ -3321,7 +3072,7 @@
     {
       "uuid": "ad6e2ece-7e95-4c9b-9034-803476ca002d",
       "name": "login",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3332,22 +3083,11 @@
     {
       "uuid": "d079fdbe-6979-44e9-a801-cdda20d24a25",
       "name": "signup",
-      "collapsed": false,
-      "children": [
-        {
-          "type": "route",
-          "uuid": "2961686d-1707-4d9a-9ac7-ee29f4f3d771"
-        }
-      ]
-    },
-    {
-      "uuid": "e1465dad-b695-4bf2-acb3-4f63238545d8",
-      "name": "exercises",
       "collapsed": true,
       "children": [
         {
           "type": "route",
-          "uuid": "b31e45ff-2551-4852-a897-8d71461aa743"
+          "uuid": "2961686d-1707-4d9a-9ac7-ee29f4f3d771"
         }
       ]
     },
@@ -3376,6 +3116,17 @@
           "uuid": "4addf52b-a48c-4f82-a739-543bfa05dc6a"
         }
       ]
+    },
+    {
+      "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
+      "name": "user",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "folder",
+          "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940"
+        }
+      ]
     }
   ],
   "rootChildren": [
@@ -3394,6 +3145,10 @@
     {
       "type": "route",
       "uuid": "a69aac4a-6b2d-4280-a4dd-0b13d6b69d9f"
+    },
+    {
+      "type": "folder",
+      "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22"
     },
     {
       "type": "folder",
@@ -3434,10 +3189,6 @@
     {
       "type": "folder",
       "uuid": "7517c19e-6fc6-4b29-8661-9163d11fa817"
-    },
-    {
-      "type": "folder",
-      "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940"
     },
     {
       "type": "folder",
