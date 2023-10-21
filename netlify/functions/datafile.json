@@ -525,62 +525,6 @@
       "type": "http"
     },
     {
-      "uuid": "1cedcce9-857b-426d-b5a1-064c2d8d07c2",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "dashboard/daily-learn-button",
-      "responses": [
-        {
-          "uuid": "7c64d6e7-75af-4d60-8588-038e4ad887d9",
-          "body": "[\r\n   {\r\n      \"lessonType\":\"SPEAKING\",\r\n      \"progress\":5,\r\n      \"maxProgress\":6\r\n   },\r\n   {\r\n      \"lessonType\":\"PRONUNCIATION\",\r\n      \"progress\":300,\r\n      \"maxProgress\":6\r\n   },\r\n   {\r\n      \"lessonType\":\"VOCABULARY\",\r\n      \"progress\":20,\r\n      \"maxProgress\":30\r\n   },\r\n   {\r\n      \"lessonType\":\"GRAMMAR\",\r\n      \"progress\":20,\r\n      \"maxProgress\":30\r\n   },\r\n   {\r\n      \"lessonType\":\"READING\",\r\n      \"progress\":30,\r\n      \"maxProgress\":30\r\n   },\r\n   {\r\n      \"lessonType\":\"LISTENING\",\r\n      \"progress\":30,\r\n      \"maxProgress\":30\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null,
-      "type": "http"
-    },
-    {
-      "uuid": "0f1811bd-b213-4f82-b408-918ca327236c",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "dashboard/study-calendar",
-      "responses": [
-        {
-          "uuid": "0848d9c1-c1e4-466d-8852-7e3fb6837b6e",
-          "body": "{\r\n   \"maxValue\":400,\r\n   \"data\":[\r\n      {\r\n         \"value\":96,\r\n         \"day\":\"2022-09-19\"\r\n      },\r\n      {\r\n         \"value\":389,\r\n         \"day\":\"2022-10-08\"\r\n      },\r\n      {\r\n         \"value\":174,\r\n         \"day\":\"2022-07-15\"\r\n      },\r\n      {\r\n         \"value\":268,\r\n         \"day\":\"2022-10-19\"\r\n      },\r\n      {\r\n         \"value\":194,\r\n         \"day\":\"2022-08-09\"\r\n      },\r\n      {\r\n         \"value\":220,\r\n         \"day\":\"2022-10-28\"\r\n      },\r\n      {\r\n         \"value\":331,\r\n         \"day\":\"2022-09-22\"\r\n      },\r\n      {\r\n         \"value\":242,\r\n         \"day\":\"2022-10-05\"\r\n      },\r\n      {\r\n         \"value\":185,\r\n         \"day\":\"2022-07-28\"\r\n      },\r\n      {\r\n         \"value\":166,\r\n         \"day\":\"2022-07-08\"\r\n      },\r\n      {\r\n         \"value\":380,\r\n         \"day\":\"2022-10-06\"\r\n      },\r\n      {\r\n         \"value\":258,\r\n         \"day\":\"2022-07-25\"\r\n      },\r\n      {\r\n         \"value\":241,\r\n         \"day\":\"2022-06-19\"\r\n      },\r\n      {\r\n         \"value\":325,\r\n         \"day\":\"2022-10-02\"\r\n      },\r\n      {\r\n         \"value\":138,\r\n         \"day\":\"2022-06-14\"\r\n      },\r\n      {\r\n         \"value\":333,\r\n         \"day\":\"2022-09-04\"\r\n      },\r\n      {\r\n         \"value\":75,\r\n         \"day\":\"2022-06-30\"\r\n      },\r\n      {\r\n         \"value\":226,\r\n         \"day\":\"2022-09-02\"\r\n      },\r\n      {\r\n         \"value\":292,\r\n         \"day\":\"2022-09-06\"\r\n      },\r\n      {\r\n         \"value\":34,\r\n         \"day\":\"2022-06-28\"\r\n      },\r\n      {\r\n         \"value\":380,\r\n         \"day\":\"2022-09-31\"\r\n      },\r\n      {\r\n         \"value\":247,\r\n         \"day\":\"2022-06-13\"\r\n      },\r\n      {\r\n         \"value\":183,\r\n         \"day\":\"2022-10-20\"\r\n      },\r\n      {\r\n         \"value\":59,\r\n         \"day\":\"2022-10-18\"\r\n      },\r\n      {\r\n         \"value\":138,\r\n         \"day\":\"2022-09-23\"\r\n      },\r\n      {\r\n         \"value\":5,\r\n         \"day\":\"2022-08-02\"\r\n      },\r\n      {\r\n         \"value\":154,\r\n         \"day\":\"2022-09-18\"\r\n      },\r\n      {\r\n         \"value\":331,\r\n         \"day\":\"2022-07-17\"\r\n      },\r\n      {\r\n         \"value\":212,\r\n         \"day\":\"2022-06-15\"\r\n      },\r\n      {\r\n         \"value\":232,\r\n         \"day\":\"2022-07-12\"\r\n      },\r\n      {\r\n         \"value\":147,\r\n         \"day\":\"2022-06-11\"\r\n      },\r\n      {\r\n         \"value\":117,\r\n         \"day\":\"2022-10-30\"\r\n      },\r\n      {\r\n         \"value\":366,\r\n         \"day\":\"2022-09-10\"\r\n      },\r\n      {\r\n         \"value\":277,\r\n         \"day\":\"2022-10-09\"\r\n      },\r\n      {\r\n         \"value\":359,\r\n         \"day\":\"2022-07-09\"\r\n      },\r\n      {\r\n         \"value\":199,\r\n         \"day\":\"2022-07-13\"\r\n      },\r\n      {\r\n         \"value\":344,\r\n         \"day\":\"2022-07-07\"\r\n      },\r\n      {\r\n         \"value\":374,\r\n         \"day\":\"2022-06-06\"\r\n      },\r\n      {\r\n         \"value\":27,\r\n         \"day\":\"2022-06-04\"\r\n      },\r\n      {\r\n         \"value\":279,\r\n         \"day\":\"2022-10-26\"\r\n      },\r\n      {\r\n         \"value\":87,\r\n         \"day\":\"2022-10-22\"\r\n      },\r\n      {\r\n         \"value\":45,\r\n         \"day\":\"2022-09-05\"\r\n      },\r\n      {\r\n         \"value\":29,\r\n         \"day\":\"2022-10-23\"\r\n      },\r\n      {\r\n         \"value\":42,\r\n         \"day\":\"2022-06-02\"\r\n      },\r\n      {\r\n         \"value\":183,\r\n         \"day\":\"2022-09-30\"\r\n      },\r\n      {\r\n         \"value\":163,\r\n         \"day\":\"2022-06-27\"\r\n      },\r\n      {\r\n         \"value\":71,\r\n         \"day\":\"2022-10-11\"\r\n      },\r\n      {\r\n         \"value\":62,\r\n         \"day\":\"2022-07-20\"\r\n      },\r\n      {\r\n         \"value\":67,\r\n         \"day\":\"2022-07-27\"\r\n      },\r\n      {\r\n         \"value\":52,\r\n         \"day\":\"2022-06-17\"\r\n      },\r\n      {\r\n         \"value\":354,\r\n         \"day\":\"2022-09-29\"\r\n      },\r\n      {\r\n         \"value\":93,\r\n         \"day\":\"2022-07-01\"\r\n      },\r\n      {\r\n         \"value\":34,\r\n         \"day\":\"2022-08-10\"\r\n      },\r\n      {\r\n         \"value\":356,\r\n         \"day\":\"2022-06-05\"\r\n      },\r\n      {\r\n         \"value\":57,\r\n         \"day\":\"2022-07-26\"\r\n      },\r\n      {\r\n         \"value\":284,\r\n         \"day\":\"2022-07-03\"\r\n      },\r\n      {\r\n         \"value\":303,\r\n         \"day\":\"2022-07-24\"\r\n      },\r\n      {\r\n         \"value\":37,\r\n         \"day\":\"2022-06-26\"\r\n      },\r\n      {\r\n         \"value\":182,\r\n         \"day\":\"2022-09-25\"\r\n      },\r\n      {\r\n         \"value\":91,\r\n         \"day\":\"2022-10-27\"\r\n      },\r\n      {\r\n         \"value\":249,\r\n         \"day\":\"2022-08-04\"\r\n      },\r\n      {\r\n         \"value\":146,\r\n         \"day\":\"2022-07-19\"\r\n      },\r\n      {\r\n         \"value\":68,\r\n         \"day\":\"2022-06-09\"\r\n      },\r\n      {\r\n         \"value\":204,\r\n         \"day\":\"2022-06-23\"\r\n      },\r\n      {\r\n         \"value\":168,\r\n         \"day\":\"2022-09-17\"\r\n      },\r\n      {\r\n         \"value\":399,\r\n         \"day\":\"2022-09-14\"\r\n      },\r\n      {\r\n         \"value\":371,\r\n         \"day\":\"2022-06-29\"\r\n      },\r\n      {\r\n         \"value\":27,\r\n         \"day\":\"2022-09-20\"\r\n      },\r\n      {\r\n         \"value\":173,\r\n         \"day\":\"2022-09-24\"\r\n      },\r\n      {\r\n         \"value\":153,\r\n         \"day\":\"2022-07-29\"\r\n      },\r\n      {\r\n         \"value\":37,\r\n         \"day\":\"2022-09-16\"\r\n      },\r\n      {\r\n         \"value\":152,\r\n         \"day\":\"2022-10-24\"\r\n      },\r\n      {\r\n         \"value\":70,\r\n         \"day\":\"2022-10-15\"\r\n      },\r\n      {\r\n         \"value\":289,\r\n         \"day\":\"2022-06-25\"\r\n      },\r\n      {\r\n         \"value\":74,\r\n         \"day\":\"2022-06-10\"\r\n      },\r\n      {\r\n         \"value\":200,\r\n         \"day\":\"2022-10-16\"\r\n      },\r\n      {\r\n         \"value\":326,\r\n         \"day\":\"2022-09-28\"\r\n      },\r\n      {\r\n         \"value\":292,\r\n         \"day\":\"2022-06-22\"\r\n      },\r\n      {\r\n         \"value\":261,\r\n         \"day\":\"2022-06-01\"\r\n      },\r\n      {\r\n         \"value\":93,\r\n         \"day\":\"2022-09-27\"\r\n      },\r\n      {\r\n         \"value\":278,\r\n         \"day\":\"2022-06-21\"\r\n      },\r\n      {\r\n         \"value\":144,\r\n         \"day\":\"2022-08-08\"\r\n      },\r\n      {\r\n         \"value\":78,\r\n         \"day\":\"2022-10-10\"\r\n      },\r\n      {\r\n         \"value\":392,\r\n         \"day\":\"2022-07-18\"\r\n      },\r\n      {\r\n         \"value\":115,\r\n         \"day\":\"2022-10-14\"\r\n      },\r\n      {\r\n         \"value\":274,\r\n         \"day\":\"2022-09-07\"\r\n      },\r\n      {\r\n         \"value\":270,\r\n         \"day\":\"2022-07-22\"\r\n      },\r\n      {\r\n         \"value\":44,\r\n         \"day\":\"2022-10-03\"\r\n      },\r\n      {\r\n         \"value\":169,\r\n         \"day\":\"2022-09-09\"\r\n      },\r\n      {\r\n         \"value\":78,\r\n         \"day\":\"2022-09-03\"\r\n      },\r\n      {\r\n         \"value\":214,\r\n         \"day\":\"2022-07-06\"\r\n      },\r\n      {\r\n         \"value\":398,\r\n         \"day\":\"2022-08-01\"\r\n      },\r\n      {\r\n         \"value\":280,\r\n         \"day\":\"2022-09-21\"\r\n      },\r\n      {\r\n         \"value\":222,\r\n         \"day\":\"2022-10-17\"\r\n      },\r\n      {\r\n         \"value\":254,\r\n         \"day\":\"2022-07-10\"\r\n      },\r\n      {\r\n         \"value\":398,\r\n         \"day\":\"2022-07-23\"\r\n      },\r\n      {\r\n         \"value\":146,\r\n         \"day\":\"2022-10-07\"\r\n      },\r\n      {\r\n         \"value\":110,\r\n         \"day\":\"2022-09-12\"\r\n      },\r\n      {\r\n         \"value\":52,\r\n         \"day\":\"2022-08-07\"\r\n      },\r\n      {\r\n         \"value\":180,\r\n         \"day\":\"2022-09-11\"\r\n      },\r\n      {\r\n         \"value\":231,\r\n         \"day\":\"2022-06-07\"\r\n      },\r\n      {\r\n         \"value\":256,\r\n         \"day\":\"2022-06-08\"\r\n      },\r\n      {\r\n         \"value\":89,\r\n         \"day\":\"2022-07-02\"\r\n      },\r\n      {\r\n         \"value\":215,\r\n         \"day\":\"2022-10-25\"\r\n      },\r\n      {\r\n         \"value\":211,\r\n         \"day\":\"2022-08-11\"\r\n      },\r\n      {\r\n         \"value\":136,\r\n         \"day\":\"2022-10-13\"\r\n      },\r\n      {\r\n         \"value\":289,\r\n         \"day\":\"2022-09-26\"\r\n      }\r\n   ]\r\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null,
-      "type": "http"
-    },
-    {
       "uuid": "25ef3461-5055-48e3-913d-cd8d57e4cc44",
       "documentation": "",
       "method": "post",
@@ -1424,34 +1368,6 @@
           "default": false,
           "databucketID": "",
           "bodyType": "INLINE"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null,
-      "type": "http"
-    },
-    {
-      "uuid": "a69aac4a-6b2d-4280-a4dd-0b13d6b69d9f",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "bucket/:lessonId",
-      "responses": [
-        {
-          "uuid": "94a5d1c6-6b46-4e85-9416-cf2206b65691",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "C:\\Morcinus\\OneDrive\\Morcinus Files\\FIT\\Bakalářka\\image.jpg",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "FILE"
         }
       ],
       "enabled": true,
@@ -3179,7 +3095,7 @@
     {
       "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940",
       "name": "study-session",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3209,7 +3125,7 @@
     {
       "uuid": "43c840a0-e923-4b09-a914-a126d438961b",
       "name": "reset-password",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3220,7 +3136,7 @@
     {
       "uuid": "2fe77ef2-b734-4fe8-a547-8a06c88deb43",
       "name": "change-password",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3242,7 +3158,7 @@
     {
       "uuid": "d079fdbe-6979-44e9-a801-cdda20d24a25",
       "name": "signup",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3253,7 +3169,7 @@
     {
       "uuid": "586174e7-190c-4b3d-9675-5525508da3c9",
       "name": "notices",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3306,19 +3222,7 @@
   "rootChildren": [
     {
       "type": "route",
-      "uuid": "1cedcce9-857b-426d-b5a1-064c2d8d07c2"
-    },
-    {
-      "type": "route",
-      "uuid": "0f1811bd-b213-4f82-b408-918ca327236c"
-    },
-    {
-      "type": "route",
       "uuid": "25ef3461-5055-48e3-913d-cd8d57e4cc44"
-    },
-    {
-      "type": "route",
-      "uuid": "a69aac4a-6b2d-4280-a4dd-0b13d6b69d9f"
     },
     {
       "type": "folder",
