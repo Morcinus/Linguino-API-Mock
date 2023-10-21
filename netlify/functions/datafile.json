@@ -303,7 +303,7 @@
             {
               "target": "body",
               "modifier": "password",
-              "value": "^.{1,5}$",
+              "value": "^.{1,7}$",
               "invert": false,
               "operator": "regex"
             }
@@ -3176,7 +3176,7 @@
     {
       "uuid": "ad6e2ece-7e95-4c9b-9034-803476ca002d",
       "name": "login",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
