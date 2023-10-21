@@ -1939,7 +1939,7 @@
       "type": "http",
       "documentation": "",
       "method": "post",
-      "endpoint": "changePassword",
+      "endpoint": "change-password",
       "responses": [
         {
           "uuid": "ae549658-084b-4fad-a256-a3cbb4a1a318",
@@ -1952,8 +1952,30 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "password",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            },
+            {
+              "target": "body",
+              "modifier": "email",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            },
+            {
+              "target": "body",
+              "modifier": "resetToken",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            }
+          ],
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true
@@ -3197,8 +3219,8 @@
     },
     {
       "uuid": "2fe77ef2-b734-4fe8-a547-8a06c88deb43",
-      "name": "changePassword",
-      "collapsed": true,
+      "name": "change-password",
+      "collapsed": false,
       "children": [
         {
           "type": "route",
