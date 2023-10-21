@@ -1878,8 +1878,33 @@
       "type": "http",
       "documentation": "",
       "method": "post",
-      "endpoint": "resetPassword",
+      "endpoint": "reset-password",
       "responses": [
+        {
+          "uuid": "bf810ee6-e039-4038-879b-0604b487230a",
+          "body": "{\r\n   \"error\":\"INVALID_EMAIL_ADDRESS\"\r\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "Error: INVALID_EMAIL_ADDRESS",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "email",
+              "value": "\\S+@\\S+\\.\\S+",
+              "invert": true,
+              "operator": "regex"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
         {
           "uuid": "e35eebfa-cc08-4962-b810-bf6a3f6c1ee5",
           "body": "",
@@ -1891,7 +1916,15 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "email",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
@@ -3153,8 +3186,8 @@
     },
     {
       "uuid": "43c840a0-e923-4b09-a914-a126d438961b",
-      "name": "resetPassword",
-      "collapsed": true,
+      "name": "reset-password",
+      "collapsed": false,
       "children": [
         {
           "type": "route",
