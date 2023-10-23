@@ -1654,11 +1654,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "challenges",
+      "endpoint": "user/active-challenges",
       "responses": [
         {
           "uuid": "b50376a3-820a-4e65-b323-e86e7133dca1",
-          "body": "[\r\n   {\r\n      \"id\":\"fssfdffs\",\r\n      \"title\":\"Challenge Lorem Ipsum\",\r\n      \"description\":\"Lorem ipsum dolor sit amet, consectatur adipiscing elit.\",\r\n      \"progress\":100,\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"collectedReward\":false\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"title\":\"{{faker 'lorem.words' 3}}\",\r\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\r\n      \"progress\":100,\r\n      \"imageURL\":\"{{faker 'image.nature' 512 512}}\",\r\n      \"collectedReward\":false\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1681,8 +1681,8 @@
       "uuid": "7b45c895-4515-4363-81c4-933ca8974070",
       "type": "http",
       "documentation": "",
-      "method": "put",
-      "endpoint": "challenges/:id",
+      "method": "patch",
+      "endpoint": "user/active-challenges/:id",
       "responses": [
         {
           "uuid": "df6d072b-322b-4cc6-b66d-c4b291fbb144",
@@ -2837,7 +2837,7 @@
     {
       "uuid": "e58cab13-3940-43c0-956b-feac2e16a968",
       "name": "challenges",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3238,6 +3238,10 @@
         {
           "type": "folder",
           "uuid": "92d8acee-af30-4ed1-bb30-ccc287711ce4"
+        },
+        {
+          "type": "folder",
+          "uuid": "e58cab13-3940-43c0-956b-feac2e16a968"
         }
       ]
     },
@@ -3280,10 +3284,6 @@
     {
       "type": "folder",
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a"
-    },
-    {
-      "type": "folder",
-      "uuid": "e58cab13-3940-43c0-956b-feac2e16a968"
     },
     {
       "type": "folder",
