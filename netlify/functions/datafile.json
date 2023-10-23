@@ -2414,14 +2414,14 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "users/:userId/notices",
+      "endpoint": "user/notices",
       "responses": [
         {
-          "uuid": "e54da37e-c057-45fa-abad-392116f589f0",
-          "body": "[\r\n   {\r\n      \"id\":\"0646445\",\r\n      \"surveyId\":\"897898\",\r\n      \"type\":\"RATING_SURVEY\",\r\n      \"question\":\"Jaká je pravděpodobnost, že byste aplikaci doporučili přátelům/kolegům?\",\r\n      \"answerLabel1\":\"Nízká\",\r\n      \"answerLabel2\":\"Vysoká\",\r\n      \"maxPoints\":10\r\n   },\r\n   {\r\n      \"id\":\"123456\",\r\n      \"type\":\"FREE_TRIAL_END\",\r\n      \"name\":\"Prodlužte si předplatné a užívejte si tyto výhody:\",\r\n      \"featureList\":[\r\n         \"Žádné reklamy!\",\r\n         \"Pokročilá slovíčka\",\r\n         \"Lidé s premium se statisticky učí rychleji!\"\r\n      ],\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"123\",\r\n      \"type\":\"ACHIEVEMENT\",\r\n      \"name\":\"Moudrý vševěd\",\r\n      \"description\":\"Nauč se aspoň 50 gramatických lekcí.\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
+          "uuid": "6836cee8-2e3a-4e63-8558-88737672be0f",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"type\":\"ACHIEVEMENT\",\r\n      \"name\":\"Moudrý vševěd\",\r\n      \"description\":\"Nauč se aspoň 50 gramatických lekcí.\",\r\n      \"imageURL\":\"{{faker 'image.nature' 512 512}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "Example Response",
+          "label": "Example Response: Achievement Notice",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2435,10 +2435,44 @@
         },
         {
           "uuid": "16891b3e-d5a9-456f-a478-ff0e545cdeb7",
-          "body": "[\n  {\n    \"id\": \"FREE_TRIAL_OFFER\",\n    \"type\": \"FREE_TRIAL_OFFER\"\n  }\n]",
+          "body": "[\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"type\": \"FREE_TRIAL_OFFER\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "Free trial offer notice",
+          "label": "Example Response: Free Trial Offer Notice",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "c1fd4121-2747-4402-992e-97e5fbc975d7",
+          "body": "[\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"type\": \"FREE_TRIAL_END\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: Free Trial End Notice",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "69e601ac-6fef-4b23-a22a-86969ef3bbb4",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"surveyId\":\"{{faker 'datatype.uuid'}}\",\r\n      \"type\":\"RATING_SURVEY\",\r\n      \"question\":\"Jaká je pravděpodobnost, že byste aplikaci doporučili přátelům/kolegům?\",\r\n      \"answerLabel1\":\"Nízká\",\r\n      \"answerLabel2\":\"Vysoká\",\r\n      \"maxPoints\":10\r\n   }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: Rating Survey Notice",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2455,7 +2489,7 @@
           "body": "[]",
           "latency": 0,
           "statusCode": 200,
-          "label": "Empty Response (No Notices)",
+          "label": "Example Response: Empty Response",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2476,7 +2510,7 @@
       "type": "http",
       "documentation": "",
       "method": "delete",
-      "endpoint": "users/:userId/notices/:noticeId",
+      "endpoint": "user/notices/:noticeId",
       "responses": [
         {
           "uuid": "278c4878-c838-430f-ba24-38ef86a4d412",
@@ -2889,10 +2923,6 @@
         {
           "type": "folder",
           "uuid": "eae6468a-bac6-47ec-847f-af28aedebf88"
-        },
-        {
-          "type": "folder",
-          "uuid": "586174e7-190c-4b3d-9675-5525508da3c9"
         }
       ]
     },
@@ -3169,7 +3199,7 @@
     {
       "uuid": "586174e7-190c-4b3d-9675-5525508da3c9",
       "name": "notices",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3200,6 +3230,10 @@
         {
           "type": "folder",
           "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940"
+        },
+        {
+          "type": "folder",
+          "uuid": "586174e7-190c-4b3d-9675-5525508da3c9"
         }
       ]
     },
