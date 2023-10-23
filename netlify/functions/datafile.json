@@ -1598,11 +1598,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "achievements",
+      "endpoint": "user/achievements",
       "responses": [
         {
           "uuid": "b1c11662-b289-40e4-b659-c7ac0c61a9bc",
-          "body": "[\r\n   {\r\n      \"id\":\"dskjlnfsack\",\r\n      \"title\":\"Lorem ipsum\",\r\n      \"description\":\"Lorem ipsum dolor sit amet, consectatur adipiscing elit.\",\r\n      \"progress\":100,\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"collectedReward\":false\r\n   },\r\n   {\r\n      \"id\":\"dskjlnfsaak\",\r\n      \"title\":\"Lorem ipsum 2\",\r\n      \"description\":\"Lorem ipsum dolor sit amet, consectatur adipiscing elit.\",\r\n      \"progress\":20,\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"collectedReward\":false\r\n   },\r\n   {\r\n      \"id\":\"dskjlnfsakd\",\r\n      \"title\":\"Lorem ipsum 3\",\r\n      \"description\":\"Lorem ipsum dolor sit amet, consectatur adipiscing elit.\",\r\n      \"progress\":80,\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"collectedReward\":false\r\n   }\r\n]",
+          "body": "[\n   {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"title\":\"{{faker 'lorem.words' 3}}\",\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\n      \"progress\":100,\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n      \"collectedReward\":false\n   },\n   {{#repeat 2}}\n   {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"title\":\"{{faker 'lorem.words' 3}}\",\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\n      \"progress\":\"{{faker 'datatype.number' 100}}\",\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n      \"collectedReward\":false\n   }\n   {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1625,8 +1625,8 @@
       "uuid": "b787aac9-7740-4532-b7b9-733d7b437aa4",
       "type": "http",
       "documentation": "",
-      "method": "put",
-      "endpoint": "achievements/:id",
+      "method": "patch",
+      "endpoint": "user/achievements/:id",
       "responses": [
         {
           "uuid": "c6fa26e7-1fe7-44d2-b9ce-3d6723859604",
@@ -2138,7 +2138,7 @@
       "responses": [
         {
           "uuid": "9e311525-8c7d-4a7d-9be3-c1b784be4a33",
-          "body": "{\n  \"username\": \"pepik123\",\n  \"name\": \"Pepa Okurka\",\n  \"followers\": 12,\n  \"following\": 42,\n  \"level\": 12,\n  \"profileImageURL\": \"https://picsum.photos/id/168/512/512\",\n  \"isFollowed\": false,\n  \"id\": \"dkflgirkemekdiwlskdo\",\n  \"userId\": \"alskeiwocmgvhcnfjebz\",\n  \"streak\": 142,\n  \"learningStats\": [\n    {\n      \"date\": \"2023-06-12T14:31:38+0000\",\n      \"points\": 20\n    },\n    {\n      \"date\": \"2023-06-11T14:31:38+0000\",\n      \"points\": 50\n    },\n    {\n      \"date\": \"2023-06-10T14:31:38+0000\",\n      \"points\": 40\n    },\n    {\n      \"date\": \"2023-06-09T14:31:38+0000\",\n      \"points\": 15\n    },\n    {\n      \"date\": \"2023-06-08T14:31:38+0000\",\n      \"points\": 30\n    },\n    {\n      \"date\": \"2023-06-07T14:31:38+0000\",\n      \"points\": 22\n    },\n    {\n      \"date\": \"2023-06-06T14:31:38+0000\",\n      \"points\": 10\n    }\n  ]\n}",
+          "body": "{\n  \"username\": \"pepik123\",\n  \"name\": \"Pepa Okurka\",\n  \"followers\": 12,\n  \"following\": 42,\n  \"level\": 12,\n  \"profileImageURL\": \"https://picsum.photos/id/168/512/512\",\n  \"isFollowed\": false,\n  \"id\": \"dkflgirkemekdiwlskdo\",\n  \"userId\": \"alskeiwocmgvhcnfjebz\",\n  \"streak\": 142,\n  \"learningStats\": [\n    {\n      \"date\": \"2023-06-12T14:31:38+0000\",\n      \"points\": 20\n    },\n    {\n      \"date\": \"2023-06-11T14:31:38+0000\",\n      \"points\": 50\n    },\n    {\n      \"date\": \"2023-06-10T14:31:38+0000\",\n      \"points\": 40\n    },\n    {\n      \"date\": \"2023-06-09T14:31:38+0000\",\n      \"points\": 15\n    },\n    {\n      \"date\": \"2023-06-08T14:31:38+0000\",\n      \"points\": 30\n    },\n    {\n      \"date\": \"2023-06-07T14:31:38+0000\",\n      \"points\": 22\n    },\n    {\n      \"date\": \"2023-06-06T14:31:38+0000\",\n      \"points\": 10\n    }\n  ],\n  \"achievements\":[\n   {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"title\":\"{{faker 'lorem.words' 3}}\",\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\n      \"progress\":100,\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n      \"collectedReward\":false\n   },\n   {{#repeat 2}}\n   {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"title\":\"{{faker 'lorem.words' 3}}\",\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\n      \"progress\":\"{{faker 'datatype.number' 100}}\",\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n      \"collectedReward\":false\n   }\n   {{/repeat}}\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2837,7 +2837,7 @@
     {
       "uuid": "e58cab13-3940-43c0-956b-feac2e16a968",
       "name": "challenges",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3242,6 +3242,10 @@
         {
           "type": "folder",
           "uuid": "e58cab13-3940-43c0-956b-feac2e16a968"
+        },
+        {
+          "type": "folder",
+          "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a"
         }
       ]
     },
@@ -3280,10 +3284,6 @@
     {
       "type": "folder",
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e"
-    },
-    {
-      "type": "folder",
-      "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a"
     },
     {
       "type": "folder",
