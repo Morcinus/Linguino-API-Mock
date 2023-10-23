@@ -2050,7 +2050,7 @@
       "type": "http",
       "documentation": "",
       "method": "post",
-      "endpoint": "survey-answers",
+      "endpoint": "user/survey-answers",
       "responses": [
         {
           "uuid": "d2bd7aa7-a1bd-450f-becc-f926a9f4e762",
@@ -3234,6 +3234,10 @@
         {
           "type": "folder",
           "uuid": "586174e7-190c-4b3d-9675-5525508da3c9"
+        },
+        {
+          "type": "folder",
+          "uuid": "92d8acee-af30-4ed1-bb30-ccc287711ce4"
         }
       ]
     },
@@ -3265,10 +3269,6 @@
     {
       "type": "folder",
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e"
-    },
-    {
-      "type": "folder",
-      "uuid": "92d8acee-af30-4ed1-bb30-ccc287711ce4"
     },
     {
       "type": "folder",
