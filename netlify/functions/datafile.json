@@ -528,14 +528,14 @@
       "uuid": "ef9b7deb-031b-4128-952b-6de898108f48",
       "documentation": "",
       "method": "get",
-      "endpoint": "lessons",
+      "endpoint": "user/courses/:courseId/lessons",
       "responses": [
         {
           "uuid": "9182902b-63c9-4965-a1ee-bc75863f4e77",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"1) Type Grammar, Category 0\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"2) Type Grammar, Category 0\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"3) Type Grammar, Category 0\",\r\n      \"progress\":50\r\n   }\r\n]",
+          "body": "[\n  {{#repeat 10}}\n  {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"name\": \"{{faker 'lorem.words' 4}}\"\n  }\n  {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "Type Grammar, Category 0",
+          "label": "Example Response: type!=null, level!=null",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -549,10 +549,10 @@
             },
             {
               "target": "query",
-              "modifier": "categoryId",
-              "value": "0",
-              "invert": false,
-              "operator": "equals"
+              "modifier": "level",
+              "value": "",
+              "invert": true,
+              "operator": "null"
             }
           ],
           "rulesOperator": "AND",
@@ -564,10 +564,10 @@
         },
         {
           "uuid": "68133dec-eead-4b95-8f16-f9a336f8babf",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"1) Type Grammar, Category 0\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"2) Type Grammar, Category 0\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"3) Type Grammar, Category 0\",\r\n      \"progress\":50\r\n   }\r\n]",
+          "body": "[\n  {{#repeat 10}}\n  {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"name\": \"{{faker 'lorem.words' 4}}\"\n  }\n  {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "favorite=true",
+          "label": "Example Response: favorite=true",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -589,10 +589,10 @@
         },
         {
           "uuid": "4264fb8b-45a8-4e72-a870-923b6be89d90",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"Minulý čas prostý - otázky\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"Minulý čas prostý - negativa\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"Minulý čas prostý - přehled\",\r\n      \"progress\":50\r\n   }\r\n]",
+          "body": "[\n  {{#repeat 10}}\n  {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"name\": \"{{faker 'lorem.words' 4}}\"\n  }\n  {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "searchName=min",
+          "label": "Example Response: searchName!=null",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -600,169 +600,9 @@
             {
               "target": "query",
               "modifier": "searchName",
-              "value": "min",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "aa518985-5dc8-4176-94b1-58feb79e9eb3",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"1) Type Grammar, Category 1\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"2) Type Grammar, Category 1\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"3) Type Grammar, Category 1\",\r\n      \"progress\":50\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Type Grammar, Category 1",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "type",
-              "value": "VOCABULARY|GRAMMAR|LISTENING|SPEAKING|PRONUNCIATION|READING",
-              "invert": false,
-              "operator": "regex"
-            },
-            {
-              "target": "query",
-              "modifier": "categoryId",
-              "value": "1",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "1a684e4b-ac52-46d6-8a8a-dc79fbb0af74",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"1) Type Grammar, Category 2\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"2) Type Grammar, Category 2\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"3) Type Grammar, Category 2\",\r\n      \"progress\":50\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Type Grammar, Category 2",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "type",
-              "value": "VOCABULARY|GRAMMAR|LISTENING|SPEAKING|PRONUNCIATION|READING",
-              "invert": false,
-              "operator": "regex"
-            },
-            {
-              "target": "query",
-              "modifier": "categoryId",
-              "value": "2",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "6131252b-f815-426c-8a09-cd31866bc7af",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"1) Type Grammar, Category 3\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"2) Type Grammar, Category 3\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"3) Type Grammar, Category 3\",\r\n      \"progress\":50\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Type Grammar, Category 3",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "type",
-              "value": "VOCABULARY|GRAMMAR|LISTENING|SPEAKING|PRONUNCIATION|READING",
-              "invert": false,
-              "operator": "regex"
-            },
-            {
-              "target": "query",
-              "modifier": "categoryId",
-              "value": "3",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "9c1a702b-060f-493d-bcb0-7e0bf53f55b9",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"1) Type Grammar, Category 4\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"2) Type Grammar, Category 4\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"3) Type Grammar, Category 4\",\r\n      \"progress\":50\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Type Grammar, Category 4",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "type",
-              "value": "VOCABULARY|GRAMMAR|LISTENING|SPEAKING|PRONUNCIATION|READING",
-              "invert": false,
-              "operator": "regex"
-            },
-            {
-              "target": "query",
-              "modifier": "categoryId",
-              "value": "4",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "7b4a8220-9bb9-46a6-bc96-0eead63080eb",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"1) Type Grammar, Category 5\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"2) Type Grammar, Category 5\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"3) Type Grammar, Category 5\",\r\n      \"progress\":50\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Type Grammar, Category 5",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "type",
-              "value": "VOCABULARY|GRAMMAR|LISTENING|SPEAKING|PRONUNCIATION|READING",
-              "invert": false,
-              "operator": "regex"
-            },
-            {
-              "target": "query",
-              "modifier": "categoryId",
-              "value": "5",
-              "invert": false,
-              "operator": "equals"
+              "value": "",
+              "invert": true,
+              "operator": "null"
             }
           ],
           "rulesOperator": "AND",
@@ -774,20 +614,20 @@
         },
         {
           "uuid": "f42725df-821d-4ed2-8bfa-8fcc16c37391",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"My food vocabulary\",\r\n      \"progress\":100\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"School\",\r\n      \"progress\":75\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"My other vocabulary\",\r\n      \"progress\":50\r\n   }\r\n]",
+          "body": "[\n  {{#repeat 10}}\n  {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"name\": \"{{faker 'lorem.words' 4}}\"\n  }\n  {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "User lessons",
+          "label": "Example Response: custom==true",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
           "rules": [
             {
               "target": "query",
-              "modifier": "author",
-              "value": "",
-              "invert": true,
-              "operator": "null"
+              "modifier": "custom",
+              "value": "true",
+              "invert": false,
+              "operator": "equals"
             }
           ],
           "rulesOperator": "AND",
@@ -1213,46 +1053,14 @@
       "uuid": "b8c6a74c-d1be-4d2e-baab-579c5f26a2e6",
       "documentation": "",
       "method": "get",
-      "endpoint": "lessons/:lessonId",
+      "endpoint": "user/courses/:courseId/lessons/:lessonId",
       "responses": [
         {
           "uuid": "b314de01-75cc-4ef1-979c-9225d2e965db",
-          "body": "{\r\n   \"name\":\"Lorem ipsum\",\r\n   \"videoId\":\"dQw4w9WgXcQ\",\r\n   \"id\":\"12345\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus justo, mollis sit amet maximus non, gravida id elit. Mauris molestie luctus vulputate. Phasellus et lacinia nisl, eu gravida est. Aliquam congue erat enim. Vestibulum laoreet sapien sed augue ornare, vitae gravida lacus placerat. Nulla at massa porttitor, rhoncus nibh non, luctus lorem. Vestibulum ex lacus, convallis quis auctor non, molestie et arcu. Pellentesque volutpat lacus eget sem vulputate imperdiet. Aliquam tristique ex ut dolor venenatis, sit amet convallis turpis tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis pulvinar est orci, imperdiet varius mi lobortis sed. Fusce fermentum justo vel erat semper, non tristique tortor dictum. Suspendisse quis ipsum mauris. Etiam dignissim quam velit, eget dapibus massa rutrum in. Donec tristique odio ipsum, eu vulputate augue euismod ut. Praesent laoreet vestibulum libero id eleifend.\",\r\n   \"feedback\":{\r\n      \r\n   },\r\n   \"background\":{\r\n      \"gradient\":\"0deg, rgba(255,221,169,1) 0%, rgba(255,215,112,1) 100%\"\r\n   },\r\n   \"items\":[\r\n      {\r\n         \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n         \"nameL1\":\"jablko\",\r\n         \"nameL2\":\"apple\",\r\n         \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n         \"nameL1\":\"hruška\",\r\n         \"nameL2\":\"pear\",\r\n         \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n         \"nameL1\":\"meloun\",\r\n         \"nameL2\":\"melon\",\r\n         \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n   ]\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"dQw4w9WgXcQ\",\r\n   \"id\": \"{{faker 'datatype.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'datatype.uuid'}}\",\r\n         \"nameL1\":\"jablko\",\r\n         \"nameL2\":\"apple\",\r\n         \"imageURL\":\"{{faker 'image.nature' 512 512}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'datatype.uuid'}}\",\r\n         \"nameL1\":\"hruška\",\r\n         \"nameL2\":\"pear\",\r\n         \"imageURL\":\"{{faker 'image.nature' 512 512}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'datatype.uuid'}}\",\r\n         \"nameL1\":\"meloun\",\r\n         \"nameL2\":\"melon\",\r\n         \"imageURL\":\"{{faker 'image.nature' 512 512}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n   ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "group",
-              "value": "category",
-              "invert": false,
-              "operator": "equals"
-            },
-            {
-              "target": "params",
-              "modifier": "sort",
-              "value": "+learningOrder",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "ea41703d-588e-48ef-8108-fe8b628036e7",
-          "body": "{\r\n   \"name\":\"Lorem ipsum\",\r\n   \"videoId\":\"dQw4w9WgXcQ\",\r\n   \"id\":\"12345\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus justo, mollis sit amet maximus non, gravida id elit. Mauris molestie luctus vulputate. Phasellus et lacinia nisl, eu gravida est. Aliquam congue erat enim. Vestibulum laoreet sapien sed augue ornare, vitae gravida lacus placerat. Nulla at massa porttitor, rhoncus nibh non, luctus lorem. Vestibulum ex lacus, convallis quis auctor non, molestie et arcu. Pellentesque volutpat lacus eget sem vulputate imperdiet. Aliquam tristique ex ut dolor venenatis, sit amet convallis turpis tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis pulvinar est orci, imperdiet varius mi lobortis sed. Fusce fermentum justo vel erat semper, non tristique tortor dictum. Suspendisse quis ipsum mauris. Etiam dignissim quam velit, eget dapibus massa rutrum in. Donec tristique odio ipsum, eu vulputate augue euismod ut. Praesent laoreet vestibulum libero id eleifend.\",\r\n   \"feedback\":{\r\n      \r\n   },\r\n   \"background\":{\r\n      \"imageURL\":\"https://picsum.photos/id/11/1920/1080\"\r\n   },\r\n   \"items\":[\r\n      {\r\n         \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n         \"nameL1\":\"jablko\",\r\n         \"nameL2\":\"apple\",\r\n         \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n         \"nameL1\":\"hruška\",\r\n         \"nameL2\":\"pear\",\r\n         \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n         \"nameL1\":\"meloun\",\r\n         \"nameL2\":\"melon\",\r\n         \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n   ]\r\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Background image",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -1278,23 +1086,6 @@
           "default": true,
           "databucketID": "",
           "bodyType": "INLINE"
-        },
-        {
-          "uuid": "af6004e3-a51e-42f7-a4d4-2991d28533ee",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 404,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
         }
       ],
       "enabled": true,
@@ -1304,8 +1095,8 @@
     {
       "uuid": "cc45737a-0422-41e7-acb4-52b9d841b0d4",
       "documentation": "",
-      "method": "put",
-      "endpoint": "lessons/:lessonId",
+      "method": "patch",
+      "endpoint": "user/courses/:courseId/lessons/:lessonId",
       "responses": [
         {
           "uuid": "1007c6c1-8e89-4b82-9f14-ad94072b6701",
@@ -1321,23 +1112,6 @@
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "78236e4a-80cb-4d0a-bd67-670a9dfff003",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 404,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
           "databucketID": "",
           "bodyType": "INLINE"
         }
@@ -2078,7 +1852,7 @@
       "type": "http",
       "documentation": "",
       "method": "post",
-      "endpoint": "lessons",
+      "endpoint": "user/courses/:courseId/lessons",
       "responses": [
         {
           "uuid": "0d65e6a7-e2eb-456d-a668-57a1ebc4fcaa",
@@ -2106,7 +1880,7 @@
       "type": "http",
       "documentation": "",
       "method": "delete",
-      "endpoint": "lessons/:lessonId",
+      "endpoint": "user/courses/:courseId/lessons/:lessonId",
       "responses": [
         {
           "uuid": "1f8c351f-d57b-4b58-83fd-3b8647837105",
@@ -2828,6 +2602,34 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "4313d919-25ff-413b-87b1-e9ab1e0f82d0",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "user/courses/:courseId/lessons/:lessonId/feedback",
+      "responses": [
+        {
+          "uuid": "c77f48b8-c5b0-4d2d-8cd4-9d05e7c03cc6",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2923,7 +2725,7 @@
     {
       "uuid": "f90b3022-75ab-4d50-b719-9c6fe65b13f7",
       "name": "courses",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3015,7 +2817,7 @@
     {
       "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6",
       "name": "lessons",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3027,15 +2829,19 @@
         },
         {
           "type": "route",
-          "uuid": "cc45737a-0422-41e7-acb4-52b9d841b0d4"
-        },
-        {
-          "type": "route",
           "uuid": "b8c6a74c-d1be-4d2e-baab-579c5f26a2e6"
         },
         {
           "type": "route",
+          "uuid": "cc45737a-0422-41e7-acb4-52b9d841b0d4"
+        },
+        {
+          "type": "route",
           "uuid": "a1210487-5444-4c4b-85f3-cbb587bc8295"
+        },
+        {
+          "type": "folder",
+          "uuid": "a6e9af20-e0bb-4240-bbf2-5115936adc39"
         }
       ]
     },
@@ -3270,7 +3076,7 @@
     {
       "uuid": "68ce32df-ed45-4e9b-a0fc-fdc4660ea41b",
       "name": "study-map",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3310,6 +3116,10 @@
         {
           "type": "folder",
           "uuid": "d5e1b9c9-d0db-4edf-934a-927ffd55644e"
+        },
+        {
+          "type": "folder",
+          "uuid": "f92757c6-03d3-47a5-bd19-14d7f2bedfe7"
         }
       ]
     },
@@ -3349,6 +3159,28 @@
           "uuid": "fe85493a-3eda-4c86-b20c-1475fd9abb60"
         }
       ]
+    },
+    {
+      "uuid": "f92757c6-03d3-47a5-bd19-14d7f2bedfe7",
+      "name": "courses",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "folder",
+          "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6"
+        }
+      ]
+    },
+    {
+      "uuid": "a6e9af20-e0bb-4240-bbf2-5115936adc39",
+      "name": "feedback",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "4313d919-25ff-413b-87b1-e9ab1e0f82d0"
+        }
+      ]
     }
   ],
   "rootChildren": [
@@ -3363,10 +3195,6 @@
     {
       "type": "folder",
       "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be"
-    },
-    {
-      "type": "folder",
-      "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6"
     },
     {
       "type": "folder",
