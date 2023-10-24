@@ -1881,10 +1881,10 @@
       "responses": [
         {
           "uuid": "6e077f75-82c3-4cd7-9247-36c7e2e67428",
-          "body": "[\n  {\n    \"id\": \"dfllfgflgds\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\",\n    \"name\": \"Angličtina\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\"\n  },\n  {\n    \"id\": \"fdslfdmlff\",\n    \"language1\": \"cs\",\n    \"language2\": \"de\",\n    \"name\": \"Němčina\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\"\n  },\n  {\n    \"id\": \"fdslflsdjf\",\n    \"language1\": \"cs\",\n    \"language2\": \"es\",\n    \"name\": \"Španělština\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\"\n  }\n]",
+          "body": "[\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\",\n    \"name\": \"Angličtina\",\n    \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\"\n  },\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"language1\": \"cs\",\n    \"language2\": \"de\",\n    \"name\": \"Němčina\",\n    \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\"\n  },\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"language1\": \"cs\",\n    \"language2\": \"es\",\n    \"name\": \"Španělština\",\n    \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "language1=cs",
+          "label": "Example Response: language1=cs",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -1906,10 +1906,10 @@
         },
         {
           "uuid": "eae02cc5-72d7-434d-868f-ae73b52de8b0",
-          "body": "[\r\n   {\r\n      \"id\":\"dfllfgflgds\",\r\n      \"languageL1\":\"en\",\r\n      \"name\":\"English\",\r\n      \"thumbnailURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fdslfdmlff\",\r\n      \"languageL1\":\"en\",\r\n      \"name\":\"German\",\r\n      \"thumbnailURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fdslflsdjf\",\r\n      \"languageL1\":\"en\",\r\n      \"name\":\"Spanish\",\r\n      \"thumbnailURL\":\"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"language1\":\"en\",\r\n      \"language2\": \"en\",\r\n      \"name\":\"English\",\r\n      \"thumbnailURL\":\"{{faker 'image.nature' 512 512}}\"\r\n   },\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"language1\":\"en\",\r\n      \"language2\": \"de\",\r\n      \"name\":\"German\",\r\n      \"thumbnailURL\":\"{{faker 'image.nature' 512 512}}\"\r\n   },\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"language1\":\"en\",\r\n      \"language2\": \"es\",\r\n      \"name\":\"Spanish\",\r\n      \"thumbnailURL\":\"{{faker 'image.nature' 512 512}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "language1=en",
+          "label": "Example Response: language1=en-US",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -1919,7 +1919,7 @@
             {
               "target": "query",
               "modifier": "language1",
-              "value": "en",
+              "value": "en-US",
               "invert": false,
               "operator": "equals"
             }
@@ -1942,7 +1942,7 @@
       "responses": [
         {
           "uuid": "889ab126-2860-4a6f-89f9-168659d6203b",
-          "body": "{\n  \"id\": \"dfllfgflgds\",\n  \"language1\": \"cs\",\n  \"language2\": \"en\",\n  \"name\": \"Angličtina\",\n  \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n  \"featuredTopics\": [\n    {\n      \"id\": \"dfknfdalkfa\",\n      \"name\": \"Cestování\",\n      \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n      \"enabled\": false\n    },\n    {\n      \"id\": \"dfknfdalkbc\",\n      \"name\": \"Práce\",\n      \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n      \"enabled\": false\n    },\n    {\n      \"id\": \"dfknfdalkfc\",\n      \"name\": \"Rodina\",\n      \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n      \"enabled\": false\n    },\n    {\n      \"id\": \"dfknfdalkfd\",\n      \"name\": \"Škola\",\n      \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n      \"enabled\": false\n    },\n    {\n      \"id\": \"dfknfdalkfe\",\n      \"name\": \"Kultura\",\n      \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n      \"enabled\": false\n    }\n  ]\n}",
+          "body": "{\n  \"id\":\"{{faker 'datatype.uuid'}}\",\n  \"language1\": \"cs\",\n  \"language2\": \"en\",\n  \"name\": \"Angličtina\",\n  \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\",\n  \"featuredTopics\": [\n    {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"name\": \"Cestování\",\n      \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"name\": \"Práce\",\n      \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"name\": \"Rodina\",\n      \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"name\": \"Škola\",\n      \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"name\": \"Kultura\",\n      \"thumbnailURL\": \"{{faker 'image.nature' 512 512}}\",\n      \"enabled\": false\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2772,6 +2772,62 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "9cc3e196-43b6-4472-8714-c15c5f5f08ff",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "user",
+      "responses": [
+        {
+          "uuid": "6c7fbbe6-857b-466b-9352-0942a25316f7",
+          "body": "{\n  \"id\": \"{{faker 'datatype.uuid'}}\",\n  \"username\": \"{{faker 'internet.userName'}}\",\n  \"role\": \"USER\",\n  \"streak\": {{faker 'datatype.number' min=0 max=999}},\n  \"balance\": {{faker 'datatype.number' min=0 max=999}},\n  \"accountInitialized\": true,\n  \"completedDailyGoal\": false,\n  \"activeSubscription\": null,\n  \"selectedCourse\": {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"name\": \"Angličtina\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\"\n  },\n  \"lastViewedStudyMapLevel\": {{faker 'datatype.number' min=0 max=5}}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "fe85493a-3eda-4c86-b20c-1475fd9abb60",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "user/account-setup",
+      "responses": [
+        {
+          "uuid": "94bc0b4e-9404-4d17-96dc-3057d67d44d9",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2822,7 +2878,7 @@
     {
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a",
       "name": "achievements",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2837,7 +2893,7 @@
     {
       "uuid": "e58cab13-3940-43c0-956b-feac2e16a968",
       "name": "challenges",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2867,7 +2923,7 @@
     {
       "uuid": "f90b3022-75ab-4d50-b719-9c6fe65b13f7",
       "name": "courses",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3225,8 +3281,12 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
+        {
+          "type": "route",
+          "uuid": "9cc3e196-43b6-4472-8714-c15c5f5f08ff"
+        },
         {
           "type": "folder",
           "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940"
@@ -3246,6 +3306,10 @@
         {
           "type": "folder",
           "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a"
+        },
+        {
+          "type": "folder",
+          "uuid": "d5e1b9c9-d0db-4edf-934a-927ffd55644e"
         }
       ]
     },
@@ -3272,6 +3336,17 @@
         {
           "type": "route",
           "uuid": "02a4a7d5-33d6-4a14-a134-d77ae6b55764"
+        }
+      ]
+    },
+    {
+      "uuid": "d5e1b9c9-d0db-4edf-934a-927ffd55644e",
+      "name": "account-setup",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "fe85493a-3eda-4c86-b20c-1475fd9abb60"
         }
       ]
     }
