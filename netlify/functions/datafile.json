@@ -1625,12 +1625,12 @@
       "uuid": "b787aac9-7740-4532-b7b9-733d7b437aa4",
       "type": "http",
       "documentation": "",
-      "method": "patch",
-      "endpoint": "user/achievements/:id",
+      "method": "put",
+      "endpoint": "user/achievements/:id/collect-reward",
       "responses": [
         {
           "uuid": "c6fa26e7-1fe7-44d2-b9ce-3d6723859604",
-          "body": "{{body}}",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1681,12 +1681,12 @@
       "uuid": "7b45c895-4515-4363-81c4-933ca8974070",
       "type": "http",
       "documentation": "",
-      "method": "patch",
-      "endpoint": "user/active-challenges/:id",
+      "method": "put",
+      "endpoint": "user/active-challenges/:id/collect-reward",
       "responses": [
         {
           "uuid": "df6d072b-322b-4cc6-b66d-c4b291fbb144",
-          "body": "{{body}}",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2822,7 +2822,7 @@
     {
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a",
       "name": "achievements",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2837,7 +2837,7 @@
     {
       "uuid": "e58cab13-3940-43c0-956b-feac2e16a968",
       "name": "challenges",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3225,7 +3225,7 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "folder",
