@@ -607,14 +607,14 @@
       "uuid": "c492d31b-7d30-49a5-9590-663e08dfa8d1",
       "documentation": "",
       "method": "get",
-      "endpoint": "shop-items",
+      "endpoint": "user/shop-items",
       "responses": [
         {
           "uuid": "1086a632-6a16-468f-8952-77cf465ec95e",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYa6\",\r\n      \"name\":\"Item 1\",\r\n      \"price\":\"42\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYx6\",\r\n      \"name\":\"Item 2\",\r\n      \"price\":\"156\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYn6\",\r\n      \"name\":\"Item 3\",\r\n      \"price\":\"249\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"bought\": true\r\n   }\r\n]",
+          "body": "[\r\n   {{#repeat 9}}\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"name\":\"{{faker 'lorem.word'}}\",\r\n      \"price\": {{faker 'datatype.number' 999}},\r\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\r\n      \"categoryId\": \"avatars\",\r\n      \"bought\": {{faker 'datatype.boolean'}},\r\n      \"equipped\": false\r\n   }\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "Category 1",
+          "label": "Example Response: categoryId=avatars",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -622,99 +622,15 @@
             {
               "target": "query",
               "modifier": "categoryId",
-              "value": "0",
+              "value": "avatars",
               "invert": false,
               "operator": "equals"
             }
           ],
           "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "83030f6f-d104-4c79-81fd-0851a0c96085",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYa6\",\r\n      \"name\":\"Item 1\",\r\n      \"price\":\"42\",\r\n      \"imageURL\":\"https://picsum.photos/id/12/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYx6\",\r\n      \"name\":\"Item 2\",\r\n      \"price\":\"156\",\r\n      \"imageURL\":\"https://picsum.photos/id/12/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYn6\",\r\n      \"name\":\"Item 3\",\r\n      \"price\":\"249\",\r\n      \"imageURL\":\"https://picsum.photos/id/12/512/512\"\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Category 2",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "categoryId",
-              "value": "1",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "8586ea59-5259-4cf4-add6-eed73920a121",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYa6\",\r\n      \"name\":\"Item 1\",\r\n      \"price\":\"42\",\r\n      \"imageURL\":\"https://picsum.photos/id/17/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYx6\",\r\n      \"name\":\"Item 2\",\r\n      \"price\":\"156\",\r\n      \"imageURL\":\"https://picsum.photos/id/17/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgYn6\",\r\n      \"name\":\"Item 3\",\r\n      \"price\":\"249\",\r\n      \"imageURL\":\"https://picsum.photos/id/17/512/512\"\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Category 3",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "categoryId",
-              "value": "2",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "7a267e26-cbcc-46c2-8256-05f454741d0d",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 404,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "6df4ab63-1bdd-4f97-9228-508c7130f8b0",
-          "body": "{\n  \"error\": \"NOT_ENOUGH_MONEY\"\n},",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
           "databucketID": "",
           "bodyType": "INLINE"
         }
@@ -727,87 +643,22 @@
       "uuid": "5e991703-6928-42ef-a08a-de5ee4afc20b",
       "documentation": "",
       "method": "put",
-      "endpoint": "shop-items/:itemId",
+      "endpoint": "user/shop-items/:itemId/buy",
       "responses": [
         {
           "uuid": "5147341c-abe0-4831-a540-020b916309fd",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
-          "label": "Item bought",
+          "label": "",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "itemId",
-              "value": "p81MnJz1A3nhPZmQmgYa6",
-              "invert": false,
-              "operator": "equals"
-            },
-            {
-              "target": "body",
-              "modifier": "bought",
-              "value": "true",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
+          "rules": [],
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "0bb29236-49b7-48a3-b1e5-219e2ddf02a7",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Item equipped",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "body",
-              "modifier": "equipped",
-              "value": "true",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "d9022116-d638-40e0-8402-34886ddd27ee",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Item unequipped",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "body",
-              "modifier": "equipped",
-              "value": "false",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
+          "default": true,
           "databucketID": "",
           "bodyType": "INLINE"
         },
@@ -816,39 +667,7 @@
           "body": "{\r\n  \"error\":\"NOT_ENOUGH_MONEY\"\r\n}",
           "latency": 0,
           "statusCode": 400,
-          "label": "Not enough money",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "itemId",
-              "value": "p81MnJz1A3nhPZmQmgYx6",
-              "invert": false,
-              "operator": "equals"
-            },
-            {
-              "target": "body",
-              "modifier": "itemId",
-              "value": "p81MnJz1A3nhPZmQmgYn6",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "86db8219-a721-4e84-99e3-cec801fc80f1",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 404,
-          "label": "",
+          "label": "Example Response: Not enough money",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -2574,6 +2393,62 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "c394e81e-ddef-4f67-accb-1476c8bd84f4",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "user/shop-items/:itemId/equip",
+      "responses": [
+        {
+          "uuid": "57d55f4b-6c60-4431-80a3-bfac56369c31",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "1b523e8b-3731-4313-9151-9f14db328553",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "user/shop-items/:itemId/equip",
+      "responses": [
+        {
+          "uuid": "37e648a2-fe9b-49db-9e2f-c5a47a72ddbe",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2692,7 +2567,7 @@
     {
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e",
       "name": "users",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2928,6 +2803,14 @@
         {
           "type": "route",
           "uuid": "5e991703-6928-42ef-a08a-de5ee4afc20b"
+        },
+        {
+          "type": "route",
+          "uuid": "c394e81e-ddef-4f67-accb-1476c8bd84f4"
+        },
+        {
+          "type": "route",
+          "uuid": "1b523e8b-3731-4313-9151-9f14db328553"
         }
       ]
     },
@@ -3004,7 +2887,7 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -3041,6 +2924,10 @@
         {
           "type": "folder",
           "uuid": "2a4ee2e2-5f3e-4599-9106-390d1e88c358"
+        },
+        {
+          "type": "folder",
+          "uuid": "475556c0-4efa-4fb5-a48a-f99b7b3f160e"
         }
       ]
     },
@@ -3147,10 +3034,6 @@
     {
       "type": "folder",
       "uuid": "7517c19e-6fc6-4b29-8661-9163d11fa817"
-    },
-    {
-      "type": "folder",
-      "uuid": "475556c0-4efa-4fb5-a48a-f99b7b3f160e"
     },
     {
       "type": "folder",
