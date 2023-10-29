@@ -130,35 +130,7 @@
       "responses": [
         {
           "uuid": "9bc10232-9c93-4ee4-a96a-dda76fe61e0e",
-          "body": "[\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Ruth Campbell\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ruthcampbell\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Danielle Smith\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"daniellesmith\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Sasha Townsend\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sashatownsend\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Janelle Patton\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"janellepatton\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Ashlyn Owens\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ashlynowens\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Alma Gross\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"almagross\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Tina Harris\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"tinaharris\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Susan Moran\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"susanmoran\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Mackenzie Lawrence\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"mackenzielawrence\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Sara Pham\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sarapham\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null,
-      "type": "http"
-    },
-    {
-      "uuid": "4d203646-6550-40c3-bd6b-11b925daef0b",
-      "documentation": "",
-      "method": "put",
-      "endpoint": "users/:userId/followers/:id",
-      "responses": [
-        {
-          "uuid": "63c855a6-bf9f-4b6e-9108-4f1b57a20bd8",
-          "body": "{}",
+          "body": "[\r\n   {{#repeat 5}}\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"name\":\"{{faker 'name.fullName'}}\",\r\n      \"isFollowed\":{{faker 'datatype.boolean'}},\r\n      \"username\":\"{{faker 'internet.userName'}}\",\r\n      \"profileImageURL\":\"{{faker 'internet.avatar'}}\"\r\n   }\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -186,35 +158,7 @@
       "responses": [
         {
           "uuid": "9535f0a6-6a45-4742-af6b-7fa7ca39e4a7",
-          "body": "[\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Ruth Campbell 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ruthcampbell\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Danielle Smith 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"daniellesmith\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Sasha Townsend 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sashatownsend\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Janelle Patton 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"janellepatton\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Ashlyn Owens 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"ashlynowens\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Alma Gross 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"almagross\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Tina Harris 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"tinaharris\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Susan Moran 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"susanmoran\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"ngsgdbdshsghsgh\",\r\n      \"name\":\"Mackenzie Lawrence 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"mackenzielawrence\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"sghsgdshdhhsdhsd\",\r\n      \"name\":\"Sara Pham 2\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"sarapham\",\r\n      \"profileImageURL\": \"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        }
-      ],
-      "enabled": true,
-      "responseMode": null,
-      "type": "http"
-    },
-    {
-      "uuid": "df714720-45d4-480a-b1f2-c245b743feb9",
-      "documentation": "",
-      "method": "put",
-      "endpoint": "users/:userId/following/:id",
-      "responses": [
-        {
-          "uuid": "4ef1f8ce-8580-4a3c-b052-97edd22bc420",
-          "body": "{}",
+          "body": "[\r\n   {{#repeat 5}}\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"name\":\"{{faker 'name.fullName'}}\",\r\n      \"isFollowed\":{{faker 'datatype.boolean'}},\r\n      \"username\":\"{{faker 'internet.userName'}}\",\r\n      \"profileImageURL\":\"{{faker 'internet.avatar'}}\"\r\n   }\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2942,10 +2886,6 @@
       "children": [
         {
           "type": "route",
-          "uuid": "df714720-45d4-480a-b1f2-c245b743feb9"
-        },
-        {
-          "type": "route",
           "uuid": "1df45fa8-fe0b-4561-ab0e-8ac061b9eadd"
         }
       ]
@@ -2955,10 +2895,6 @@
       "name": "followers",
       "collapsed": true,
       "children": [
-        {
-          "type": "route",
-          "uuid": "4d203646-6550-40c3-bd6b-11b925daef0b"
-        },
         {
           "type": "route",
           "uuid": "493c9f82-0c5c-4f0e-a47f-90a9dac9e88e"
