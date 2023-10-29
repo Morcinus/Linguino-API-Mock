@@ -1736,34 +1736,6 @@
       "responseMode": null
     },
     {
-      "uuid": "1ba76f7b-f99f-46d1-8866-ab02231f9cb1",
-      "type": "http",
-      "documentation": "",
-      "method": "put",
-      "endpoint": "users/:userId",
-      "responses": [
-        {
-          "uuid": "671b76d8-3a6f-40d4-a03e-2bda2f1bb764",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true
-        }
-      ],
-      "enabled": true,
-      "responseMode": null
-    },
-    {
       "uuid": "672aaa66-afcf-4d3f-a01a-d52dfb251268",
       "type": "http",
       "documentation": "",
@@ -1908,39 +1880,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "users/:userId/profile",
+      "endpoint": "users/:userId",
       "responses": [
         {
           "uuid": "9e311525-8c7d-4a7d-9be3-c1b784be4a33",
-          "body": "{\n  \"username\": \"pepik123\",\n  \"name\": \"Pepa Okurka\",\n  \"followers\": 12,\n  \"following\": 42,\n  \"level\": 12,\n  \"profileImageURL\": \"https://picsum.photos/id/168/512/512\",\n  \"isFollowed\": false,\n  \"id\": \"dkflgirkemekdiwlskdo\",\n  \"userId\": \"alskeiwocmgvhcnfjebz\",\n  \"streak\": 142,\n  \"learningStats\": [\n    {\n      \"date\": \"2023-06-12T14:31:38+0000\",\n      \"points\": 20\n    },\n    {\n      \"date\": \"2023-06-11T14:31:38+0000\",\n      \"points\": 50\n    },\n    {\n      \"date\": \"2023-06-10T14:31:38+0000\",\n      \"points\": 40\n    },\n    {\n      \"date\": \"2023-06-09T14:31:38+0000\",\n      \"points\": 15\n    },\n    {\n      \"date\": \"2023-06-08T14:31:38+0000\",\n      \"points\": 30\n    },\n    {\n      \"date\": \"2023-06-07T14:31:38+0000\",\n      \"points\": 22\n    },\n    {\n      \"date\": \"2023-06-06T14:31:38+0000\",\n      \"points\": 10\n    }\n  ],\n  \"achievements\":[\n   {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"title\":\"{{faker 'lorem.words' 3}}\",\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\n      \"progress\":100,\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n      \"collectedReward\":false\n   },\n   {{#repeat 2}}\n   {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"title\":\"{{faker 'lorem.words' 3}}\",\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\n      \"progress\":\"{{faker 'datatype.number' 100}}\",\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n      \"collectedReward\":false\n   }\n   {{/repeat}}\n  ]\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true
-        }
-      ],
-      "enabled": true,
-      "responseMode": null
-    },
-    {
-      "uuid": "224b041a-7aa7-4b66-a2fe-15be8456cd14",
-      "type": "http",
-      "documentation": "",
-      "method": "put",
-      "endpoint": "users/:userId/profile/:profileId",
-      "responses": [
-        {
-          "uuid": "5b91f2cd-2419-4e78-890e-ce70c984a647",
-          "body": "{\n  \"username\": \"pepik123\",\n  \"name\": \"Pepa Okurka\",\n  \"followers\": 12,\n  \"following\": 42,\n  \"level\": 12,\n  \"profileImageURL\": \"https://picsum.photos/id/168/512/512\",\n  \"isFollowed\": {{body \"isFollowed\"}},\n  \"id\": \"dkflgirkemekdiwlskdo\",\n  \"userId\": \"alskeiwocmgvhcnfjebz\",\n  \"streak\": 142,\n  \"learningStats\": [\n    {\n      \"date\": \"2023-06-12T14:31:38+0000\",\n      \"points\": 20\n    },\n    {\n      \"date\": \"2023-06-11T14:31:38+0000\",\n      \"points\": 50\n    },\n    {\n      \"date\": \"2023-06-10T14:31:38+0000\",\n      \"points\": 40\n    },\n    {\n      \"date\": \"2023-06-09T14:31:38+0000\",\n      \"points\": 15\n    },\n    {\n      \"date\": \"2023-06-08T14:31:38+0000\",\n      \"points\": 30\n    },\n    {\n      \"date\": \"2023-06-07T14:31:38+0000\",\n      \"points\": 22\n    },\n    {\n      \"date\": \"2023-06-06T14:31:38+0000\",\n      \"points\": 10\n    }\n  ]\n}",
+          "body": "{\n  \"id\":\"{{faker 'datatype.uuid'}}\",\n  \"username\":\"{{faker 'internet.userName'}}\",\n  \"name\":\"{{faker 'name.fullName'}}\",\n  \"followers\": {{faker 'datatype.number' 100}},\n  \"following\": {{faker 'datatype.number' 100}},\n  \"level\": {{faker 'datatype.number' 100}},\n  \"profileImageURL\":\"{{faker 'internet.avatar'}}\",\n  \"isFollowed\":{{faker 'datatype.boolean'}},\n  \"streak\": {{faker 'datatype.number' 999}},\n  \"learningStats\": [\n    {\n      \"date\": \"2023-06-12T14:31:38+0000\",\n      \"points\": {{faker 'datatype.number' 35}}\n    },\n    {\n      \"date\": \"2023-06-11T14:31:38+0000\",\n      \"points\": {{faker 'datatype.number' 35}}\n    },\n    {\n      \"date\": \"2023-06-10T14:31:38+0000\",\n      \"points\": {{faker 'datatype.number' 35}}\n    },\n    {\n      \"date\": \"2023-06-09T14:31:38+0000\",\n      \"points\": {{faker 'datatype.number' 35}}\n    },\n    {\n      \"date\": \"2023-06-08T14:31:38+0000\",\n      \"points\": {{faker 'datatype.number' 35}}\n    },\n    {\n      \"date\": \"2023-06-07T14:31:38+0000\",\n      \"points\": {{faker 'datatype.number' 35}}\n    },\n    {\n      \"date\": \"2023-06-06T14:31:38+0000\",\n      \"points\": {{faker 'datatype.number' 35}}\n    }\n  ],\n  \"achievements\":[\n   {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"title\":\"{{faker 'lorem.words' 3}}\",\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\n      \"progress\":100,\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n      \"collectedReward\":false\n   },\n   {{#repeat 2}}\n   {\n      \"id\":\"{{faker 'datatype.uuid'}}\",\n      \"title\":\"{{faker 'lorem.words' 3}}\",\n      \"description\":\"{{faker 'lorem.sentence' 8}}\",\n      \"progress\":\"{{faker 'datatype.number' 100}}\",\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n      \"collectedReward\":false\n   }\n   {{/repeat}}\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2419,10 +2363,10 @@
       "responses": [
         {
           "uuid": "6a931155-e210-49eb-816d-669c8aaa841c",
-          "body": "[\r\n   {\r\n      \"id\":\"fsaklnkjdsafdasf\",\r\n      \"name\":\"Pepa Okurka\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"pepaokurka\",\r\n      \"profileImageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"daggfafgfafddsaf\",\r\n      \"name\":\"Prasátko Pepina\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"prasatkopepina\",\r\n      \"profileImageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   },\r\n   {\r\n      \"id\":\"fsdaffgbnhdnff\",\r\n      \"name\":\"Pepek Námořník\",\r\n      \"isFollowed\":true,\r\n      \"username\":\"pepeknamornik\",\r\n      \"profileImageURL\":\"https://picsum.photos/id/168/512/512\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"name\":\"Pepa Okurka\",\r\n      \"isFollowed\":{{faker 'datatype.boolean'}},\r\n      \"username\":\"{{faker 'internet.userName' 'Pepa' 'Okurka'}}\",\r\n      \"profileImageURL\":\"{{faker 'internet.avatar'}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "searchName=pep",
+          "label": "Example Response: searchName=\"Pepa Okurka\"",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2432,9 +2376,9 @@
             {
               "target": "query",
               "modifier": "searchName",
-              "value": "pep",
+              "value": "[Pp](?:e(?:p(?:a(?: [Oo](k(?:u(?:rka)?)?)?)?)?)?)?",
               "invert": false,
-              "operator": "equals"
+              "operator": "regex"
             }
           ],
           "rulesOperator": "OR",
@@ -2444,7 +2388,7 @@
         },
         {
           "uuid": "c7a89b02-6017-4a94-b315-be99f1e3f105",
-          "body": "[]",
+          "body": "[\r\n   {{#repeat 5}}\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"name\":\"{{faker 'name.fullName'}}\",\r\n      \"isFollowed\":{{faker 'datatype.boolean'}},\r\n      \"username\":\"{{faker 'internet.userName'}}\",\r\n      \"profileImageURL\":\"{{faker 'internet.avatar'}}\"\r\n   }\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2630,6 +2574,62 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "48d261ba-cd14-4029-a154-e414efc92831",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "user/following/:userId",
+      "responses": [
+        {
+          "uuid": "42730c4a-5acd-4d1c-bd4f-a739e4396a91",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e0521ca8-ecbe-4ac2-85ec-f0081cf84830",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "user/following/:userId",
+      "responses": [
+        {
+          "uuid": "74897d7e-b378-4b19-8c36-c00c2efc1957",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2748,7 +2748,7 @@
     {
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e",
       "name": "users",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2756,7 +2756,7 @@
         },
         {
           "type": "route",
-          "uuid": "1ba76f7b-f99f-46d1-8866-ab02231f9cb1"
+          "uuid": "71866c34-8d37-416e-acb1-52d34fb1c6d5"
         },
         {
           "type": "folder",
@@ -2765,10 +2765,6 @@
         {
           "type": "folder",
           "uuid": "e29d44ab-fdb3-4d48-8bb6-8f592db51879"
-        },
-        {
-          "type": "folder",
-          "uuid": "7ef0d871-5422-4313-bd11-d41c45541f7d"
         },
         {
           "type": "folder",
@@ -2861,21 +2857,6 @@
         {
           "type": "route",
           "uuid": "158e3966-8dcb-49c7-9569-6f04a33e3194"
-        }
-      ]
-    },
-    {
-      "uuid": "7ef0d871-5422-4313-bd11-d41c45541f7d",
-      "name": "profile",
-      "collapsed": true,
-      "children": [
-        {
-          "type": "route",
-          "uuid": "71866c34-8d37-416e-acb1-52d34fb1c6d5"
-        },
-        {
-          "type": "route",
-          "uuid": "224b041a-7aa7-4b66-a2fe-15be8456cd14"
         }
       ]
     },
@@ -3087,7 +3068,7 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -3120,6 +3101,10 @@
         {
           "type": "folder",
           "uuid": "f92757c6-03d3-47a5-bd19-14d7f2bedfe7"
+        },
+        {
+          "type": "folder",
+          "uuid": "2a4ee2e2-5f3e-4599-9106-390d1e88c358"
         }
       ]
     },
@@ -3179,6 +3164,21 @@
         {
           "type": "route",
           "uuid": "4313d919-25ff-413b-87b1-e9ab1e0f82d0"
+        }
+      ]
+    },
+    {
+      "uuid": "2a4ee2e2-5f3e-4599-9106-390d1e88c358",
+      "name": "following",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "48d261ba-cd14-4029-a154-e414efc92831"
+        },
+        {
+          "type": "route",
+          "uuid": "e0521ca8-ecbe-4ac2-85ec-f0081cf84830"
         }
       ]
     }
