@@ -1569,14 +1569,14 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "courses/:courseId/topics",
+      "endpoint": "user/courses/:courseId/topics",
       "responses": [
         {
           "uuid": "c90157a6-c8b8-4b19-a5e1-1669aeeed81f",
-          "body": "[\n  {\n    \"id\": \"dfknfdalkfa\",\n    \"name\": \"Cestování\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"dfknfdalkbc\",\n    \"name\": \"Práce\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n    \"enabled\": false\n  },\n  {\n    \"id\": \"dfknfdalkfc\",\n    \"name\": \"Rodina\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n    \"enabled\": false\n  },\n  {\n    \"id\": \"dfknfdalkfd\",\n    \"name\": \"Škola\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"dfknfdalkfe\",\n    \"name\": \"Kultura\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n    \"enabled\": true\n  }\n]",
+          "body": "[\n  {{#repeat 10}}\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"name\":\"{{faker 'lorem.word'}}\",\n    \"enabled\":{{faker 'datatype.boolean'}}\n  }\n  {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "tag=main",
+          "label": "category=main",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -1585,7 +1585,7 @@
           "rules": [
             {
               "target": "query",
-              "modifier": "tag",
+              "modifier": "category",
               "value": "main",
               "invert": false,
               "operator": "equals"
@@ -1598,10 +1598,10 @@
         },
         {
           "uuid": "5a066cf8-eda8-443b-8f37-bb46a4c753e1",
-          "body": "[\n  {\n    \"id\": \"dasddfasfda\",\n    \"name\": \"Zahraniční studium\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"dasddfasfdb\",\n    \"name\": \"Práce jako letuška\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n    \"enabled\": false\n  },\n  {\n    \"id\": \"dasddfasfdc\",\n    \"name\": \"Práce jako právník\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\",\n    \"enabled\": false\n  }\n]",
+          "body": "[\n  {{#repeat 5}}\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"name\":\"{{faker 'lorem.word'}}\",\n    \"enabled\":{{faker 'datatype.boolean'}}\n  }\n  {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "tag=extra",
+          "label": "category=extra",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -1610,7 +1610,7 @@
           "rules": [
             {
               "target": "query",
-              "modifier": "tag",
+              "modifier": "category",
               "value": "extra",
               "invert": false,
               "operator": "equals"
@@ -1630,7 +1630,7 @@
       "type": "http",
       "documentation": "",
       "method": "put",
-      "endpoint": "courses/:courseId/topics/:topicId",
+      "endpoint": "user/courses/:courseId/topics/:topicId",
       "responses": [
         {
           "uuid": "8ad6674c-1281-4bff-8419-28204078f4b3",
@@ -2403,6 +2403,34 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "f05c77d7-cb49-443e-b15d-d1193add0e56",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "user/courses/:courseId/topics/:topicId",
+      "responses": [
+        {
+          "uuid": "5cd55900-488b-4eb9-9b92-ebee20eabc9a",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2453,7 +2481,7 @@
     {
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a",
       "name": "achievements",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2507,10 +2535,6 @@
         {
           "type": "route",
           "uuid": "216beb06-02f1-40a7-9bec-56985e0b8d7e"
-        },
-        {
-          "type": "folder",
-          "uuid": "464e24f7-21fd-4071-8a35-b5790e6beb7e"
         },
         {
           "type": "folder",
@@ -2571,7 +2595,7 @@
     {
       "uuid": "e29d44ab-fdb3-4d48-8bb6-8f592db51879",
       "name": "courses",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "folder",
@@ -2632,7 +2656,7 @@
     {
       "uuid": "464e24f7-21fd-4071-8a35-b5790e6beb7e",
       "name": "topics",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2641,6 +2665,10 @@
         {
           "type": "route",
           "uuid": "6983f25e-9a49-4837-8f44-fc9be1c23c7b"
+        },
+        {
+          "type": "route",
+          "uuid": "f05c77d7-cb49-443e-b15d-d1193add0e56"
         }
       ]
     },
@@ -2946,6 +2974,10 @@
         {
           "type": "folder",
           "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be"
+        },
+        {
+          "type": "folder",
+          "uuid": "464e24f7-21fd-4071-8a35-b5790e6beb7e"
         }
       ]
     },
