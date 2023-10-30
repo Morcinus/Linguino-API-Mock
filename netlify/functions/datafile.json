@@ -820,11 +820,11 @@
       "uuid": "a1f25332-a1f4-4de5-b5f4-02bbf71933b7",
       "documentation": "",
       "method": "get",
-      "endpoint": "article-categories",
+      "endpoint": "courses/:courseId/article-categories",
       "responses": [
         {
           "uuid": "013242b6-aebb-4ede-9d7d-47bdc1ad7cf6",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"Account\"\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"Studying\"\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"Queue\"\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"Premium\"\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"Courses\"\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwxYI\",\r\n      \"name\":\"Custom Collections\"\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwbYI\",\r\n      \"name\":\"Challenges\"\r\n   }\r\n]",
+          "body": "[\r\n   {{#repeat 7}}\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"name\":\"{{faker 'lorem.word'}}\"\r\n   }\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -848,18 +848,26 @@
       "uuid": "0d3a4b1d-390b-421b-a03a-22069189ecc6",
       "documentation": "",
       "method": "get",
-      "endpoint": "articles",
+      "endpoint": "courses/:courseId/articles",
       "responses": [
         {
           "uuid": "05cfc2fb-d610-493a-9ddb-bada6baa1097",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"name\":\"How to change a password\"\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"name\":\"How to change username\"\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"name\":\"How to change profile visibility\"\r\n   }\r\n]",
+          "body": "[\r\n   {{#repeat 5}}\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"name\":\"{{faker 'lorem.words' 5}}\"\r\n   }\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "categoryId != null",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "categoryId",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
@@ -876,11 +884,11 @@
       "uuid": "fe07bb7e-cc6b-4814-9f6b-7d4a88bb2526",
       "documentation": "",
       "method": "get",
-      "endpoint": "articles/:id",
+      "endpoint": "courses/:courseId/articles/:id",
       "responses": [
         {
           "uuid": "180c9355-2f64-4c4f-bf33-916838d51504",
-          "body": "{\r\n   \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n   \"name\":\"How to change a password\",\r\n   \"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan egestas velit, vitae porta lorem posuere vitae. Proin eu ipsum vestibulum, fringilla neque at, convallis velit. Integer sit amet faucibus ipsum. Praesent velit ligula, pretium vel lacinia a, lacinia sed magna. Maecenas volutpat nulla ac aliquam iaculis. Quisque nulla lectus, eleifend ut nisl et, accumsan iaculis diam. Suspendisse pharetra arcu eu augue tristique, eu semper lorem elementum. Nullam non diam ac arcu fringilla porttitor sit amet nec leo. Sed sagittis urna sit amet scelerisque pellentesque. Nulla facilisi. Sed lacus orci, consectetur vitae bibendum at, egestas ac augue. In sagittis ornare leo non dignissim.\"\r\n}",
+          "body": "{\r\n   \"id\":\"{{faker 'datatype.uuid'}}\",\r\n   \"name\":\"{{faker 'lorem.words' 5}}\",\r\n   \"text\":\"{{faker 'lorem.paragraph' 20}}\"\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2426,7 +2434,7 @@
     {
       "uuid": "f90b3022-75ab-4d50-b719-9c6fe65b13f7",
       "name": "courses",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2443,6 +2451,14 @@
         {
           "type": "folder",
           "uuid": "1b92768c-79f4-41b4-85ac-5109065e17e5"
+        },
+        {
+          "type": "folder",
+          "uuid": "7517c19e-6fc6-4b29-8661-9163d11fa817"
+        },
+        {
+          "type": "folder",
+          "uuid": "c3786d99-9d65-4488-a384-86714c13b3f8"
         }
       ]
     },
@@ -2514,7 +2530,7 @@
     {
       "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6",
       "name": "lessons",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2594,7 +2610,7 @@
     {
       "uuid": "c3786d99-9d65-4488-a384-86714c13b3f8",
       "name": "articles",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2609,7 +2625,7 @@
     {
       "uuid": "7517c19e-6fc6-4b29-8661-9163d11fa817",
       "name": "article-categories",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2639,7 +2655,7 @@
     {
       "uuid": "e871c1ae-4011-4e81-9608-3340a6f3879f",
       "name": "following",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2769,7 +2785,7 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2908,14 +2924,6 @@
     {
       "type": "folder",
       "uuid": "ff574366-5875-4525-95e6-357d17e26795"
-    },
-    {
-      "type": "folder",
-      "uuid": "c3786d99-9d65-4488-a384-86714c13b3f8"
-    },
-    {
-      "type": "folder",
-      "uuid": "7517c19e-6fc6-4b29-8661-9163d11fa817"
     },
     {
       "type": "folder",
