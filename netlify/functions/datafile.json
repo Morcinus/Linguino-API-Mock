@@ -1137,20 +1137,28 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "users/:userId/feed",
+      "endpoint": "user/feed",
       "responses": [
         {
           "uuid": "a86bdd59-648c-4e56-b244-8296f9ea9d51",
-          "body": "[\r\n   {\r\n      \"id\":\"dnfksanjfdlsa\",\r\n      \"type\":\"message\",\r\n      \"author\":\"Pepa Okurka\",\r\n      \"authorAvatarURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"message\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n      \"publishedAt\":\"2042-03-18T20:15:05Z\",\r\n      \"reactions\":[\r\n         {\r\n            \"counter\":1,\r\n            \"reactedByUser\":false,\r\n            \"text\":\"🧠\"\r\n         },\r\n         {\r\n            \"counter\":99,\r\n            \"reactedByUser\":false,\r\n            \"text\":\"💡\"\r\n         }\r\n      ]\r\n   },\r\n   {\r\n      \"id\":\"dfajflkanlnjg\",\r\n      \"type\":\"video\",\r\n      \"videoId\":\"dQw4w9WgXcQ\",\r\n      \"title\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n      \"seenByUser\":true\r\n   },\r\n   {\r\n      \"id\":\"sdmflafl\",\r\n      \"type\":\"article\",\r\n      \"link\":\"https://example.com\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"title\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"type\":\"video\",\r\n      \"videoId\":\"dQw4w9WgXcQ\",\r\n      \"title\":\"{{faker 'lorem.sentence' 8}}\"\r\n   },\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"type\":\"article\",\r\n      \"link\":\"https://example.com\",\r\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\r\n      \"title\":\"{{faker 'lorem.sentence' 8}}\"\r\n   },\r\n   {{#repeat 3}}\r\n   {\r\n      \"id\":\"{{faker 'datatype.uuid'}}\",\r\n      \"type\":\"message\",\r\n      \"author\":\"{{faker 'name.fullName'}}\",\r\n      \"authorAvatarURL\":\"{{faker 'internet.avatar'}}\",\r\n      \"message\":\"{{oneOf (array 'reached_level_10' 'reached_level_50' 'reached_level_100')}}\",\r\n      \"publishedAt\":\"{{faker 'date.recent'}}\",\r\n      \"seenByUser\":true,\r\n      \"reactions\":[\r\n         {{#repeat 3}}\r\n         {\r\n            \"counter\":{{faker 'datatype.number' min=1 max=10}},\r\n            \"reactedByUser\":{{faker 'datatype.boolean'}},\r\n            \"id\":\"{{oneOf (array 'light_bulb' 'brain' 'muscle' 'heart_eyes')}}\"\r\n         }\r\n         {{/repeat}}\r\n      ]\r\n   },\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "page != null",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "page",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
@@ -1164,14 +1172,14 @@
       "uuid": "65279a11-560e-4e64-b080-0bf2f501f491",
       "type": "http",
       "documentation": "",
-      "method": "put",
-      "endpoint": "users/:userId/feed/:feedId",
+      "method": "delete",
+      "endpoint": "user/feed/:feedItemId/reactions/:reactionId",
       "responses": [
         {
           "uuid": "91c4706f-4eee-41fb-acb8-cff454fe260a",
           "body": "{}",
           "latency": 0,
-          "statusCode": 200,
+          "statusCode": 204,
           "label": "",
           "headers": [],
           "bodyType": "INLINE",
@@ -2339,6 +2347,34 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "034987de-50b8-4da5-84da-c120f379a0c7",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "user/feed/:feedItemId/reactions/:reactionId",
+      "responses": [
+        {
+          "uuid": "a047db0d-a8a7-4c84-b088-1e739a710b05",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2389,7 +2425,7 @@
     {
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a",
       "name": "achievements",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2404,7 +2440,7 @@
     {
       "uuid": "e58cab13-3940-43c0-956b-feac2e16a968",
       "name": "challenges",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2419,22 +2455,22 @@
     {
       "uuid": "1d58577b-3d83-47d2-84e2-1c05839b3f6d",
       "name": "feed",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
           "uuid": "49a3c511-def4-466d-99d0-5127ccb6572a"
         },
         {
-          "type": "route",
-          "uuid": "65279a11-560e-4e64-b080-0bf2f501f491"
+          "type": "folder",
+          "uuid": "ec4ae141-2baf-422f-af6f-c8acfb91d972"
         }
       ]
     },
     {
       "uuid": "f90b3022-75ab-4d50-b719-9c6fe65b13f7",
       "name": "courses",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2465,7 +2501,7 @@
     {
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e",
       "name": "users",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2474,10 +2510,6 @@
         {
           "type": "route",
           "uuid": "71866c34-8d37-416e-acb1-52d34fb1c6d5"
-        },
-        {
-          "type": "folder",
-          "uuid": "1d58577b-3d83-47d2-84e2-1c05839b3f6d"
         },
         {
           "type": "folder",
@@ -2655,7 +2687,7 @@
     {
       "uuid": "e871c1ae-4011-4e81-9608-3340a6f3879f",
       "name": "following",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2785,7 +2817,7 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2826,6 +2858,10 @@
         {
           "type": "folder",
           "uuid": "475556c0-4efa-4fb5-a48a-f99b7b3f160e"
+        },
+        {
+          "type": "folder",
+          "uuid": "1d58577b-3d83-47d2-84e2-1c05839b3f6d"
         }
       ]
     },
@@ -2869,7 +2905,7 @@
     {
       "uuid": "f92757c6-03d3-47a5-bd19-14d7f2bedfe7",
       "name": "courses",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "folder",
@@ -2904,6 +2940,21 @@
         {
           "type": "route",
           "uuid": "e0521ca8-ecbe-4ac2-85ec-f0081cf84830"
+        }
+      ]
+    },
+    {
+      "uuid": "ec4ae141-2baf-422f-af6f-c8acfb91d972",
+      "name": "reactions",
+      "collapsed": false,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "034987de-50b8-4da5-84da-c120f379a0c7"
+        },
+        {
+          "type": "route",
+          "uuid": "65279a11-560e-4e64-b080-0bf2f501f491"
         }
       ]
     }
