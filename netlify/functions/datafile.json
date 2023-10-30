@@ -1400,8 +1400,8 @@
       "uuid": "672aaa66-afcf-4d3f-a01a-d52dfb251268",
       "type": "http",
       "documentation": "",
-      "method": "post",
-      "endpoint": "user/courses",
+      "method": "put",
+      "endpoint": "user/courses/:courseId",
       "responses": [
         {
           "uuid": "bf8b9a84-be39-462f-941f-7997905c8f89",
@@ -2481,7 +2481,7 @@
     {
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a",
       "name": "achievements",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2526,7 +2526,7 @@
     {
       "uuid": "f90b3022-75ab-4d50-b719-9c6fe65b13f7",
       "name": "courses",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2553,7 +2553,7 @@
     {
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e",
       "name": "users",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2656,7 +2656,7 @@
     {
       "uuid": "464e24f7-21fd-4071-8a35-b5790e6beb7e",
       "name": "topics",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2865,7 +2865,7 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2953,7 +2953,7 @@
     {
       "uuid": "f92757c6-03d3-47a5-bd19-14d7f2bedfe7",
       "name": "courses",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
