@@ -688,11 +688,11 @@
       "uuid": "0b4c0f5c-331c-4484-9d96-fbe4e20c1c17",
       "documentation": "",
       "method": "get",
-      "endpoint": "lesson-items",
+      "endpoint": "user/courses/:courseId/lesson-items",
       "responses": [
         {
           "uuid": "7167f3cf-d598-4f99-a872-2c8128efe7e0",
-          "body": "[\r\n   {\r\n      \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n      \"nameL1\":\"jablko\",\r\n      \"nameL2\":\"apple\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n      \"nameL1\":\"hruška\",\r\n      \"nameL2\":\"pear\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n      \"nameL1\":\"meloun\",\r\n      \"nameL2\":\"melon\",\r\n      \"imageURL\":\"https://picsum.photos/id/168/512/512\",\r\n      \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   }\r\n]",
+          "body": "[\r\n   {{#repeat 10}}\r\n   {\r\n      \"id\": \"{{faker 'datatype.uuid'}}\",\r\n      \"nameL1\":\"{{faker 'lorem.word'}}\",\r\n      \"nameL2\":\"{{faker 'word.noun'}}\",\r\n      \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\r\n      \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   }\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "favorite=true",
@@ -711,38 +711,13 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "57c790e9-9b00-4dcb-8b60-5bf1f2ecb864",
-          "body": "[\n  {\n    \"id\": \"6NZPKpcEwFWwRRbr5n8b\",\n    \"nameL1\": \"hruška\",\n    \"nameL2\": \"pear\",\n    \"imageURL\": \"https://picsum.photos/id/168/512/512\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  },\n  {\n    \"id\": \"fdsnfdnosdjfofdjfojd\",\n    \"nameL1\": \"broskev\",\n    \"nameL2\": \"peach\",\n    \"imageURL\": \"https://picsum.photos/id/168/512/512\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "searchVocabulary=pea",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "searchVocabulary",
-              "value": "pea",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
+          "default": true,
           "databucketID": "",
           "bodyType": "INLINE"
         },
         {
           "uuid": "e3130c9d-90de-41c0-bfab-6ca709598fc6",
-          "body": "[\n  {\n    \"id\": \"fdsnfdnosdjfofdjfojd\",\n    \"nameL1\": \"broskev\",\n    \"nameL2\": \"peach\",\n    \"imageURL\": \"https://picsum.photos/id/168/512/512\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"nameL1\": \"broskev\",\n    \"nameL2\": \"peach\",\n    \"imageURL\":\"{{faker 'image.nature' 512 512 true}}\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "searchVocabulary=peach",
@@ -753,57 +728,15 @@
             {
               "target": "query",
               "modifier": "searchVocabulary",
-              "value": "peach",
+              "value": "p(?:e(?:a(?:c(?:h)?)?)?)?",
               "invert": false,
-              "operator": "equals"
+              "operator": "regex"
             }
           ],
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "134f28f9-e8e7-4251-8a46-28261e463c8f",
-          "body": "[]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "searchVocabulary!=null",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "searchVocabulary",
-              "value": "",
-              "invert": true,
-              "operator": "null"
-            }
-          ],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "6930c14c-36d5-4136-bb92-260d1f301493",
-          "body": "[]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
           "databucketID": "",
           "bodyType": "INLINE"
         }
@@ -970,12 +903,12 @@
     {
       "uuid": "ea944dd9-eb08-4ea3-8033-ba9ec8553887",
       "documentation": "",
-      "method": "put",
-      "endpoint": "lesson-items/:itemId",
+      "method": "patch",
+      "endpoint": "user/courses/:courseId/lesson-items/:itemId",
       "responses": [
         {
           "uuid": "b0521df4-923a-4291-95ab-ab9e36c2ebf4",
-          "body": "{{body}}",
+          "body": "{}",
           "latency": 5000,
           "statusCode": 200,
           "label": "",
@@ -989,23 +922,6 @@
           "default": true,
           "databucketID": "",
           "bodyType": "INLINE"
-        },
-        {
-          "uuid": "b92fe5e8-fd9b-48f5-989b-fe49127162f1",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 404,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
         }
       ],
       "enabled": true,
@@ -1016,31 +932,14 @@
       "uuid": "158e3966-8dcb-49c7-9569-6f04a33e3194",
       "documentation": "",
       "method": "get",
-      "endpoint": "lesson-items/:itemId",
+      "endpoint": "user/courses/:courseId/lesson-items/:itemId",
       "responses": [
         {
           "uuid": "89e8b61b-4744-4377-8345-ae5a3cef2da0",
-          "body": "{\r\n   \"nameL1\":\"Lorem ipsum\",\r\n   \"nameL2\":\"Lorem ipsum\",\r\n   \"id\":\"12345\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"progress\":60,\r\n   \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n   \"description\":\"noun /pronunciation/\\n ### Definition\\n Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n   \"background\":{\r\n      \"gradient\":\"0deg, rgba(255,221,169,1) 0%, rgba(255,215,112,1) 100%\"\r\n   },\r\n   \"examples\":[\r\n      {\r\n         \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n         \"textL1\":\"jablko\",\r\n         \"textL2\":\"apple\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n         \"textL1\":\"hruška\",\r\n         \"textL2\":\"pear\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n         \"textL1\":\"meloun\",\r\n         \"textL2\":\"melon\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n   ]\r\n}",
+          "body": "{\r\n   \"nameL1\":\"{{faker 'lorem.word'}}\",\r\n   \"nameL2\":\"{{faker 'word.noun'}}\",\r\n   \"id\": \"{{faker 'datatype.uuid'}}\",\r\n   \"favorite\":{{faker 'datatype.boolean'}},\r\n   \"visible\":{{faker 'datatype.boolean'}},\r\n   \"progress\":{{faker 'datatype.number' 100}},\r\n   \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n   \"description\":\"{{faker 'lorem.paragraph'}}\",\r\n   \"examples\":[\r\n      {{#repeat 3}}\r\n      {\r\n         \"id\": \"{{faker 'datatype.uuid'}}\",\r\n         \"textL1\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"textL2\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n      {{/repeat}}\r\n   ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "AND",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "e04144df-e987-404c-9165-89d3f79b407c",
-          "body": "{\r\n   \"nameL1\":\"Lorem ipsum\",\r\n   \"nameL2\":\"Lorem ipsum\",\r\n   \"id\":\"12345\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"progress\":60,\r\n   \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n   \"description\":\"noun /pronunciation/\\n ### Definition\\n Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n   \"background\":{\r\n      \"imageURL\":\"https://picsum.photos/id/11/1920/1080\"\r\n   },\r\n   \"examples\":[\r\n      {\r\n         \"id\":\"p81MnJz1A3nhPZmQmgY6\",\r\n         \"textL1\":\"jablko\",\r\n         \"textL2\":\"apple\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\":\"6NZPKpcEwFWwRRbr5n8b\",\r\n         \"textL1\":\"hruška\",\r\n         \"textL2\":\"pear\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\":\"02OyjZAPbylI4pycwqYI\",\r\n         \"textL1\":\"meloun\",\r\n         \"textL2\":\"melon\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n   ]\r\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Background image",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -1049,23 +948,6 @@
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
-          "databucketID": "",
-          "bodyType": "INLINE"
-        },
-        {
-          "uuid": "35d2355a-6652-485e-85b7-a737c2f1919c",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 404,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
           "databucketID": "",
           "bodyType": "INLINE"
         }
@@ -2499,7 +2381,7 @@
     {
       "uuid": "067b032a-5e34-49d2-99bc-bb9eb017076a",
       "name": "achievements",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2514,7 +2396,7 @@
     {
       "uuid": "e58cab13-3940-43c0-956b-feac2e16a968",
       "name": "challenges",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2567,7 +2449,7 @@
     {
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e",
       "name": "users",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2663,7 +2545,7 @@
     {
       "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be",
       "name": "lesson-items",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2671,11 +2553,11 @@
         },
         {
           "type": "route",
-          "uuid": "ea944dd9-eb08-4ea3-8033-ba9ec8553887"
+          "uuid": "158e3966-8dcb-49c7-9569-6f04a33e3194"
         },
         {
           "type": "route",
-          "uuid": "158e3966-8dcb-49c7-9569-6f04a33e3194"
+          "uuid": "ea944dd9-eb08-4ea3-8033-ba9ec8553887"
         }
       ]
     },
@@ -2887,7 +2769,7 @@
     {
       "uuid": "188c76ff-5749-434b-8e9a-cbcab2538d22",
       "name": "user",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2971,11 +2853,15 @@
     {
       "uuid": "f92757c6-03d3-47a5-bd19-14d7f2bedfe7",
       "name": "courses",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "folder",
           "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6"
+        },
+        {
+          "type": "folder",
+          "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be"
         }
       ]
     },
@@ -3014,10 +2900,6 @@
     {
       "type": "folder",
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e"
-    },
-    {
-      "type": "folder",
-      "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be"
     },
     {
       "type": "folder",
