@@ -1401,11 +1401,11 @@
       "type": "http",
       "documentation": "",
       "method": "post",
-      "endpoint": "users/:userId/courses",
+      "endpoint": "user/courses",
       "responses": [
         {
           "uuid": "bf8b9a84-be39-462f-941f-7997905c8f89",
-          "body": " {\r\n    \"id\":\"dfllfgflgds\",\r\n    \"language1\":\"cs\",\r\n    \"language2\":\"en\",\r\n    \"name\":\"Angličtina\",\r\n    \"thumbnailURL\":\"https://picsum.photos/id/168/512/512\"\r\n },",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1457,11 +1457,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "users/:userId/courses",
+      "endpoint": "user/courses",
       "responses": [
         {
           "uuid": "b152291f-4960-40b0-b97f-3d6349bcdd05",
-          "body": "[\n  {\n    \"id\": \"dfllfgflgds\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\",\n    \"name\": \"Angličtina\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\"\n  },\n  {\n    \"id\": \"fdslfdmlff\",\n    \"language1\": \"cs\",\n    \"language2\": \"de\",\n    \"name\": \"Němčina\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\"\n  },\n  {\n    \"id\": \"fdslflsdjf\",\n    \"language1\": \"cs\",\n    \"language2\": \"es\",\n    \"name\": \"Španělština\",\n    \"thumbnailURL\": \"https://picsum.photos/id/168/512/512\"\n  }\n]",
+          "body": "[\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\",\n    \"name\": \"Angličtina\",\n    \"thumbnailURL\": \"{{faker 'image.nature' 512 512 true}}\"\n  },\n  {{#repeat 2}}\n  {\n    \"id\":\"{{faker 'datatype.uuid'}}\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\",\n    \"name\": \"{{faker 'lorem.word'}}\",\n    \"thumbnailURL\": \"{{faker 'image.nature' 512 512 true}}\"\n  }\n  {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2375,6 +2375,34 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "b5ab9621-6bbe-4419-a0de-a618b07d1741",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "user/courses/:courseId/select-course",
+      "responses": [
+        {
+          "uuid": "88d774b8-94f4-4f11-8f42-0dd63e3877e3",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -2455,7 +2483,7 @@
     {
       "uuid": "1d58577b-3d83-47d2-84e2-1c05839b3f6d",
       "name": "feed",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2470,7 +2498,7 @@
     {
       "uuid": "f90b3022-75ab-4d50-b719-9c6fe65b13f7",
       "name": "courses",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2501,7 +2529,7 @@
     {
       "uuid": "4ce018e8-8483-4135-a8bb-31571aabe85e",
       "name": "users",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -2543,16 +2571,8 @@
     {
       "uuid": "e29d44ab-fdb3-4d48-8bb6-8f592db51879",
       "name": "courses",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
-        {
-          "type": "route",
-          "uuid": "672aaa66-afcf-4d3f-a01a-d52dfb251268"
-        },
-        {
-          "type": "route",
-          "uuid": "2b8afca0-2a6b-459c-a76b-161ed9806dab"
-        },
         {
           "type": "folder",
           "uuid": "68ce32df-ed45-4e9b-a0fc-fdc4660ea41b"
@@ -2593,7 +2613,7 @@
     {
       "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be",
       "name": "lesson-items",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2642,7 +2662,7 @@
     {
       "uuid": "c3786d99-9d65-4488-a384-86714c13b3f8",
       "name": "articles",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2657,7 +2677,7 @@
     {
       "uuid": "7517c19e-6fc6-4b29-8661-9163d11fa817",
       "name": "article-categories",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2905,8 +2925,20 @@
     {
       "uuid": "f92757c6-03d3-47a5-bd19-14d7f2bedfe7",
       "name": "courses",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
+        {
+          "type": "route",
+          "uuid": "2b8afca0-2a6b-459c-a76b-161ed9806dab"
+        },
+        {
+          "type": "route",
+          "uuid": "672aaa66-afcf-4d3f-a01a-d52dfb251268"
+        },
+        {
+          "type": "route",
+          "uuid": "b5ab9621-6bbe-4419-a0de-a618b07d1741"
+        },
         {
           "type": "folder",
           "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6"
@@ -2946,7 +2978,7 @@
     {
       "uuid": "ec4ae141-2baf-422f-af6f-c8acfb91d972",
       "name": "reactions",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
