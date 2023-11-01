@@ -2828,7 +2828,7 @@
     {
       "uuid": "d079fdbe-6979-44e9-a801-cdda20d24a25",
       "name": "signup",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
