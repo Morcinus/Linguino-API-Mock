@@ -1733,11 +1733,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "settings/:userId",
+      "endpoint": "user/settings",
       "responses": [
         {
           "uuid": "cb4ca00c-490e-465a-8e4a-bdd3b1f31dba",
-          "body": "{\n  \"id\": \"abc\",\n  \"name\": \"Pepa Okurka\",\n  \"username\": \"pepik123\",\n  \"email\": \"pepa.okurka@pepa.cz\",\n  \"dailyGoal\": 5,\n  \"notifications\": {\n    \"sendOnMobile\": true,\n    \"sendOnEmail\": false,\n    \"sendOnDesktop\": true\n  },\n  \"notifyOn\": {\n    \"friendsActivities\": false,\n    \"somebodyFollowsUser\": true,\n    \"userForgetsPractice\": true\n  },\n  \"practiceNotificationTime\": \"2022-04-17T14:40:00.000Z\",\n  \"learnOnDays\": [\n    \"tuesday\",\n    \"wednesday\",\n    \"saturday\"\n  ],\n  \"animations\": true,\n  \"reviewPreviousLevels\": true,\n  \"publicProfile\": true\n}",
+          "body": "{\n  \"name\":\"{{faker 'person.fullName'}}\",\n  \"username\":\"{{faker 'internet.userName'}}\",\n  \"email\":\"{{faker 'internet.email'}}\",\n  \"dailyGoal\": {{oneOf (array 1 5 10 20 30)}}\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1761,12 +1761,12 @@
       "uuid": "f3002042-b9b5-41fb-93fb-154867dd1355",
       "type": "http",
       "documentation": "",
-      "method": "put",
-      "endpoint": "settings/:userId",
+      "method": "patch",
+      "endpoint": "user/settings",
       "responses": [
         {
           "uuid": "b84d45b2-3b05-457d-99bc-fefdfebcae50",
-          "body": "{\n  \"name\": \"{{body 'name' 'Pepa Okurka'}}\",\n  \"username\": \"{{body 'username' 'pepik123'}}\",\n  \"email\": \"{{body 'email' 'pepa.okurka@pepa.cz'}}\",\n  \"dailyGoal\": \"{{body 'dailyGoal' '5'}}\",\n  \"notifications\": {\n    \"sendOnMobile\": \"{{body 'notifications.sendOnMobile' 'false'}}\",\n    \"sendOnEmail\": \"{{body 'notifications.sendOnEmail' 'false'}}\",\n    \"sendOnDesktop\": \"{{body 'notifications.sendOnDesktop' 'true'}}\"\n  },\n  \"notifyOn\": {\n    \"friendsActivities\": \"{{body 'notifyOn.friendsActivities' 'false'}}\",\n    \"somebodyFollowsUser\": \"{{body 'notifyOn.somebodyFollowsUser' 'true'}}\",\n    \"userForgetsPractice\": \"{{body 'notifyOn.userForgetsPractice' 'true'}}\",\n  },\n  \"practiceNotificationTime\": \"{{body 'practiceNotificationTime' '2022-04-17T15:30:200Z'}}\",\n  \"learnOnDays\": \"{{body 'learnOnDays' '[\\\"tuesday\", \"wednesday\", \"saturday\\\"]'}}\",\n  \"animations\": \"{{body 'animations' 'true'}}\",\n  \"reviewPreviousLevels\": \"{{body 'reviewPreviousLevels' 'true'}}\",\n  \"publicProfile\": \"{{body 'publicProfile' 'true'}}\",\n}",
+          "body": "{\n  \"name\": \"{{body 'name'}}\",\n  \"username\": \"{{body 'username'}}\",\n  \"email\": \"{{body 'email'}}\",\n  \"dailyGoal\": \"{{body 'dailyGoal'}}\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -3001,6 +3001,10 @@
         },
         {
           "type": "folder",
+          "uuid": "ff574366-5875-4525-95e6-357d17e26795"
+        },
+        {
+          "type": "folder",
           "uuid": "1d58577b-3d83-47d2-84e2-1c05839b3f6d"
         }
       ]
@@ -3120,10 +3124,6 @@
     {
       "type": "folder",
       "uuid": "f90b3022-75ab-4d50-b719-9c6fe65b13f7"
-    },
-    {
-      "type": "folder",
-      "uuid": "ff574366-5875-4525-95e6-357d17e26795"
     },
     {
       "type": "folder",
