@@ -26,7 +26,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true,
+          "default": false,
           "databucketID": "",
           "bodyType": "INLINE",
           "crudKey": "id",
@@ -112,7 +112,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false,
+          "default": true,
           "crudKey": "id",
           "callbacks": []
         },
@@ -2156,7 +2156,7 @@
         },
         {
           "uuid": "69e601ac-6fef-4b23-a22a-86969ef3bbb4",
-          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"surveyId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"RATING_SURVEY\",\r\n      \"question\":\"Jaká je pravděpodobnost, že byste aplikaci doporučili přátelům/kolegům?\",\r\n      \"answerLabel1\":\"Nízká\",\r\n      \"answerLabel2\":\"Vysoká\",\r\n      \"maxPoints\":10\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"surveyId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"RATING_SURVEY\",\r\n      \"question\":\"Jaká je pravděpodobnost, že byste aplikaci doporučili přátelům/kolegům?\",\r\n      \"answerLabel1\":\"Nízká\",\r\n      \"answerLabel2\":\"Vysoká\",\r\n      \"maxPoints\":5\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Example Response: Rating Survey Notice",
@@ -2169,7 +2169,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false,
+          "default": true,
           "crudKey": "id",
           "callbacks": []
         },
@@ -2188,7 +2188,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true,
+          "default": false,
           "crudKey": "id",
           "callbacks": []
         }
