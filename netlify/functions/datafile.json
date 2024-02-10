@@ -26,7 +26,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false,
+          "default": true,
           "databucketID": "",
           "bodyType": "INLINE",
           "crudKey": "id",
@@ -112,7 +112,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true,
+          "default": false,
           "crudKey": "id",
           "callbacks": []
         },
@@ -1787,7 +1787,7 @@
       "responses": [
         {
           "uuid": "889ab126-2860-4a6f-89f9-168659d6203b",
-          "body": "{\n  \"id\":\"{{faker 'string.uuid'}}\",\n  \"language1\": \"cs\",\n  \"language2\": \"en\",\n  \"name\": \"Angličtina\",\n  \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n  \"featuredTopics\": [\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Cestování\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Práce\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Rodina\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Škola\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Kultura\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    }\n  ]\n}",
+          "body": "{\n  \"id\":\"{{faker 'string.uuid'}}\",\n  \"language1\": \"cs\",\n  \"language2\": \"en\",\n  \"name\": \"Angličtina\",\n  \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n  \"featuredTopics\": [\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Cestování\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Práce\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Škola\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Kultura\",\n      \"thumbnailURL\": \"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\n      \"enabled\": false\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
