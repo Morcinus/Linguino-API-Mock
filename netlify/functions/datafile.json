@@ -2527,7 +2527,7 @@
       "responses": [
         {
           "uuid": "e259feaf-59fb-489f-b511-dd3134b0355f",
-          "body": "[\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"explanation\": \"# Hello world \\n Lorem opossum\",\n    \"question\": {\n      \"id\": \"dsmaljdsa\",\n      \"question\": \"Brambora xx'x\",\n      \"answer\": \"xx'x\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"fdsfsdfdsfsdfsd\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmaljdsad\",\n      \"question\": \"Brambora yyy\",\n      \"answer\": \"yyy\",\n      \"type\": \"TEXT\"\n    }\n  },\n  {\n    \"id\": \"gsggdsggsgfdsg\",\n    \"lessonItemId\": \"123\",\n    \"type\": \"TEXT\",\n    \"assignmentTitle\": \"Přeložte do angličtiny 1\",\n    \"instructionDescription\": \"Tip: použijte přítomný čas prostý\",\n    \"question\": {\n      \"id\": \"dsmxaljdsa\",\n      \"question\": \"Brambora zzz\",\n      \"answer\": \"zzz\",\n      \"type\": \"TEXT\"\n    }\n  }\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2617,7 +2617,7 @@
           "body": "{\n  \"id\": \"{{faker 'string.uuid'}}\",\n  \"username\": \"{{faker 'internet.userName'}}\",\n  \"role\": \"USER\",\n  \"streak\": {{faker 'number.int' min=0 max=999 max=99999}},\n  \"balance\": {{faker 'number.int' min=0 max=999 max=99999}},\n  \"accountInitialized\": true,\n  \"completedDailyGoal\": false,\n  \"activeSubscription\": null,\n  \"selectedCourse\": {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Angličtina\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\"\n  },\n  \"lastViewedStudyMapLevel\": {{faker 'number.int' min=0 max=5 max=99999}}\n}",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "Example Response (free user)",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2628,6 +2628,25 @@
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "2272e33c-1ae8-4f47-999c-d664316bf91f",
+          "body": "{\n  \"id\":\"{{faker 'string.uuid'}}\",\n  \"username\":\"{{faker 'internet.userName'}}\",\n  \"role\":\"PREMIUM_USER\",\n  \"streak\":{{faker 'number.int' min=0 max=999 max=99999}},\n  \"balance\":{{faker 'number.int' min=0 max=999 max=99999}},\n  \"accountInitialized\":true,\n  \"completedDailyGoal\":true,\n  \"activeSubscription\":{\n     \"id\":\"{{faker 'string.uuid'}}\",\n     \"nextPayment\":\"{{faker 'date.future'}}\",\n     \"subscriptionState\":\"PAID\",\n     \"planId\":\"{{faker 'string.uuid'}}\"\n  },\n  \"selectedCourse\":{\n     \"id\":\"{{faker 'string.uuid'}}\",\n     \"name\":\"English Course\",\n     \"language1\":\"cs\",\n     \"language2\":\"en\"\n  },\n  \"lastViewedStudyMapLevel\":{{faker 'number.int' min=0 max=5 max=99999}}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response (premium user)",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
           "crudKey": "id",
           "callbacks": []
         }
