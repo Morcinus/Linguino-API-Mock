@@ -2614,7 +2614,7 @@
       "responses": [
         {
           "uuid": "6c7fbbe6-857b-466b-9352-0942a25316f7",
-          "body": "{\n  \"id\": \"{{faker 'string.uuid'}}\",\n  \"username\": \"{{faker 'internet.userName'}}\",\n  \"role\": \"USER\",\n  \"streak\": {{faker 'number.int' min=0 max=999 max=99999}},\n  \"balance\": {{faker 'number.int' min=0 max=999 max=99999}},\n  \"accountInitialized\": true,\n  \"completedDailyGoal\": false,\n  \"activeSubscription\": null,\n  \"selectedCourse\": {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Angličtina\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\"\n  },\n  \"lastViewedStudyMapLevel\": {{faker 'number.int' min=0 max=5 max=99999}}\n}",
+          "body": "{\n  \"id\": \"{{faker 'string.uuid'}}\",\n  \"username\": \"{{faker 'internet.userName'}}\",\n  \"role\": \"USER\",\n  \"streak\": {{faker 'number.int' min=0 max=999 max=99999}},\n  \"balance\": {{faker 'number.int' min=0 max=999 max=99999}},\n  \"accountInitialized\": true,\n  \"completedDailyGoal\":true,\n  \"activeSubscription\": null,\n  \"selectedCourse\": {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Angličtina\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\"\n  },\n  \"lastViewedStudyMapLevel\": {{faker 'number.int' min=0 max=5 max=99999}}\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Example Response (free user)",
