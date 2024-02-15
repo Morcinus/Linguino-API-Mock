@@ -11,7 +11,7 @@
       "uuid": "3cf36e77-8e08-41aa-b382-89ea82b382aa",
       "documentation": "",
       "method": "get",
-      "endpoint": "user/study-session",
+      "endpoint": "user/courses/:courseId/study-session",
       "responses": [
         {
           "uuid": "0158cddf-756f-49f5-b271-7b9ef8ab64ff",
@@ -352,7 +352,7 @@
       "uuid": "99f8f56e-c4e5-416b-be79-8c227fe51743",
       "documentation": "",
       "method": "post",
-      "endpoint": "user/study-session",
+      "endpoint": "user/courses/:courseId/study-session",
       "responses": [
         {
           "uuid": "cb62309f-bfbe-4148-a652-bc91d568ee92",
@@ -3326,10 +3326,6 @@
         },
         {
           "type": "folder",
-          "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940"
-        },
-        {
-          "type": "folder",
           "uuid": "586174e7-190c-4b3d-9675-5525508da3c9"
         },
         {
@@ -3435,6 +3431,10 @@
         {
           "type": "folder",
           "uuid": "464e24f7-21fd-4071-8a35-b5790e6beb7e"
+        },
+        {
+          "type": "folder",
+          "uuid": "e3b20a0a-f870-42b7-86d0-7b0f31611940"
         }
       ]
     },
