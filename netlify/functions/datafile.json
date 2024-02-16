@@ -15,7 +15,7 @@
       "responses": [
         {
           "uuid": "0158cddf-756f-49f5-b271-7b9ef8ab64ff",
-          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Multiple Exercises",
@@ -34,7 +34,7 @@
         },
         {
           "uuid": "ede76d73-3d78-4aeb-9492-ff899f792599",
-          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Multiple Exercises - lessonId in query",
@@ -61,7 +61,7 @@
         },
         {
           "uuid": "b73ad906-bb24-4433-9385-53f1c9c0443c",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"BUILD_WORD\",\n    \"wordL1\": \"jablko\",\n    \"wordL2\": \"apple\",\n    \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"answerAudioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"BUILD_WORD\",\n    \"wordL1\": \"jablko\",\n    \"wordL2\": \"apple\",\n    \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Build The Word",
@@ -80,7 +80,7 @@
         },
         {
           "uuid": "bc1db923-8166-4f85-8097-d7c7066aecf0",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"TEXT\",\n    \"textL1\": \"jablko\",\n    \"textL2\": \"apple\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"textL2AudioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\n    \"explanation\": \"#### Lorem ipsum\\n Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"TEXT\",\n    \"textL1\": \"jablko\",\n    \"textL2\": \"apple\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"textL2AudioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n    \"explanation\": \"#### Lorem ipsum\\n Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Text Exercise",
@@ -137,7 +137,7 @@
         },
         {
           "uuid": "5fed87a0-f2ec-4bd6-ac1b-5858524d83b7",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"SHORT_LISTENING\",\n    \"textL2\": \"apple\",\n    \"textL2AudioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"SHORT_LISTENING\",\n    \"textL2\": \"apple\",\n    \"textL2AudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Short Listening",
@@ -156,7 +156,7 @@
         },
         {
           "uuid": "08272bf9-4598-4e62-8eb7-f22c08adbd49",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"LISTENING\",\n    \"questionL2\": \"What color was the T-shirt?\",\n    \"answerL2\": \"blue\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"LISTENING\",\n    \"questionL2\": \"What color was the T-shirt?\",\n    \"answerL2\": \"blue\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"audioURL\": \"https://mocks.linguino.org/audio-long.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Listening",
@@ -251,7 +251,7 @@
         },
         {
           "uuid": "cca38315-cd56-485f-9265-72373b6ce70f",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"REPEAT_AUDIO\",\n    \"textL2\": \"I like vegetables\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"REPEAT_AUDIO\",\n    \"textL2\": \"I like vegetables\",\n    \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise:  Repeat Audio",
@@ -327,7 +327,7 @@
         },
         {
           "uuid": "fb338293-130d-4c24-8c5d-c5527d0ea9b0",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"text\": \"Laptop\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      }\n    ],\n    \"options2\": [\n      {\n        \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\n        \"matchIndex\": 0\n      },\n      {\n        \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\n        \"matchIndex\": 1\n      },\n      {\n        \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\n        \"matchIndex\": 2\n      },\n      {\n        \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\n        \"matchIndex\": 3\n      }\n    ]\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"text\": \"Laptop\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      }\n    ],\n    \"options2\": [\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 0\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 1\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 2\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 3\n      }\n    ]\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Matching (Text-Audio)",
@@ -978,7 +978,7 @@
       "responses": [
         {
           "uuid": "7167f3cf-d598-4f99-a872-2c8128efe7e0",
-          "body": "[\r\n   {{#repeat 10}}\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"nameL1\":\"{{faker 'lorem.word'}}\",\r\n      \"nameL2\":\"{{faker 'word.noun'}}\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   }\r\n   {{/repeat}}\r\n]",
+          "body": "[\r\n   {{#repeat 10}}\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"nameL1\":\"{{faker 'lorem.word'}}\",\r\n      \"nameL2\":\"{{faker 'word.noun'}}\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"audioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   }\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "favorite=true",
@@ -1005,7 +1005,7 @@
         },
         {
           "uuid": "e3130c9d-90de-41c0-bfab-6ca709598fc6",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"nameL1\": \"broskev\",\n    \"nameL2\": \"peach\",\n    \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"nameL1\": \"broskev\",\n    \"nameL2\": \"peach\",\n    \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "searchVocabulary=peach",
@@ -1080,7 +1080,7 @@
         },
         {
           "uuid": "bdf42e2a-7676-45ea-95b5-db924d6adefa",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jablko\",\r\n         \"nameL2\":\"apple\",\r\n         \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"hruška\",\r\n         \"nameL2\":\"pear\",\r\n         \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"meloun\",\r\n         \"nameL2\":\"melon\",\r\n         \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n   ]\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jablko\",\r\n         \"nameL2\":\"apple\",\r\n         \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\r\n         \"audioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"hruška\",\r\n         \"nameL2\":\"pear\",\r\n         \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\r\n         \"audioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"meloun\",\r\n         \"nameL2\":\"melon\",\r\n         \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 category=\"nature\"}}\",\r\n         \"audioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n      }\r\n   ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Vocabulary",
@@ -1319,7 +1319,7 @@
       "responses": [
         {
           "uuid": "89e8b61b-4744-4377-8345-ae5a3cef2da0",
-          "body": "{\r\n   \"nameL1\":\"{{faker 'lorem.word'}}\",\r\n   \"nameL2\":\"{{faker 'word.noun'}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":{{faker 'datatype.boolean'}},\r\n   \"progress\":{{faker 'number.int' 100 max=99999}},\r\n   \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n   \"description\":\"{{faker 'lorem.paragraph'}}\",\r\n   \"examples\":[\r\n      {{#repeat 3}}\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"textL1\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"textL2\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n      {{/repeat}}\r\n   ]\r\n}",
+          "body": "{\r\n   \"nameL1\":\"{{faker 'lorem.word'}}\",\r\n   \"nameL2\":\"{{faker 'word.noun'}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":{{faker 'datatype.boolean'}},\r\n   \"progress\":{{faker 'number.int' 100 max=99999}},\r\n   \"audioURL\":\"https://mocks.linguino.org/audio-short.mp3\",\r\n   \"description\":\"{{faker 'lorem.paragraph'}}\",\r\n   \"examples\":[\r\n      {{#repeat 3}}\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"textL1\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"textL2\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"audioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n      }\r\n      {{/repeat}}\r\n   ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson Item",
@@ -1338,7 +1338,7 @@
         },
         {
           "uuid": "86cceff3-13aa-4fd8-8e1a-c36ff34cd2a2",
-          "body": "{\r\n   \"nameL1\":\"{{faker 'lorem.word'}}\",\r\n   \"nameL2\":\"{{faker 'word.noun'}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":{{faker 'datatype.boolean'}},\r\n   \"progress\":{{faker 'number.int' 100 max=99999}},\r\n   \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\",\r\n   \"description\":\"{{faker 'lorem.paragraph'}}\",\r\n   \"backgroundImageUrl\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n   \"examples\":[\r\n      {{#repeat 3}}\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"textL1\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"textL2\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"audioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n      }\r\n      {{/repeat}}\r\n   ]\r\n}",
+          "body": "{\r\n   \"nameL1\":\"{{faker 'lorem.word'}}\",\r\n   \"nameL2\":\"{{faker 'word.noun'}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":{{faker 'datatype.boolean'}},\r\n   \"progress\":{{faker 'number.int' 100 max=99999}},\r\n   \"audioURL\":\"https://mocks.linguino.org/audio-short.mp3\",\r\n   \"description\":\"{{faker 'lorem.paragraph'}}\",\r\n   \"backgroundImageUrl\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n   \"examples\":[\r\n      {{#repeat 3}}\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"textL1\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"textL2\":\"{{faker 'lorem.sentence' 7}}\",\r\n         \"audioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n      }\r\n      {{/repeat}}\r\n   ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson Item: Background Image",
@@ -2527,7 +2527,7 @@
       "responses": [
         {
           "uuid": "e259feaf-59fb-489f-b511-dd3134b0355f",
-          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
