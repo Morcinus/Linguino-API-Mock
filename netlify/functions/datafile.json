@@ -232,7 +232,7 @@
         },
         {
           "uuid": "e422df85-29ef-427e-9b44-5fa9da8d3068",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"READ_ALOUD\",\n    \"textL2\": \"potato\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"READ_ALOUD\",\n    \"textL2\": \"I like vegetables\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: ReadAloud",
@@ -251,7 +251,7 @@
         },
         {
           "uuid": "cca38315-cd56-485f-9265-72373b6ce70f",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"REPEAT_AUDIO\",\n    \"textL2\": \"potato\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"REPEAT_AUDIO\",\n    \"textL2\": \"I like vegetables\",\n    \"audioURL\": \"https://www.chosic.com/wp-content/uploads/2021/02/Monkeys-Spinning-Monkeys.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise:  Repeat Audio",
