@@ -1061,7 +1061,7 @@
         },
         {
           "uuid": "5de80edf-e594-46b1-88e3-83b34ecc3d57",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"dQw4w9WgXcQ\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"PRONUNCIATION\"\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"Tyq0oivryDQ\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"PRONUNCIATION\"\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Pronunciation",
@@ -1099,7 +1099,7 @@
         },
         {
           "uuid": "d80d89d8-1994-47c5-be39-a84a2e2acb40",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"dQw4w9WgXcQ\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"GRAMMAR\"\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"Tyq0oivryDQ\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"GRAMMAR\"\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Grammar",
@@ -1542,7 +1542,7 @@
       "responses": [
         {
           "uuid": "a86bdd59-648c-4e56-b244-8296f9ea9d51",
-          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"video\",\r\n      \"videoId\":\"dQw4w9WgXcQ\",\r\n      \"title\":\"{{faker 'lorem.sentence' 8}}\"\r\n   },\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"article\",\r\n      \"link\":\"https://example.com\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"title\":\"{{faker 'lorem.sentence' 8}}\"\r\n   },\r\n   {{#repeat 3}}\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"message\",\r\n      \"author\":\"{{faker 'person.fullName'}}\",\r\n      \"authorAvatarURL\":\"{{faker 'internet.avatar'}}\",\r\n      \"message\":\"{{oneOf (array 'reached_level_10' 'reached_level_50' 'reached_level_100')}}\",\r\n      \"publishedAt\":\"{{faker 'date.recent'}}\",\r\n      \"seenByUser\":true,\r\n      \"reactions\":[\r\n         {\r\n            \"counter\":{{faker 'number.int' min=1 max=10 max=99999}},\r\n            \"reactedByUser\":{{faker 'datatype.boolean'}},\r\n            \"id\":\"{{oneOf (array 'muscle' 'heart_eyes')}}\"\r\n         },\r\n         {\r\n            \"counter\":{{faker 'number.int' min=1 max=10 max=99999}},\r\n            \"reactedByUser\":{{faker 'datatype.boolean'}},\r\n            \"id\":\"{{oneOf (array 'light_bulb' 'brain')}}\"\r\n         }\r\n      ]\r\n   },\r\n   {{/repeat}}\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"video\",\r\n      \"videoId\":\"Tyq0oivryDQ\",\r\n      \"title\":\"{{faker 'lorem.sentence' 8}}\"\r\n   },\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"article\",\r\n      \"link\":\"https://example.com\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"title\":\"{{faker 'lorem.sentence' 8}}\"\r\n   },\r\n   {{#repeat 3}}\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"message\",\r\n      \"author\":\"{{faker 'person.fullName'}}\",\r\n      \"authorAvatarURL\":\"{{faker 'internet.avatar'}}\",\r\n      \"message\":\"{{oneOf (array 'reached_level_10' 'reached_level_50' 'reached_level_100')}}\",\r\n      \"publishedAt\":\"{{faker 'date.recent'}}\",\r\n      \"seenByUser\":true,\r\n      \"reactions\":[\r\n         {\r\n            \"counter\":{{faker 'number.int' min=1 max=10 max=99999}},\r\n            \"reactedByUser\":{{faker 'datatype.boolean'}},\r\n            \"id\":\"{{oneOf (array 'muscle' 'heart_eyes')}}\"\r\n         },\r\n         {\r\n            \"counter\":{{faker 'number.int' min=1 max=10 max=99999}},\r\n            \"reactedByUser\":{{faker 'datatype.boolean'}},\r\n            \"id\":\"{{oneOf (array 'light_bulb' 'brain')}}\"\r\n         }\r\n      ]\r\n   },\r\n   {{/repeat}}\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "page != null",
