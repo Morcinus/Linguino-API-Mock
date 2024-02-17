@@ -2328,14 +2328,14 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "users/:userId/courses/:courseId/study-map",
+      "endpoint": "user/courses/:courseId/study-map",
       "responses": [
         {
-          "uuid": "d6818825-4d24-4bc1-86ce-f261d4d38091",
-          "body": "{\n  \"lessons\": [\n    {\n      \"id\": \"dafljfnjanjndga\",\n      \"name\": \"Basic Grammar\",\n      \"icon\": \"schedule\",\n      \"type\": \"GRAMMAR\"\n    },\n    {\n      \"id\": \"dsfljfnjanjndga\",\n      \"name\": \"Animals\",\n      \"icon\": \"pets\",\n      \"type\": \"VOCABULARY\"\n    },\n    {\n      \"id\": \"ddfljfnjanjndga\",\n      \"name\": \"At a restaurant\",\n      \"icon\": \"restaurant\",\n      \"type\": \"LISTENING\"\n    },\n    {\n      \"id\": \"dffljfnjanjndga\",\n      \"name\": \"Basic Sounds\",\n      \"icon\": \"music_note\",\n      \"type\": \"PRONUNCIATION\"\n    },\n    {\n      \"id\": \"dgfljfnjanjndga\",\n      \"name\": \"At an airport\",\n      \"icon\": \"flight\",\n      \"type\": \"SPEAKING\"\n    },\n    {\n      \"id\": \"dhfljfnjanjndga\",\n      \"name\": \"Back in time\",\n      \"icon\": \"history\",\n      \"type\": \"READING\"\n    }\n  ]\n}",
+          "uuid": "66afdc2e-ee27-447f-b0e8-97be9fdf4ec1",
+          "body": "{\n  \"lessons\": [\n    {\n      \"id\": \"dafljfnjanjndga\",\n      \"name\": \"Basic Grammar\",\n      \"icon\": \"schedule\",\n      \"type\": \"GRAMMAR\"\n    },\n    {\n      \"id\": \"dsfljfnjanjndga\",\n      \"name\": \"Animals\",\n      \"icon\": \"pets\",\n      \"type\": \"VOCABULARY\",\n      \"isActive\": true\n    },\n    {\n      \"id\": \"ddfljfnjanjndga\",\n      \"name\": \"At a restaurant\",\n      \"icon\": \"restaurant\",\n      \"type\": \"LISTENING\"\n    },\n    {\n      \"id\": \"dffljfnjanjndga\",\n      \"name\": \"Basic Sounds\",\n      \"icon\": \"music_note\",\n      \"type\": \"PRONUNCIATION\"\n    },\n    {\n      \"id\": \"dgfljfnjanjndga\",\n      \"name\": \"At an airport\",\n      \"icon\": \"flight\",\n      \"type\": \"SPEAKING\"\n    },\n    {\n      \"id\": \"dhfljfnjanjndga\",\n      \"name\": \"Back in time\",\n      \"icon\": \"history\",\n      \"type\": \"READING\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
-          "label": "level==0",
+          "label": "level!=null, page==0",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2345,12 +2345,19 @@
             {
               "target": "query",
               "modifier": "level",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            },
+            {
+              "target": "query",
+              "modifier": "page",
               "value": "0",
               "invert": false,
               "operator": "equals"
             }
           ],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
@@ -2358,8 +2365,8 @@
           "callbacks": []
         },
         {
-          "uuid": "3e2a87d6-a5c1-4fce-9756-9ec6acc8fc5a",
-          "body": "{\n  \"lessons\": [\n    {\n      \"id\": \"dafljfnjanjndga\",\n      \"name\": \"Past Simple\",\n      \"icon\": \"schedule\",\n      \"type\": \"GRAMMAR\"\n    },\n    {\n      \"id\": \"dsfljfnjanjndga\",\n      \"name\": \"Animals\",\n      \"icon\": \"pets\",\n      \"type\": \"VOCABULARY\"\n    },\n    {\n      \"id\": \"ddfljfnjanjndga\",\n      \"name\": \"At a restaurant\",\n      \"icon\": \"restaurant\",\n      \"type\": \"LISTENING\"\n    },\n    {\n      \"id\": \"dffljfnjanjndga\",\n      \"name\": \"Basic Sounds\",\n      \"icon\": \"music_note\",\n      \"type\": \"PRONUNCIATION\"\n    },\n    {\n      \"id\": \"dgfljfnjanjndga\",\n      \"name\": \"At an airport\",\n      \"icon\": \"flight\",\n      \"type\": \"SPEAKING\"\n    },\n    {\n      \"id\": \"dhfljfnjanjndga\",\n      \"name\": \"Back in time\",\n      \"icon\": \"history\",\n      \"type\": \"READING\"\n    }\n  ]\n}",
+          "uuid": "d6818825-4d24-4bc1-86ce-f261d4d38091",
+          "body": "{\n  \"lessons\": [\n    {\n      \"id\": \"dafljfnjanjndga\",\n      \"name\": \"Basic Grammar\",\n      \"icon\": \"schedule\",\n      \"type\": \"GRAMMAR\"\n    },\n    {\n      \"id\": \"dsfljfnjanjndga\",\n      \"name\": \"Animals\",\n      \"icon\": \"pets\",\n      \"type\": \"VOCABULARY\"\n    },\n    {\n      \"id\": \"ddfljfnjanjndga\",\n      \"name\": \"At a restaurant\",\n      \"icon\": \"restaurant\",\n      \"type\": \"LISTENING\"\n    },\n    {\n      \"id\": \"dffljfnjanjndga\",\n      \"name\": \"Basic Sounds\",\n      \"icon\": \"music_note\",\n      \"type\": \"PRONUNCIATION\"\n    },\n    {\n      \"id\": \"dgfljfnjanjndga\",\n      \"name\": \"At an airport\",\n      \"icon\": \"flight\",\n      \"type\": \"SPEAKING\"\n    },\n    {\n      \"id\": \"dhfljfnjanjndga\",\n      \"name\": \"Back in time\",\n      \"icon\": \"history\",\n      \"type\": \"READING\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "level!=null",
@@ -3067,12 +3074,7 @@
     {
       "uuid": "e29d44ab-fdb3-4d48-8bb6-8f592db51879",
       "name": "courses",
-      "children": [
-        {
-          "type": "folder",
-          "uuid": "68ce32df-ed45-4e9b-a0fc-fdc4660ea41b"
-        }
-      ]
+      "children": []
     },
     {
       "uuid": "f8f5046e-62ec-4f0f-96af-8be8cc51f9e6",
@@ -3431,6 +3433,10 @@
         {
           "type": "folder",
           "uuid": "464e24f7-21fd-4071-8a35-b5790e6beb7e"
+        },
+        {
+          "type": "folder",
+          "uuid": "68ce32df-ed45-4e9b-a0fc-fdc4660ea41b"
         },
         {
           "type": "folder",
