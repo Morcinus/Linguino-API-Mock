@@ -2405,7 +2405,7 @@
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
+          "label": "Free Trial Start",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2423,35 +2423,16 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
-          "uuid": "ffde156b-4626-45f1-826f-0d4da4ab3fe1",
-          "body": "{\n  \"type\": \"setup\",\n  \"clientSecret\": \"seti_1MnT9FG3Ks4CHLRJQbgPIDZA_secret_NYaJm1HVHat3gkIfyOy2jDRBfC4UYOL\"\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Setup Intent Response",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
           "default": false,
-          "databucketID": "",
-          "bodyType": "INLINE",
           "crudKey": "id",
           "callbacks": []
         },
         {
           "uuid": "95fca500-a3a9-4f2e-ba96-629a20b14459",
-          "body": "{\n  \"type\": \"payment\",\n  \"clientSecret\": \"pi_1FeMfPG3Ks4CHLRJKNH1H9co_secret_joGYitz8HbVxA41OkqJJxFXUW\"\n}",
+          "body": "{\n  \"error\": \"MOCK_NOT_SUPPORTED\"\n}",
           "latency": 0,
-          "statusCode": 200,
-          "label": "Payment Intent Response",
+          "statusCode": 501,
+          "label": "Subscription is not supported",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -2459,7 +2440,7 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false,
+          "default": true,
           "databucketID": "",
           "bodyType": "INLINE",
           "crudKey": "id",
@@ -3574,5 +3555,29 @@
       "uuid": "dc8d975d-717b-46a3-907b-e2be3e32e8b1"
     }
   ],
-  "callbacks": []
+  "callbacks": [
+    {
+      "uuid": "a440c12c-2fec-4a80-b707-7550279fb80b",
+      "id": "6abp",
+      "uri": "https://api.stripe.com/v1/customers",
+      "name": "Stripe - create customer",
+      "documentation": "",
+      "method": "post",
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Bearer sk_test_51Nc3x5C4N1Cw0gvFQYOlfej34rr9eEFgzYjyBxsRAXQonjhcqTea8GMu5JoqIKUy1OFucEEoQYybTahFMvCpxxpc00voFaroAM"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "bodyType": "INLINE",
+      "body": "email=pepa.okurka.pepa%40gmail.com&name=\"Pepa Okurka\"",
+      "databucketID": "",
+      "filePath": "",
+      "sendFileAsBody": true
+    }
+  ]
 }
