@@ -15,7 +15,7 @@
       "responses": [
         {
           "uuid": "0158cddf-756f-49f5-b271-7b9ef8ab64ff",
-          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"isNew\":true,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"lessonId\":\"{{faker 'string.uuid'}}\",\r\n      \"lessonType\":\"VOCABULARY\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"isNew\":false,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"isNew\":true,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"lessonId\":\"{{faker 'string.uuid'}}\",\r\n      \"lessonType\":\"GRAMMAR\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Multiple Exercises",
@@ -34,7 +34,7 @@
         },
         {
           "uuid": "ede76d73-3d78-4aeb-9492-ff899f792599",
-          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
+          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"isNew\":false,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageURL\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"textL2AudioURL\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"isNew\":false,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\r\n      \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"isNew\":false,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\r\n   }\r\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Multiple Exercises - lessonId in query",
@@ -61,7 +61,7 @@
         },
         {
           "uuid": "b73ad906-bb24-4433-9385-53f1c9c0443c",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"BUILD_WORD\",\n    \"wordL1\": \"jablko\",\n    \"wordL2\": \"apple\",\n    \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"BUILD_WORD\",\n    \"wordL1\": \"jablko\",\n    \"wordL2\": \"apple\",\n    \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"answerAudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Build The Word",
@@ -80,7 +80,7 @@
         },
         {
           "uuid": "bc1db923-8166-4f85-8097-d7c7066aecf0",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"TEXT\",\n    \"textL1\": \"jablko\",\n    \"textL2\": \"apple\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"textL2AudioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n    \"explanation\": \"#### Lorem ipsum\\n Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"TEXT\",\n    \"textL1\": \"jablko\",\n    \"textL2\": \"apple\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"textL2AudioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n    \"explanation\": \"#### Lorem ipsum\\n Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Text Exercise",
@@ -98,46 +98,8 @@
           "callbacks": []
         },
         {
-          "uuid": "a1bef6ff-8e24-402b-a477-4f4999c14d63",
-          "body": "[\n  {\n    \"lessonId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"NEW_GRAMMAR\"\n  }\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Exercise: New Grammar",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
-          "uuid": "22303417-8ed6-46a3-8e4d-a94493e53162",
-          "body": "[\n  {\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"NEW_VOCABULARY\"\n  }\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Exercise: New Vocabulary",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
           "uuid": "5fed87a0-f2ec-4bd6-ac1b-5858524d83b7",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"SHORT_LISTENING\",\n    \"textL2\": \"apple\",\n    \"textL2AudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"SHORT_LISTENING\",\n    \"textL2\": \"apple\",\n    \"textL2AudioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Short Listening",
@@ -156,7 +118,7 @@
         },
         {
           "uuid": "08272bf9-4598-4e62-8eb7-f22c08adbd49",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"LISTENING\",\n    \"questionL2\": \"What color was the T-shirt?\",\n    \"answerL2\": \"blue\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"audioURL\": \"https://mocks.linguino.org/audio-long.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"LISTENING\",\n    \"questionL2\": \"What color was the T-shirt?\",\n    \"answerL2\": \"blue\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"audioURL\": \"https://mocks.linguino.org/audio-long.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Listening",
@@ -175,7 +137,7 @@
         },
         {
           "uuid": "c85bac3b-ea48-4a4c-ae15-fafeaecba233",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"READING\",\n    \"article\": \"#### Hello world \\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis lacus eu tortor venenatis, quis vestibulum nisi fringilla. Ut elit est, lacinia sed interdum vel, facilisis ac magna. Sed rutrum scelerisque neque, quis luctus purus convallis eu. Donec vehicula mi quis ante volutpat egestas. Proin et risus ac sem congue posuere. Mauris rutrum lobortis augue at malesuada. Nunc quis lorem nec nulla faucibus sagittis. Quisque nec aliquam sapien. Sed imperdiet semper lectus, interdum hendrerit diam aliquam pharetra.\",\n    \"questionL2\": \"What color was the T-shirt?\",\n    \"answerL2\": \"blue\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"READING\",\n    \"article\": \"#### Hello world \\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis lacus eu tortor venenatis, quis vestibulum nisi fringilla. Ut elit est, lacinia sed interdum vel, facilisis ac magna. Sed rutrum scelerisque neque, quis luctus purus convallis eu. Donec vehicula mi quis ante volutpat egestas. Proin et risus ac sem congue posuere. Mauris rutrum lobortis augue at malesuada. Nunc quis lorem nec nulla faucibus sagittis. Quisque nec aliquam sapien. Sed imperdiet semper lectus, interdum hendrerit diam aliquam pharetra.\",\n    \"questionL2\": \"What color was the T-shirt?\",\n    \"answerL2\": \"blue\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Reading",
@@ -194,7 +156,7 @@
         },
         {
           "uuid": "917daee2-a7a3-4705-9642-8280947d2349",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"FILL_IN_SENTENCE\",\n    \"textL1\": \"Mám rád jablka.\",\n    \"textL2\": \"I like apples .\",\n    \"blankIndexes\": [2],\n    \"options\": [\"apples\", \"pears\", \"lemons\"],\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"FILL_IN_SENTENCE\",\n    \"textL1\": \"Mám rád jablka.\",\n    \"textL2\": \"I like apples .\",\n    \"blankIndexes\": [2],\n    \"options\": [\"apples\", \"pears\", \"lemons\"],\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Fill In Sentence",
@@ -213,7 +175,7 @@
         },
         {
           "uuid": "3d091cbd-972a-4ce8-a71d-9907b547c1a1",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"FILL_TABLE\",\n    \"questionL2\": \"Complete the conjugation of the verb 'to be'\",\n    \"tableRows\": [\n      [\n        \"I\",\n        \"am\"\n      ],\n      [\n        \"you\",\n        \"are\"\n      ],\n      [\n        \"he/she/it\",\n        \"is\"\n      ]\n    ],\n    \"blankCellCoords\": [\n      [\n        1,\n        0\n      ],\n      [\n        1,\n        2\n      ]\n    ]\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"FILL_TABLE\",\n    \"questionL2\": \"Complete the conjugation of the verb 'to be'\",\n    \"tableRows\": [\n      [\n        \"I\",\n        \"am\"\n      ],\n      [\n        \"you\",\n        \"are\"\n      ],\n      [\n        \"he/she/it\",\n        \"is\"\n      ]\n    ],\n    \"blankCellCoords\": [\n      [\n        1,\n        0\n      ],\n      [\n        1,\n        2\n      ]\n    ]\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Fill In Table",
@@ -232,7 +194,7 @@
         },
         {
           "uuid": "e422df85-29ef-427e-9b44-5fa9da8d3068",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"READ_ALOUD\",\n    \"textL2\": \"I like vegetables\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"READ_ALOUD\",\n    \"textL2\": \"I like vegetables\",\n    \"imageURL\": \"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: ReadAloud",
@@ -251,7 +213,7 @@
         },
         {
           "uuid": "cca38315-cd56-485f-9265-72373b6ce70f",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"REPEAT_AUDIO\",\n    \"textL2\": \"I like vegetables\",\n    \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"REPEAT_AUDIO\",\n    \"textL2\": \"I like vegetables\",\n    \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise:  Repeat Audio",
@@ -270,7 +232,7 @@
         },
         {
           "uuid": "3913fd80-eddf-43cd-92fa-db3b5a4caea6",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"SPEECH\",\n    \"assignmentTopicL2\": \"The best holiday of my life\",\n    \"questionsL2\": [\"What did you do?\", \"Where did you travel?\", \"Why was it the best holiday?\"],\n    \"timeMs\": 60000\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"SPEECH\",\n    \"assignmentTopicL2\": \"The best holiday of my life\",\n    \"questionsL2\": [\"What did you do?\", \"Where did you travel?\", \"Why was it the best holiday?\"],\n    \"timeMs\": 60000\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Speech",
@@ -289,7 +251,7 @@
         },
         {
           "uuid": "b8581aa2-3d1d-42b2-aa44-f55612e6dbf9",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"imageURL\": \"https://picsum.photos/id/1/512/512\",\n        \"matchIndex\": 0\n      },\n      {\n        \"imageURL\": \"https://picsum.photos/id/10/512/512\",\n        \"matchIndex\": 1\n      },\n      {\n        \"imageURL\": \"https://picsum.photos/id/17/512/512\",\n        \"matchIndex\": 2\n      },\n      {\n        \"imageURL\": \"https://picsum.photos/id/24/512/512\",\n        \"matchIndex\": 3\n      }\n    ],\n    \"options2\": [\n      {\n        \"text\": \"Laptop\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      }\n    ]\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"imageURL\": \"https://picsum.photos/id/1/512/512\",\n        \"matchIndex\": 0\n      },\n      {\n        \"imageURL\": \"https://picsum.photos/id/10/512/512\",\n        \"matchIndex\": 1\n      },\n      {\n        \"imageURL\": \"https://picsum.photos/id/17/512/512\",\n        \"matchIndex\": 2\n      },\n      {\n        \"imageURL\": \"https://picsum.photos/id/24/512/512\",\n        \"matchIndex\": 3\n      }\n    ],\n    \"options2\": [\n      {\n        \"text\": \"Laptop\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      }\n    ]\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Matching (Image-Text)",
@@ -308,7 +270,7 @@
         },
         {
           "uuid": "aff5bdaa-8c65-4fdf-8e90-d1c7d4897064",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"text\": \"Notebook\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Les\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Cesta\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Kniha\",\n        \"matchIndex\": 3\n      }\n    ],\n    \"options2\": [\n      {\n        \"text\": \"Laptop\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      }\n    ]\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"text\": \"Notebook\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Les\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Cesta\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Kniha\",\n        \"matchIndex\": 3\n      }\n    ],\n    \"options2\": [\n      {\n        \"text\": \"Laptop\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      }\n    ]\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Matching (Text-Text)",
@@ -327,7 +289,7 @@
         },
         {
           "uuid": "fb338293-130d-4c24-8c5d-c5527d0ea9b0",
-          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"text\": \"Laptop\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      }\n    ],\n    \"options2\": [\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 0\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 1\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 2\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 3\n      }\n    ]\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"text\": \"Laptop\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      }\n    ],\n    \"options2\": [\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 0\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 1\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 2\n      },\n      {\n        \"audioURL\": \"https://mocks.linguino.org/audio-short.mp3\",\n        \"matchIndex\": 3\n      }\n    ]\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Exercise: Matching (Text-Audio)",
