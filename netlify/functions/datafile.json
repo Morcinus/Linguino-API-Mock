@@ -2942,6 +2942,35 @@
         }
       ],
       "responseMode": null
+    },
+    {
+      "uuid": "43aea812-877e-4c98-8379-cf56cfcf5dac",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "user/courses/:courseId/study-map/active/:lessonId",
+      "responses": [
+        {
+          "uuid": "6245eedb-6691-446f-96bd-e5f2747caf74",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -3332,6 +3361,10 @@
         {
           "type": "route",
           "uuid": "653e0ddc-7ef3-4d02-a8e8-e6d4ac0146cc"
+        },
+        {
+          "type": "folder",
+          "uuid": "ae59d416-952e-415c-a663-b18e09d029df"
         }
       ]
     },
@@ -3500,6 +3533,16 @@
         {
           "type": "route",
           "uuid": "65279a11-560e-4e64-b080-0bf2f501f491"
+        }
+      ]
+    },
+    {
+      "uuid": "ae59d416-952e-415c-a663-b18e09d029df",
+      "name": "active",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "43aea812-877e-4c98-8379-cf56cfcf5dac"
         }
       ]
     }
