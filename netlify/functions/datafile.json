@@ -970,14 +970,14 @@
           "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"nameL1\": \"broskev\",\n    \"nameL2\": \"peach\",\n    \"imageUrl\":\"{{faker 'image.urlLoremFlickr' 512 512 true category=\"nature\"}}\",\n    \"audioUrl\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "searchVocabulary=peach",
+          "label": "searchName=peach",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
           "rules": [
             {
               "target": "query",
-              "modifier": "searchVocabulary",
+              "modifier": "searchName",
               "value": "p(?:e(?:a(?:c(?:h)?)?)?)?",
               "invert": false,
               "operator": "regex"
