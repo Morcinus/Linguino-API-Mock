@@ -936,7 +936,7 @@
       "uuid": "0b4c0f5c-331c-4484-9d96-fbe4e20c1c17",
       "documentation": "",
       "method": "get",
-      "endpoint": "user/courses/:courseId/lesson-items",
+      "endpoint": "user/courses/:courseId/vocabulary",
       "responses": [
         {
           "uuid": "7167f3cf-d598-4f99-a872-2c8128efe7e0",
@@ -1248,7 +1248,7 @@
       "uuid": "ea944dd9-eb08-4ea3-8033-ba9ec8553887",
       "documentation": "",
       "method": "patch",
-      "endpoint": "user/courses/:courseId/lesson-items/:itemId",
+      "endpoint": "user/courses/:courseId/vocabulary/:itemId",
       "responses": [
         {
           "uuid": "b0521df4-923a-4291-95ab-ab9e36c2ebf4",
@@ -1277,7 +1277,7 @@
       "uuid": "158e3966-8dcb-49c7-9569-6f04a33e3194",
       "documentation": "",
       "method": "get",
-      "endpoint": "user/courses/:courseId/lesson-items/:itemId",
+      "endpoint": "user/courses/:courseId/vocabulary/:itemId",
       "responses": [
         {
           "uuid": "89e8b61b-4744-4377-8345-ae5a3cef2da0",
@@ -3100,7 +3100,7 @@
     },
     {
       "uuid": "a22d3103-395b-4d35-9043-0707ae09a4be",
-      "name": "lesson-items",
+      "name": "vocabulary",
       "children": [
         {
           "type": "route",
