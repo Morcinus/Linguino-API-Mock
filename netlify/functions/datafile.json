@@ -2297,7 +2297,7 @@
           "body": "[\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Basic Grammar\",\n    \"icon\": \"schedule\",\n    \"type\": \"GRAMMAR\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Animals\",\n    \"icon\": \"pets\",\n    \"type\": \"VOCABULARY\",\n    \"isActive\": true\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"At a restaurant\",\n    \"icon\": \"restaurant\",\n    \"type\": \"LISTENING\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Basic Sounds\",\n    \"icon\": \"music_note\",\n    \"type\": \"PRONUNCIATION\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"At an airport\",\n    \"icon\": \"flight\",\n    \"type\": \"SPEAKING\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Back in time\",\n    \"icon\": \"history\",\n    \"type\": \"READING\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "level!=null, page==0",
+          "label": "page==0",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2317,6 +2317,13 @@
               "value": "0",
               "invert": false,
               "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "limit",
+              "value": "",
+              "invert": true,
+              "operator": "null"
             }
           ],
           "rulesOperator": "AND",
@@ -2331,7 +2338,7 @@
           "body": "[\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Basic Grammar\",\n    \"icon\": \"schedule\",\n    \"type\": \"GRAMMAR\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Animals\",\n    \"icon\": \"pets\",\n    \"type\": \"VOCABULARY\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"At a restaurant\",\n    \"icon\": \"restaurant\",\n    \"type\": \"LISTENING\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Basic Sounds\",\n    \"icon\": \"music_note\",\n    \"type\": \"PRONUNCIATION\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"At an airport\",\n    \"icon\": \"flight\",\n    \"type\": \"SPEAKING\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Back in time\",\n    \"icon\": \"history\",\n    \"type\": \"READING\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "level!=null",
+          "label": "page!=0",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2341,6 +2348,20 @@
             {
               "target": "query",
               "modifier": "level",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            },
+            {
+              "target": "query",
+              "modifier": "page",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            },
+            {
+              "target": "query",
+              "modifier": "limit",
               "value": "",
               "invert": true,
               "operator": "null"
