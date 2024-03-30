@@ -1129,7 +1129,7 @@
         {
           "uuid": "1007c6c1-8e89-4b82-9f14-ad94072b6701",
           "body": "{{body}}",
-          "latency": 5000,
+          "latency": 0,
           "statusCode": 200,
           "label": "",
           "headers": [],
@@ -2971,6 +2971,35 @@
         }
       ],
       "responseMode": null
+    },
+    {
+      "uuid": "9909787a-4fb3-4662-a92a-39d88779fe4d",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "user/courses/:courseId/lessons/:lessonId",
+      "responses": [
+        {
+          "uuid": "a614f354-f8b6-4d63-8d26-4afc2a736cf4",
+          "body": "{{body}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "type": "http"
     }
   ],
   "proxyMode": false,
@@ -3137,6 +3166,10 @@
         {
           "type": "route",
           "uuid": "cc45737a-0422-41e7-acb4-52b9d841b0d4"
+        },
+        {
+          "type": "route",
+          "uuid": "9909787a-4fb3-4662-a92a-39d88779fe4d"
         },
         {
           "type": "route",
