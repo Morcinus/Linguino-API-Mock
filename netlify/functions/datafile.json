@@ -1325,7 +1325,7 @@
       "uuid": "04aac6f1-92a9-4041-aad5-adc3f239a8f2",
       "documentation": "",
       "method": "get",
-      "endpoint": "user/subscriptions/:id",
+      "endpoint": "user/subscription/:id",
       "responses": [
         {
           "uuid": "c1b5e0a9-f232-47a5-a44d-8ce22f238a78",
@@ -1354,7 +1354,7 @@
       "uuid": "98fa6a1c-e528-46e6-952e-b1ee762c6dd9",
       "documentation": "",
       "method": "put",
-      "endpoint": "user/subscriptions/:id",
+      "endpoint": "user/subscription/:id",
       "responses": [
         {
           "uuid": "abb821a7-c963-40d8-9557-2c6394707ad9",
@@ -2360,7 +2360,7 @@
       "uuid": "99caa360-a14e-474d-806c-ff4c3e74ec3e",
       "documentation": "",
       "method": "post",
-      "endpoint": "user/subscriptions",
+      "endpoint": "user/subscription",
       "responses": [
         {
           "uuid": "8d69a3eb-b55d-4c26-a8dd-2b145f318e5b",
@@ -3174,7 +3174,7 @@
     },
     {
       "uuid": "430903c9-5987-43bd-984a-2f011d0e7dc4",
-      "name": "subscriptions",
+      "name": "subscription",
       "children": [
         {
           "type": "route",
