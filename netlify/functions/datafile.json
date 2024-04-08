@@ -2032,7 +2032,7 @@
       "responses": [
         {
           "uuid": "6e077f75-82c3-4cd7-9247-36c7e2e67428",
-          "body": "[\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\",\n    \"name\": \"Angličtina\",\n    \"thumbnailUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\"\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"language1\": \"cs\",\n    \"language2\": \"en\",\n    \"name\": \"Angličtina\",\n    \"thumbnailUrl\": \"https://picsum.photos/id/20/512/512\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Example Response: language1=cs",
@@ -2096,7 +2096,7 @@
       "responses": [
         {
           "uuid": "889ab126-2860-4a6f-89f9-168659d6203b",
-          "body": "{\n  \"id\":\"{{faker 'string.uuid'}}\",\n  \"language1\": \"cs\",\n  \"language2\": \"en\",\n  \"name\": \"Angličtina\",\n  \"thumbnailUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\n  \"featuredTopics\": [\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Cestování\",\n      \"thumbnailUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Práce\",\n      \"thumbnailUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Škola\",\n      \"thumbnailUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Kultura\",\n      \"thumbnailUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\n      \"enabled\": false\n    }\n  ]\n}",
+          "body": "{\n  \"id\":\"{{faker 'string.uuid'}}\",\n  \"language1\": \"cs\",\n  \"language2\": \"en\",\n  \"name\": \"Angličtina\",\n  \"thumbnailUrl\": \"https://picsum.photos/id/20/512/512\",\n  \"featuredTopics\": [\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Cestování\",\n      \"thumbnailUrl\": \"https://picsum.photos/id/49/512/512\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Práce\",\n      \"thumbnailUrl\": \"https://picsum.photos/id/9/512/512\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Škola\",\n      \"thumbnailUrl\": \"https://picsum.photos/id/193/512/512\",\n      \"enabled\": false\n    },\n    {\n      \"id\":\"{{faker 'string.uuid'}}\",\n      \"name\": \"Kultura\",\n      \"thumbnailUrl\": \"https://picsum.photos/id/30/512/512\",\n      \"enabled\": false\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2641,7 +2641,7 @@
       "responses": [
         {
           "uuid": "deb5057e-850a-4409-bcad-07f50fc0455c",
-          "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Simple Present\",\r\n    \"icon\": \"schedule\",\r\n    \"type\": \"GRAMMAR\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Basic Activities\",\r\n    \"icon\": \"directions_run\",\r\n    \"type\": \"VOCABULARY\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Short Conversations\",\r\n    \"icon\": \"hearing\",\r\n    \"type\": \"LISTENING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Basic Sounds\",\r\n    \"icon\": \"hearing_disabled\",\r\n    \"type\": \"PRONUNCIATION\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Self & Family\",\r\n    \"icon\": \"people\",\r\n    \"type\": \"SPEAKING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Simple Texts\",\r\n    \"icon\": \"menu_book\",\r\n    \"type\": \"READING\"\r\n  }\r\n]\r\n",
+          "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Simple Present\",\r\n    \"icon\": \"schedule\",\r\n    \"type\": \"GRAMMAR\",\r\n    \"isActive\": true\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Basic Activities\",\r\n    \"icon\": \"directions_run\",\r\n    \"type\": \"VOCABULARY\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Short Conversations\",\r\n    \"icon\": \"hearing\",\r\n    \"type\": \"LISTENING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Basic Sounds\",\r\n    \"icon\": \"hearing_disabled\",\r\n    \"type\": \"PRONUNCIATION\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Self & Family\",\r\n    \"icon\": \"people\",\r\n    \"type\": \"SPEAKING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Simple Texts\",\r\n    \"icon\": \"menu_book\",\r\n    \"type\": \"READING\"\r\n  }\r\n]\r\n",
           "latency": 0,
           "statusCode": 200,
           "label": "page==0 && level==0",
