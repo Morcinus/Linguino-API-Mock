@@ -15,7 +15,7 @@
       "responses": [
         {
           "uuid": "0158cddf-756f-49f5-b271-7b9ef8ab64ff",
-          "body": "[\r\n    {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"isNew\":false,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"c\", \"p\", \"e\", \"l\", \"p\", \"b\", \"a\", \"u\"],\r\n      \"imageUrl\": \"https://picsum.photos/id/48/512/512\",\r\n      \"answerAudioUrl\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"isNew\":true,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"lessonId\":\"{{faker 'string.uuid'}}\",\r\n      \"lessonType\":\"VOCABULARY\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"ananas\",\r\n      \"textL2\":\"pineapple\",\r\n      \"imageUrl\":\"https://picsum.photos/id/824/512/512\",\r\n      \"textL2AudioUrl\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n{\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"isNew\":false,\r\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n    \"type\": \"MATCHING\",\r\n    \"options1\": [\r\n      {\r\n        \"text\": \"Jablko\",\r\n        \"matchIndex\": 2\r\n      },\r\n      {\r\n        \"text\": \"Les\",\r\n        \"matchIndex\": 1\r\n      },\r\n      {\r\n        \"text\": \"Ananas\",\r\n        \"matchIndex\": 3\r\n      },\r\n      {\r\n        \"text\": \"Kniha\",\r\n        \"matchIndex\": 0\r\n      }\r\n    ],\r\n    \"options2\": [\r\n      {\r\n        \"text\": \"Book\",\r\n        \"matchIndex\": 3\r\n      },\r\n      {\r\n        \"text\": \"Forest\",\r\n        \"matchIndex\": 1\r\n      },\r\n      {\r\n        \"text\": \"Apple\",\r\n        \"matchIndex\": 0\r\n      },\r\n      {\r\n        \"text\": \"Pineapple\",\r\n        \"matchIndex\": 2\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"isNew\":false,\r\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n    \"type\": \"SHORT_LISTENING\",\r\n    \"textL2\": \"pineapple\",\r\n    \"textL2AudioUrl\": \"https://mocks.linguino.org/pineapple.mp3\"\r\n  }\r\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\": false,\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"BUILD_WORD\",\n    \"wordL1\": \"jablko\",\n    \"wordL2\": \"apple\",\n    \"letters\": [\n      \"c\",\n      \"p\",\n      \"e\",\n      \"l\",\n      \"p\",\n      \"b\",\n      \"a\",\n      \"u\"\n    ],\n    \"imageUrl\": \"https://picsum.photos/id/48/512/512\",\n    \"answerAudioUrl\": \"https://mocks.linguino.org/audio-short.mp3\"\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\": true,\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"lessonId\": \"{{faker 'string.uuid'}}\",\n    \"lessonType\": \"VOCABULARY\",\n    \"type\": \"TEXT\",\n    \"textL1\": \"ananas\",\n    \"textL2\": \"pineapple\",\n    \"imageUrl\": \"https://picsum.photos/id/824/512/512\",\n    \"textL2AudioUrl\": \"https://mocks.linguino.org/audio-short.mp3\"\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\": false,\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"text\": \"Jablko\",\n        \"matchIndex\": 2\n      },\n      {\n        \"text\": \"Les\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Ananas\",\n        \"matchIndex\": 3\n      },\n      {\n        \"text\": \"Kniha\",\n        \"matchIndex\": 0\n      }\n    ],\n    \"options2\": [\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 3\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Apple\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Pineapple\",\n        \"matchIndex\": 2\n      }\n    ]\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\": false,\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"SHORT_LISTENING\",\n    \"textL2\": \"pineapple\",\n    \"textL2AudioUrl\": \"https://mocks.linguino.org/pineapple.mp3\"\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\": false,\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"imageUrl\": \"https://picsum.photos/id/17/512/512\",\n        \"matchIndex\": 2\n      },\n      {\n        \"imageUrl\": \"https://picsum.photos/id/235/512/512\",\n        \"matchIndex\": 0\n      },\n      {\n        \"imageUrl\": \"https://picsum.photos/id/24/512/512\",\n        \"matchIndex\": 3\n      },\n      {\n        \"imageUrl\": \"https://picsum.photos/id/471/512/512\",\n        \"matchIndex\": 1\n      }\n    ],\n    \"options2\": [\n      {\n        \"text\": \"Mountain\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Forest\",\n        \"matchIndex\": 3\n      },\n      {\n        \"text\": \"Road\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Book\",\n        \"matchIndex\": 2\n      }\n    ]\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Multiple Exercises",
@@ -34,7 +34,7 @@
         },
         {
           "uuid": "ede76d73-3d78-4aeb-9492-ff899f792599",
-          "body": "[\r\n   {\r\n      \"id\":\"{{faker 'string.uuid'}}\",\r\n      \"isNew\":false,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\":\"TEXT\",\r\n      \"textL1\":\"jablko\",\r\n      \"textL2\":\"apple\",\r\n      \"imageUrl\":\"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\r\n      \"textL2AudioUrl\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"isNew\":false,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\": \"BUILD_WORD\",\r\n      \"wordL1\": \"jablko\",\r\n      \"wordL2\": \"apple\",\r\n      \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\r\n      \"imageUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\r\n      \"answerAudioUrl\": \"https://mocks.linguino.org/audio-short.mp3\"\r\n   },\r\n   {\r\n      \"id\": \"{{faker 'string.uuid'}}\",\r\n      \"isNew\":false,\r\n      \"lessonItemId\":\"{{faker 'string.uuid'}}\",\r\n      \"type\": \"FILL_IN_SENTENCE\",\r\n      \"textL1\": \"Mám rád jablka.\",\r\n      \"textL2\": \"I like apples .\",\r\n      \"blankIndexes\": [2],\r\n      \"options\": [\"apples\", \"pears\", \"lemons\"],\r\n      \"imageUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\"\r\n   }\r\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\": false,\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"FILL_TABLE\",\n    \"questionL2\": \"Doplň množné číslo slovíčka.\",\n    \"tableRows\": [\n      [\n        \"Jednotné číslo\",\n        \"pineapple\"\n      ],\n      [\n        \"Množné číslo\",\n        \"pineapples\"\n      ]\n    ],\n    \"blankCellCoords\": [\n      [\n        1,\n        1\n      ]\n    ]\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\": false,\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"FILL_IN_SENTENCE\",\n    \"textL1\": \"Mám rád víno.\",\n    \"textL2\": \"I like grapes .\",\n    \"blankIndexes\": [\n      2\n    ],\n    \"options\": [\n      \"apples\",\n      \"pears\",\n      \"lemons\",\n      \"grapes\",\n      \"books\",\n      \"dinosaurs\"\n    ],\n    \"imageUrl\": \"https://picsum.photos/id/674/512/512\"\n  },\n    {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\": false,\n    \"lessonItemId\": \"{{faker 'string.uuid'}}\",\n    \"type\": \"MATCHING\",\n    \"options1\": [\n      {\n        \"text\": \"Jablko\",\n        \"matchIndex\": 1\n      },\n      {\n        \"text\": \"Pomeranč\",\n        \"matchIndex\": 0\n      },\n      {\n        \"text\": \"Ananas\",\n        \"matchIndex\": 3\n      },\n      {\n        \"text\": \"Banán\",\n        \"matchIndex\": 2\n      }\n    ],\n    \"options2\": [\n      {\n        \"audioUrl\": \"https://mocks.linguino.org/orange.mp3\",\n        \"matchIndex\": 1\n      },\n      {\n        \"audioUrl\": \"https://mocks.linguino.org/apple.mp3\",\n        \"matchIndex\": 0\n      },\n      {\n        \"audioUrl\": \"https://mocks.linguino.org/banana.mp3\",\n        \"matchIndex\": 3\n      },\n      {\n        \"audioUrl\": \"https://mocks.linguino.org/pineapple.mp3\",\n        \"matchIndex\": 2\n      }\n    ]\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "Multiple Exercises - lessonId in query",
@@ -710,6 +710,210 @@
       "endpoint": "user/courses/:courseId/lessons",
       "responses": [
         {
+          "uuid": "72b29a44-f61f-4152-a6d9-b7c67514b3aa",
+          "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Colors\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Numbers and counting\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Greetings and introductions\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Basic vocabulary\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Family members\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Common objects in the house\"\r\n  }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: type==VOCABULARY, level==0",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "type",
+              "value": "VOCABULARY",
+              "invert": false,
+              "operator": "regex"
+            },
+            {
+              "target": "query",
+              "modifier": "level",
+              "value": "0",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "e8c9e8ce-5f55-40a6-9241-e0138d602919",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Daily routines\"\n  },\n  {\n    \"id\": \"UTD53e6HxK\",\n    \"name\": \"Fruits\"\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Weather and seasons\"\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Transportation vocabulary\"\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Hobbies and interests\"\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Describing people's appearance and personality\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: type==VOCABULARY, level==1",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "type",
+              "value": "VOCABULARY",
+              "invert": false,
+              "operator": "regex"
+            },
+            {
+              "target": "query",
+              "modifier": "level",
+              "value": "1",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "086a7634-37f0-4c2f-bc6a-bb6c2016781d",
+          "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Jobs and occupations\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Health and wellness\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Technology vocabulary\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Travel and tourism\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Education and studying\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Expressing opinions and preferences\"\r\n  }\r\n]\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: type==VOCABULARY, level==2",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "type",
+              "value": "VOCABULARY",
+              "invert": false,
+              "operator": "regex"
+            },
+            {
+              "target": "query",
+              "modifier": "level",
+              "value": "2",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "ce19edae-b684-4dc0-8d1f-a6cb961331a4",
+          "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Cultural differences and customs\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Current events and news vocabulary\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced food and cooking terms\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Literature and reading vocabulary\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Art and entertainment\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Environmental issues vocabulary\"\r\n  }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: type==VOCABULARY, level==3",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "type",
+              "value": "VOCABULARY",
+              "invert": false,
+              "operator": "regex"
+            },
+            {
+              "target": "query",
+              "modifier": "level",
+              "value": "3",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "8bbfd497-b361-47d4-9bac-2603529b3cde",
+          "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Business English vocabulary\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced idiomatic expressions\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Legal terminology\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Political vocabulary\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Philosophical concepts\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced scientific terms\"\r\n  }\r\n]\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: type==VOCABULARY, level==4",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "type",
+              "value": "VOCABULARY",
+              "invert": false,
+              "operator": "regex"
+            },
+            {
+              "target": "query",
+              "modifier": "level",
+              "value": "4",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "b08b421a-5ca0-4656-a13b-a07cda3297a2",
+          "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced academic vocabulary\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Professional jargon and terminology\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced literary analysis terms\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Cultural and sociological discourse\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Complex philosophical discussions\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Cutting-edge scientific vocabulary\"\r\n  }\r\n]\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: type==VOCABULARY, level==5",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "type",
+              "value": "VOCABULARY",
+              "invert": false,
+              "operator": "regex"
+            },
+            {
+              "target": "query",
+              "modifier": "level",
+              "value": "5",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
           "uuid": "9182902b-63c9-4965-a1ee-bc75863f4e77",
           "body": "[\n  {{#repeat 10}}\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"{{faker 'lorem.words' 4}}\"\n  }\n  {{/repeat}}\n]",
           "latency": 0,
@@ -772,6 +976,40 @@
         },
         {
           "uuid": "4264fb8b-45a8-4e72-a870-923b6be89d90",
+          "body": "[\n  {\n    \"id\": \"UTD53e6HxK\",\n    \"name\": \"Fruits (Ovoce)\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Example Response: searchName==fruits OR searchName==ovoce",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "searchName",
+              "value": "f(?:r(?:u(?:i(?:t(?:s)?)?)?)?)?",
+              "invert": false,
+              "operator": "regex"
+            },
+            {
+              "target": "query",
+              "modifier": "searchName",
+              "value": "o(?:v(?:o(?:c(?:e)?)?)?)?",
+              "invert": false,
+              "operator": "regex"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "45190c5a-97ba-442c-b1b2-78dd407a5c9d",
           "body": "[\n  {{#repeat 10}}\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"{{faker 'lorem.words' 4}}\"\n  }\n  {{/repeat}}\n]",
           "latency": 0,
           "statusCode": 200,
@@ -784,7 +1022,7 @@
               "target": "query",
               "modifier": "searchName",
               "value": "",
-              "invert": true,
+              "invert": false,
               "operator": "null"
             }
           ],
@@ -1041,8 +1279,35 @@
           "callbacks": []
         },
         {
+          "uuid": "e3ac3e1d-4c9e-42bb-9745-95e1549d7808",
+          "body": "{\r\n   \"name\": \"Fruits\",\r\n   \"id\": \"UTD53e6HxK\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"V této lekci se zaměříme na ovoce. Prozkoumáme různé druhy ovoce a naučíme se anglická slova pro každý druh, jako jsou jablka, hrušky, banány a další. V lekci se také naučíte rozlišovat jednotná a množná čísla spojená s jednotlivými slovíčky.\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jahoda\",\r\n         \"nameL2\":\"strawberry\",\r\n         \"imageUrl\":\"https://picsum.photos/id/493/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/strawberry.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"pomeranč\",\r\n         \"nameL2\":\"orange\",\r\n         \"imageUrl\":\"https://picsum.photos/id/517/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/orange.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"víno\",\r\n         \"nameL2\":\"grapes\",\r\n         \"imageUrl\":\"https://picsum.photos/id/674/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/grapes.mp3\"\r\n      }\r\n   ]\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Lesson: Vocabulary (Fruits)",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "lessonId",
+              "value": "UTD53e6HxK",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
           "uuid": "bdf42e2a-7676-45ea-95b5-db924d6adefa",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jablko\",\r\n         \"nameL2\":\"apple\",\r\n         \"imageUrl\":\"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"hruška\",\r\n         \"nameL2\":\"pear\",\r\n         \"imageUrl\":\"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"meloun\",\r\n         \"nameL2\":\"melon\",\r\n         \"imageUrl\":\"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/audio-short.mp3\"\r\n      }\r\n   ]\r\n}",
+          "body": "{\r\n   \"name\": \"Fruits\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"V této lekci se zaměříme na ovoce. Prozkoumáme různé druhy ovoce a naučíme se anglická slova pro každý druh, jako jsou jablka, hrušky, banány a další. V lekci se také naučíte rozlišovat jednotná a množná čísla spojená s jednotlivými slovíčky.\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jahoda\",\r\n         \"nameL2\":\"strawberry\",\r\n         \"imageUrl\":\"https://picsum.photos/id/493/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/strawberry.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"pomeranč\",\r\n         \"nameL2\":\"orange\",\r\n         \"imageUrl\":\"https://picsum.photos/id/517/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/orange.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"víno\",\r\n         \"nameL2\":\"grapes\",\r\n         \"imageUrl\":\"https://picsum.photos/id/674/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/grapes.mp3\"\r\n      }\r\n   ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Vocabulary",
@@ -1053,7 +1318,7 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true,
+          "default": false,
           "databucketID": "",
           "bodyType": "INLINE",
           "crudKey": "id",
@@ -1072,7 +1337,7 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false,
+          "default": true,
           "databucketID": "",
           "bodyType": "INLINE",
           "crudKey": "id",
@@ -1952,7 +2217,7 @@
       "responses": [
         {
           "uuid": "c90157a6-c8b8-4b19-a5e1-1669aeeed81f",
-          "body": "[\n  {{#repeat 10}}\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\":\"{{faker 'lorem.word'}}\",\n    \"enabled\":{{faker 'datatype.boolean'}}\n  }\n  {{/repeat}}\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Kultura\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Škola\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Práce\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Cestování\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Rodina\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Jídlo\",\n    \"enabled\": true\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Historie\",\n    \"enabled\": true\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "category=main",
@@ -1979,7 +2244,7 @@
         },
         {
           "uuid": "5a066cf8-eda8-443b-8f37-bb46a4c753e1",
-          "body": "[\n  {{#repeat 5}}\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\":\"{{faker 'lorem.word'}}\",\n    \"enabled\":{{faker 'datatype.boolean'}}\n  }\n  {{/repeat}}\n]",
+          "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Slovní zásoba pro manažery\",\n    \"enabled\": false\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Slovní zásoba pro doktory\",\n    \"enabled\": false\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Slovní zásoba pro ajťáky\",\n    \"enabled\": false\n  },\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"Slovní zásoba pro piloty\",\n    \"enabled\": false\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "category=extra",
