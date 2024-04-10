@@ -3023,33 +3023,6 @@
       "endpoint": "user/subscription",
       "responses": [
         {
-          "uuid": "8d69a3eb-b55d-4c26-a8dd-2b145f318e5b",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Free Trial Start",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "body",
-              "modifier": "subscriptionState",
-              "value": "TRIAL",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
           "uuid": "95fca500-a3a9-4f2e-ba96-629a20b14459",
           "body": "{\n  \"error\": \"MOCK_NOT_SUPPORTED\"\n}",
           "latency": 0,
@@ -3610,6 +3583,54 @@
       ],
       "responseMode": null,
       "type": "http"
+    },
+    {
+      "uuid": "328d256a-d07d-41f2-a449-3119fdce7804",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "user/subscription/trial",
+      "responses": [
+        {
+          "uuid": "664dd330-3503-4ad1-a3b8-78106bd8e11e",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "5d75a3ce-f751-4840-9ba4-9b3886261e3b",
+          "body": "{\n  \"error\": \"You are not eligible for a trial period anymore.\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "Free trial not allowed",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -3880,6 +3901,10 @@
         {
           "type": "route",
           "uuid": "99caa360-a14e-474d-806c-ff4c3e74ec3e"
+        },
+        {
+          "type": "route",
+          "uuid": "328d256a-d07d-41f2-a449-3119fdce7804"
         }
       ]
     },
