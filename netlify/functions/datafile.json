@@ -1370,7 +1370,7 @@
       "responses": [
         {
           "uuid": "6ce8ad3d-5866-4421-99ae-e981ed1e8173",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"SPEAKING\"\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"SPEAKING\",\r\n   \"level\": \"a1\"\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Speaking",
@@ -1389,7 +1389,7 @@
         },
         {
           "uuid": "5de80edf-e594-46b1-88e3-83b34ecc3d57",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"Tyq0oivryDQ\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"PRONUNCIATION\"\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"Tyq0oivryDQ\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"PRONUNCIATION\",\r\n   \"level\": \"a1\"\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Pronunciation",
@@ -1408,7 +1408,7 @@
         },
         {
           "uuid": "e3ac3e1d-4c9e-42bb-9745-95e1549d7808",
-          "body": "{\r\n   \"name\": \"Fruits\",\r\n   \"id\": \"UTD53e6HxK\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"V této lekci se zaměříme na ovoce. Prozkoumáme různé druhy ovoce a naučíme se anglická slova pro každý druh, jako jsou jablka, hrušky, banány a další. V lekci se také naučíte rozlišovat jednotná a množná čísla spojená s jednotlivými slovíčky.\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jahoda\",\r\n         \"nameL2\":\"strawberry\",\r\n         \"imageUrl\":\"https://picsum.photos/id/493/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/strawberry.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"pomeranč\",\r\n         \"nameL2\":\"orange\",\r\n         \"imageUrl\":\"https://picsum.photos/id/517/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/orange.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"víno\",\r\n         \"nameL2\":\"grapes\",\r\n         \"imageUrl\":\"https://picsum.photos/id/674/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/grapes.mp3\"\r\n      }\r\n   ]\r\n}",
+          "body": "{\r\n   \"name\": \"Fruits\",\r\n   \"id\": \"UTD53e6HxK\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"V této lekci se zaměříme na ovoce. Prozkoumáme různé druhy ovoce a naučíme se anglická slova pro každý druh, jako jsou jablka, hrušky, banány a další. V lekci se také naučíte rozlišovat jednotná a množná čísla spojená s jednotlivými slovíčky.\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"level\": \"a1\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jahoda\",\r\n         \"nameL2\":\"strawberry\",\r\n         \"imageUrl\":\"https://picsum.photos/id/493/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/strawberry.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"pomeranč\",\r\n         \"nameL2\":\"orange\",\r\n         \"imageUrl\":\"https://picsum.photos/id/517/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/orange.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"víno\",\r\n         \"nameL2\":\"grapes\",\r\n         \"imageUrl\":\"https://picsum.photos/id/674/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/grapes.mp3\"\r\n      }\r\n   ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Vocabulary (Fruits)",
@@ -1435,7 +1435,7 @@
         },
         {
           "uuid": "bdf42e2a-7676-45ea-95b5-db924d6adefa",
-          "body": "{\r\n   \"name\": \"Fruits\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"V této lekci se zaměříme na ovoce. Prozkoumáme různé druhy ovoce a naučíme se anglická slova pro každý druh, jako jsou jablka, hrušky, banány a další. V lekci se také naučíte rozlišovat jednotná a množná čísla spojená s jednotlivými slovíčky.\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jahoda\",\r\n         \"nameL2\":\"strawberry\",\r\n         \"imageUrl\":\"https://picsum.photos/id/493/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/strawberry.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"pomeranč\",\r\n         \"nameL2\":\"orange\",\r\n         \"imageUrl\":\"https://picsum.photos/id/517/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/orange.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"víno\",\r\n         \"nameL2\":\"grapes\",\r\n         \"imageUrl\":\"https://picsum.photos/id/674/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/grapes.mp3\"\r\n      }\r\n   ]\r\n}",
+          "body": "{\r\n   \"name\": \"Fruits\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"V této lekci se zaměříme na ovoce. Prozkoumáme různé druhy ovoce a naučíme se anglická slova pro každý druh, jako jsou jablka, hrušky, banány a další. V lekci se také naučíte rozlišovat jednotná a množná čísla spojená s jednotlivými slovíčky.\",\r\n   \"type\": \"VOCABULARY\",\r\n   \"level\": \"a1\",\r\n   \"items\":[\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"jahoda\",\r\n         \"nameL2\":\"strawberry\",\r\n         \"imageUrl\":\"https://picsum.photos/id/493/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/strawberry.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"pomeranč\",\r\n         \"nameL2\":\"orange\",\r\n         \"imageUrl\":\"https://picsum.photos/id/517/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/orange.mp3\"\r\n      },\r\n      {\r\n         \"id\": \"{{faker 'string.uuid'}}\",\r\n         \"nameL1\":\"víno\",\r\n         \"nameL2\":\"grapes\",\r\n         \"imageUrl\":\"https://picsum.photos/id/674/512/512\",\r\n         \"audioUrl\":\"https://mocks.linguino.org/grapes.mp3\"\r\n      }\r\n   ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Vocabulary",
@@ -1454,7 +1454,7 @@
         },
         {
           "uuid": "d80d89d8-1994-47c5-be39-a84a2e2acb40",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"Tyq0oivryDQ\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"GRAMMAR\"\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"videoId\":\"Tyq0oivryDQ\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"GRAMMAR\",\r\n   \"level\": \"c1\"\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Grammar",
@@ -1473,7 +1473,7 @@
         },
         {
           "uuid": "2736c8cb-b46c-4fa6-82c6-5f978b2e1959",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"LISTENING\"\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"LISTENING\",\r\n   \"level\": \"a1\"\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Listening",
@@ -1492,7 +1492,7 @@
         },
         {
           "uuid": "483bf4ee-5eae-4bf5-8bad-52c1b5fad24d",
-          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"READING\"\r\n}",
+          "body": "{\r\n   \"name\": \"{{faker 'lorem.words' 4}}\",\r\n   \"id\": \"{{faker 'string.uuid'}}\",\r\n   \"favorite\":true,\r\n   \"visible\":true,\r\n   \"description\":\"{{faker 'lorem.paragraph' 10}}\",\r\n   \"type\": \"READING\",\r\n   \"level\": \"a1\"\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Lesson: Reading",
