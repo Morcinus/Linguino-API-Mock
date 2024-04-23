@@ -3631,6 +3631,72 @@
         }
       ],
       "responseMode": null
+    },
+    {
+      "uuid": "e56e9faa-4fc7-45a3-b4c6-42d034acbcf1",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "change-email",
+      "responses": [
+        {
+          "uuid": "53fd0523-4b69-419c-bcab-a0d1dace0b14",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "newEmail",
+              "value": "",
+              "invert": true,
+              "operator": "null"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "e2bbf69a-63ca-4e2f-be65-49751b34611d",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "change-email-confirm",
+      "responses": [
+        {
+          "uuid": "b6bfca57-7bbb-4c4b-bbf1-cb7d0aa431de",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
     }
   ],
   "proxyMode": false,
@@ -4209,6 +4275,26 @@
           "uuid": "43aea812-877e-4c98-8379-cf56cfcf5dac"
         }
       ]
+    },
+    {
+      "uuid": "a90dd462-7e09-4029-87c6-1abad3357797",
+      "name": "change-email",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "e56e9faa-4fc7-45a3-b4c6-42d034acbcf1"
+        }
+      ]
+    },
+    {
+      "uuid": "368f4a7a-c2a2-4e17-a5a5-e7b745dd35d6",
+      "name": "change-email-confirm",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "e2bbf69a-63ca-4e2f-be65-49751b34611d"
+        }
+      ]
     }
   ],
   "rootChildren": [
@@ -4231,6 +4317,14 @@
     {
       "type": "folder",
       "uuid": "2fe77ef2-b734-4fe8-a547-8a06c88deb43"
+    },
+    {
+      "type": "folder",
+      "uuid": "a90dd462-7e09-4029-87c6-1abad3357797"
+    },
+    {
+      "type": "folder",
+      "uuid": "368f4a7a-c2a2-4e17-a5a5-e7b745dd35d6"
     },
     {
       "type": "folder",
