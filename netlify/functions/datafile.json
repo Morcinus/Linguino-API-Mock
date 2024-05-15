@@ -60,6 +60,25 @@
           "callbacks": []
         },
         {
+          "uuid": "b1884d27-82a9-4c2f-88bf-d5bbf94dca56",
+          "body": "[]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Empty Study Session",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "databucketID": "",
+          "bodyType": "INLINE",
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
           "uuid": "b73ad906-bb24-4433-9385-53f1c9c0443c",
           "body": "[\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"isNew\":false,\n    \"lessonItemId\":\"{{faker 'string.uuid'}}\",\n    \"type\": \"BuildWordExercise\",\n    \"wordL1\": \"jablko\",\n    \"wordL2\": \"apple\",\n    \"letters\": [\"a\", \"p\", \"p\", \"l\", \"e\", \"x\", \"y\", \"z\"],\n    \"imageUrl\": \"{{faker 'image.urlPicsumPhotos' height=512 width=512}}\",\n    \"answerAudioUrl\": \"https://mocks.linguino.org/audio-short.mp3\"\n  }\n]",
           "latency": 0,
