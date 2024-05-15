@@ -2709,7 +2709,7 @@
           "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Simple Present\",\r\n    \"icon\": \"schedule\",\r\n    \"type\": \"GRAMMAR\",\r\n    \"isActive\": true\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Basic Activities\",\r\n    \"icon\": \"directions_run\",\r\n    \"type\": \"VOCABULARY\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Short Conversations\",\r\n    \"icon\": \"hearing\",\r\n    \"type\": \"LISTENING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Basic Sounds\",\r\n    \"icon\": \"hearing_disabled\",\r\n    \"type\": \"PRONUNCIATION\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Self & Family\",\r\n    \"icon\": \"people\",\r\n    \"type\": \"SPEAKING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Simple Texts\",\r\n    \"icon\": \"menu_book\",\r\n    \"type\": \"READING\"\r\n  }\r\n]\r\n",
           "latency": 0,
           "statusCode": 200,
-          "label": "page==0 && level==0",
+          "label": "page==1 && level==0",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2726,7 +2726,7 @@
             {
               "target": "query",
               "modifier": "page",
-              "value": "0",
+              "value": "1",
               "invert": false,
               "operator": "equals"
             },
@@ -2750,7 +2750,7 @@
           "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Past vs. Present\",\r\n    \"icon\": \"schedule\",\r\n    \"type\": \"GRAMMAR\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Daily Life\",\r\n    \"icon\": \"directions_run\",\r\n    \"type\": \"VOCABULARY\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Short Dialogues\",\r\n    \"icon\": \"hearing\",\r\n    \"type\": \"LISTENING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Correct Sounds\",\r\n    \"icon\": \"hearing_disabled\",\r\n    \"type\": \"PRONUNCIATION\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Opinions & Experiences\",\r\n    \"icon\": \"people\",\r\n    \"type\": \"SPEAKING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Simple Stories\",\r\n    \"icon\": \"menu_book\",\r\n    \"type\": \"READING\"\r\n  }\r\n]\r\n",
           "latency": 0,
           "statusCode": 200,
-          "label": "page==0 && level==1",
+          "label": "page==1 && level==1",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2767,7 +2767,7 @@
             {
               "target": "query",
               "modifier": "page",
-              "value": "0",
+              "value": "1",
               "invert": false,
               "operator": "equals"
             },
@@ -2791,7 +2791,7 @@
           "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Conditionals\",\r\n    \"icon\": \"schedule\",\r\n    \"type\": \"GRAMMAR\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Work & Study\",\r\n    \"icon\": \"school\",\r\n    \"type\": \"VOCABULARY\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Longer Talks\",\r\n    \"icon\": \"hearing\",\r\n    \"type\": \"LISTENING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Intonation\",\r\n    \"icon\": \"hearing_disabled\",\r\n    \"type\": \"PRONUNCIATION\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Debates\",\r\n    \"icon\": \"forum\",\r\n    \"type\": \"SPEAKING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Articles\",\r\n    \"icon\": \"article\",\r\n    \"type\": \"READING\"\r\n  }\r\n]\r\n",
           "latency": 0,
           "statusCode": 200,
-          "label": "page==0 && level==2",
+          "label": "page==1 && level==2",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2808,7 +2808,7 @@
             {
               "target": "query",
               "modifier": "page",
-              "value": "0",
+              "value": "1",
               "invert": false,
               "operator": "equals"
             },
@@ -2832,7 +2832,7 @@
           "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Subjunctive\",\r\n    \"icon\": \"schedule\",\r\n    \"type\": \"GRAMMAR\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Professional Jargon\",\r\n    \"icon\": \"work\",\r\n    \"type\": \"VOCABULARY\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Podcasts\",\r\n    \"icon\": \"headset\",\r\n    \"type\": \"LISTENING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Accents\",\r\n    \"icon\": \"hearing_disabled\",\r\n    \"type\": \"PRONUNCIATION\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Public Speaking\",\r\n    \"icon\": \"record_voice_over\",\r\n    \"type\": \"SPEAKING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Literary Works\",\r\n    \"icon\": \"book\",\r\n    \"type\": \"READING\"\r\n  }\r\n]\r\n",
           "latency": 0,
           "statusCode": 200,
-          "label": "page==0 && level==3",
+          "label": "page==1 && level==3",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2849,7 +2849,7 @@
             {
               "target": "query",
               "modifier": "page",
-              "value": "0",
+              "value": "1",
               "invert": false,
               "operator": "equals"
             },
@@ -2873,7 +2873,7 @@
           "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced Structures\",\r\n    \"icon\": \"schedule\",\r\n    \"type\": \"GRAMMAR\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced Vocabulary\",\r\n    \"icon\": \"school\",\r\n    \"type\": \"VOCABULARY\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Academic Talks\",\r\n    \"icon\": \"forum\",\r\n    \"type\": \"LISTENING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced Conversations\",\r\n    \"icon\": \"record_voice_over\",\r\n    \"type\": \"PRONUNCIATION\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Professional Debates\",\r\n    \"icon\": \"forum\",\r\n    \"type\": \"SPEAKING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Scholarly Works\",\r\n    \"icon\": \"book\",\r\n    \"type\": \"READING\"\r\n  }\r\n]\r\n",
           "latency": 0,
           "statusCode": 200,
-          "label": "page==0 && level==4",
+          "label": "page==1 && level==4",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2890,7 +2890,7 @@
             {
               "target": "query",
               "modifier": "page",
-              "value": "0",
+              "value": "1",
               "invert": false,
               "operator": "equals"
             },
@@ -2914,7 +2914,7 @@
           "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Advanced Grammar\",\r\n    \"icon\": \"schedule\",\r\n    \"type\": \"GRAMMAR\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Expert Jargon\",\r\n    \"icon\": \"work\",\r\n    \"type\": \"VOCABULARY\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Conferences\",\r\n    \"icon\": \"group_work\",\r\n    \"type\": \"LISTENING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Public Speaking\",\r\n    \"icon\": \"record_voice_over\",\r\n    \"type\": \"PRONUNCIATION\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Work Discussions\",\r\n    \"icon\": \"forum\",\r\n    \"type\": \"SPEAKING\"\r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"name\": \"Complex Texts\",\r\n    \"icon\": \"book\",\r\n    \"type\": \"READING\"\r\n  }\r\n]\r\n",
           "latency": 0,
           "statusCode": 200,
-          "label": "page==0 && level==5",
+          "label": "page==1 && level==5",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2931,7 +2931,7 @@
             {
               "target": "query",
               "modifier": "page",
-              "value": "0",
+              "value": "1",
               "invert": false,
               "operator": "equals"
             },
@@ -2955,7 +2955,7 @@
           "body": "[\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Basic Grammar\",\n    \"icon\": \"schedule\",\n    \"type\": \"GRAMMAR\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Animals\",\n    \"icon\": \"pets\",\n    \"type\": \"VOCABULARY\",\n    \"isActive\": true\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"At a restaurant\",\n    \"icon\": \"restaurant\",\n    \"type\": \"LISTENING\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Basic Sounds\",\n    \"icon\": \"music_note\",\n    \"type\": \"PRONUNCIATION\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"At an airport\",\n    \"icon\": \"flight\",\n    \"type\": \"SPEAKING\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Back in time\",\n    \"icon\": \"history\",\n    \"type\": \"READING\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "page==0",
+          "label": "page==1",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
@@ -2972,7 +2972,7 @@
             {
               "target": "query",
               "modifier": "page",
-              "value": "0",
+              "value": "1",
               "invert": false,
               "operator": "equals"
             },
@@ -2996,7 +2996,7 @@
           "body": "[\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Lorem ipsum\",\n    \"icon\": \"schedule\",\n    \"type\": \"GRAMMAR\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Lorem ipsum\",\n    \"icon\": \"pets\",\n    \"type\": \"VOCABULARY\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Lorem ipsum\",\n    \"icon\": \"restaurant\",\n    \"type\": \"LISTENING\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Lorem ipsum\",\n    \"icon\": \"music_note\",\n    \"type\": \"PRONUNCIATION\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Lorem ipsum\",\n    \"icon\": \"flight\",\n    \"type\": \"SPEAKING\"\n  },\n  {\n    \"id\":\"{{faker 'string.uuid'}}\",\n    \"name\": \"Lorem ipsum\",\n    \"icon\": \"history\",\n    \"type\": \"READING\"\n  }\n]",
           "latency": 0,
           "statusCode": 200,
-          "label": "page!=0",
+          "label": "page!=null",
           "headers": [],
           "bodyType": "INLINE",
           "filePath": "",
