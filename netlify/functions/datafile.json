@@ -2457,7 +2457,7 @@
       "responses": [
         {
           "uuid": "cb4ca00c-490e-465a-8e4a-bdd3b1f31dba",
-          "body": "{\n  \"name\":\"{{faker 'person.fullName'}}\",\n  \"username\":\"{{faker 'internet.userName'}}\",\n  \"email\":\"{{faker 'internet.email'}}\",\n  \"dailyGoal\": {{oneOf (array 1 5 10 20 30)}}\n}",
+          "body": "{\n  \"name\":\"{{faker 'person.fullName'}}\",\n  \"username\":\"{{faker 'internet.userName'}}\",\n  \"email\":\"{{faker 'internet.email'}}\",\n  \"dailyGoal\": 600000\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -2486,7 +2486,7 @@
       "responses": [
         {
           "uuid": "b84d45b2-3b05-457d-99bc-fefdfebcae50",
-          "body": "{\n  \"name\": \"{{body 'name'}}\",\n  \"username\": \"{{body 'username'}}\",\n  \"email\": \"{{body 'email'}}\",\n  \"dailyGoal\": \"{{body 'dailyGoal'}}\"\n}",
+          "body": "{\n  \"name\": \"{{body 'name'}}\",\n  \"username\": \"{{body 'username'}}\",\n  \"email\": \"{{body 'email'}}\",\n  \"dailyGoal\": {{body 'dailyGoal'}}\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
